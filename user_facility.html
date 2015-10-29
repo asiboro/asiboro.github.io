@@ -1,0 +1,240 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Fukuoka Hana Hostel - Hotel Facilities</title>
+		<script src="js/material.js"></script>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/script.js"></script>
+		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
+	<body class="mdl-jmlib mdl-color--white mdl-color-text--grey-700 mdl-base">
+		<div class="mdl-layout mdl-layout-transparent mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
+			<header class="mdl-layout__header mdl-color--primary">
+				<div class="mdl-layout__header-row">
+					<div class="mdl-layout-spacer"></div>
+					Hi, Marvin! &nbsp;<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" onclick="window.location.href='login.html'">Logout</button>
+				</div>
+				<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+					<h3>Welcome to Fukuoka Hana Hostel</h3>
+				</div>
+				<div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+					<h6><a class="mdl-breadcrumbs" href="user.html">Home</a> &gt; Hotel Facilities</h6>
+				</div>
+			</header>
+			<div class="mdl-floating-item-container mdl-search">
+				<div class="mdl-button-container mdl-cell--12-col">
+					<button class="mdl-button mdl-button--fab mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="search">
+						<i class="material-icons" role="presentation">search</i>
+						<span class="visuallyhidden">search</span>
+					</button>
+				</div>
+				<div class="mdl-grid mdl-message-container mdl-shadow--4dp mdl-color--accent">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input mdl-color-text--accent-contrast" type="text" id="keyword" />
+						<label class="mdl-textfield__label" for="sample1">input keyword then press enter</label>
+					</div>
+					<div class="mdl-layout-spacer"></div>
+					<a href="#" class="close"><i class="material-icons mdl-color-text--accent-contrast" role="presentation">close</i></a>
+				</div>
+			</div>
+			<div class="mdl-drawer mdl-layout__drawer mdl-color--primary mdl-shadow--8dp">
+				<header class="mdl-drawer-header mdl-color--primary-dark">
+					<div class="mdl-avatar">
+						<span class="mdl-layout-title">Fukuoka Hana Hostel</span>
+					</div>
+				</header>
+				<nav class="mdl-navigation mdl-navigation">
+					<a class="mdl-navigation__link" href="user.html"><i class="material-icons" role="presentation">home</i>Home</a>
+					<a class="mdl-navigation__link" href="user_policy.html"><i class="material-icons" role="presentation">local_hotel</i>Hotel Policy</a>
+					<a class="mdl-navigation__link" href="user_direction.html"><i class="material-icons" role="presentation">directions_bus</i>Directions</a>
+					<a class="mdl-navigation__link" href="user_vicinity.html"><i class="material-icons" role="presentation">store</i>Vicinity</a>
+					<div class="mdl-navigation__link mdl-navigation__link--current"><i class="material-icons" role="presentation">local_laundry_service</i>Facilities</div>
+					<a class="mdl-navigation__link" href="user_safety.html"><i class="material-icons" role="presentation">report</i>Safety</a>
+					<div class="mdl-drawer-separator"></div>
+					<a class="mdl-navigation__link" href="user_setting.html"><i class="material-icons" role="presentation">settings</i>Settings</a>
+					<div class="mdl-drawer-separator"></div>
+					<a class="mdl-navigation__link-icon" href=""><img src="img/appstore.png" width="100%"></a>
+					<a class="mdl-navigation__link-icon" href=""><img src="img/googleplay.png" width="100%"></a>
+				</nav>
+			</div>
+			<main class="mdl-layout__content mdl-color--grey-100">
+				<section class="section--center mdl-grid">
+					<a name="facility1"></a>
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">Wi-Fi Access</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/router.jpg" width="100%"></div>
+						<div class="mdl-card__supporting-text">
+							<p>24 hours/everywhere Wi-Fi access. </p>
+							<p>username: user1 </p>
+							<p>password: pass2 </p>
+						</div>
+					</div>
+					<a name="facility1"></a>
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">Laundry</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/laundry.jpg" width="100%"></div>
+						<div class="mdl-card__supporting-text">
+							<p>From 8:00am to 10:00pm only</p>
+							<p>Washer:300JPY/load</p>
+							<p>Dryer:100JPY/30min</p>
+						</div>
+					</div>
+					<a name="facility1"></a>
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">Lobby &amp; Living room</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/lobby1.jpg" width="100%"></div>
+						<div class="mdl-card__media mdl-card__media-min">
+							<img src="img/lobby1.jpg" width="25%"><img src="img/lobby2.jpg" width="25%"><img src="img/lobby3.jpg" width="25%"><img src="img/lobby4.jpg" width="25%">
+						</div>
+						<div class="mdl-card__supporting-text">
+							<p>With a liquid crystal TV. You can watch many kinds of int'l programs. </p>
+						</div>
+					</div>
+					<a name="facility2"></a>
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">Kitchen</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/kitchen1.jpg" width="100%"></div>
+						<div class="mdl-card__media mdl-card__media-min">
+							<img src="img/kitchen1.jpg" width="25%"><img src="img/kitchen2.jpg" width="25%"><img src="img/kitchen3.jpg" width="25%"><img src="img/kitchen4.jpg" width="25%">
+						</div>
+						<div class="mdl-card__supporting-text">
+							<p>Kitchen appliances, utensil, pan etc. are equipped. Coffee, Tea and seasonings are free.</p>
+						</div>
+					</div>
+					<a name="facility3"></a>
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">Common Toilet &amp; Lavatory</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/toilet1.jpg" width="100%"></div>
+						<div class="mdl-card__media mdl-card__media-min">
+							<img src="img/toilet1.jpg" width="25%"><img src="img/toilet2.jpg" width="25%"><img src="img/toilet3.jpg" width="25%"><img src="img/toilet4.jpg" width="25%">
+						</div>
+						<div class="mdl-card__supporting-text">
+							<p>Japanese high-tech common toilets. Wash basin with hair dryers and hand soap</p>
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+				<!-- <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+					<a name="facility1"></a>
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">Lobby &amp; Living room</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/lobby1.jpg" width="100%"></div>
+						<div class="mdl-card__media"><img src="img/lobby2.jpg" height="195" width="260%"></div>
+						<div class="mdl-card__supporting-text">
+							<p>With a liquid crystal TV. You can watch many kinds of int'l programs. </p>
+						</div>
+					</div>
+				</section>
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+					<a name="facility2"></a>
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">Arrival</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent"><i class="material-icons" role="presentation" id="fave2" role="presentation">favorite</i></button>
+							<div class="mdl-tooltip" for="fave2">Unpin from home</div>
+						</div>
+						<div class="mdl-card__supporting-text">
+							<p>If you arrive before check-in time, you can leave your luggage in the storage room during the reception hours.</p>
+
+							<p>During the off-hours, the frontdoor in locked for security. So please arrive during the reception hours. </p>
+
+							<p>Once you check-in, you can go out and come back any time with the room key and the entrance key.</p>
+						</div>
+					</div>
+				</section>
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+					<a name="facility3"></a>
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">Payment</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave3" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave3">Pin to home</div>
+						</div>
+						<div class="mdl-card__supporting-text">
+							<p>Please make your payment for your whole nights to stay on your arrival.</p>
+
+							<p>Credit Cards accepted (VISA or MASTER)</p>
+						</div>
+					</div>
+				</section>
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+					<a name="facility4"></a>
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">Others</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave4" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave4">Pin to home</div>
+						</div>
+						<div class="mdl-card__supporting-text">
+							<p>Smoking is not allowed inside of the building.</p>
+
+							<p>Please help management to save electricity and water.</p>
+
+							<p>We will keep an unclaimed lost article for 3 month.</p>
+						</div>
+					</div> -->
+				</section>
+				<footer class="mdl-mega-footer">
+					<div class="mdl-mega-footer--middle-section">
+						<div class="mdl-logo">
+							<div><i class="material-icons" role="presentation">place</i> <a href="">814-213 Kamikawabata-machi, Hakata-ku, Fukuoka City, Japan</a></div>
+							<div><i class="material-icons" role="presentation">call</i> <a href="">080-1234-5678</a></div>
+							<div><i class="material-icons" role="presentation">email</i> <a href="">fukuokahana@gmail.com</a></div>
+							<div><i class="material-icons" role="presentation">public</i> <a href="">www.fukuokahana.com</a></div>
+						</div>
+					</div>
+					<div class="mdl-mega-footer--bottom-section">
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">About this service</a></li>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Privacy and Terms</a></li>
+						</ul>
+					</div>
+				</footer>
+			</main>
+		</div>
+	</body>
+</html>

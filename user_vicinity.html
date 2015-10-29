@@ -1,0 +1,308 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Fukuoka Hana Hostel - Hotel Vicinity</title>
+		<script src="js/material.js"></script>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/script.js"></script>
+		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
+	<body class="mdl-jmlib mdl-color--white mdl-color-text--grey-700 mdl-base">
+		<div class="mdl-layout mdl-layout-transparent mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
+			<header class="mdl-layout__header mdl-color--primary">
+				<div class="mdl-layout__header-row">
+					<div class="mdl-layout-spacer"></div>
+					Hi, Marvin! &nbsp;<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" onclick="window.location.href='login.html'">Logout</button>
+				</div>
+				<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+					<h3>Welcome to Fukuoka Hana Hostel</h3>
+				</div>
+				<div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+					<h6><a class="mdl-breadcrumbs" href="user.html">Home</a> &gt; Vicinity</h6>
+				</div>
+			</header>
+			<div class="mdl-floating-item-container mdl-search">
+				<div class="mdl-button-container mdl-cell--12-col">
+					<button class="mdl-button mdl-button--fab mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="search">
+						<i class="material-icons" role="presentation">search</i>
+						<span class="visuallyhidden">search</span>
+					</button>
+				</div>
+				<div class="mdl-grid mdl-message-container mdl-shadow--4dp mdl-color--accent">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input mdl-color-text--accent-contrast" type="text" id="keyword" />
+						<label class="mdl-textfield__label" for="sample1">input keyword then press enter</label>
+					</div>
+					<div class="mdl-layout-spacer"></div>
+					<a href="#" class="close"><i class="material-icons mdl-color-text--accent-contrast" role="presentation">close</i></a>
+				</div>
+			</div>
+			<div class="mdl-drawer mdl-layout__drawer mdl-color--primary mdl-shadow--8dp">
+				<header class="mdl-drawer-header mdl-color--primary-dark">
+					<div class="mdl-avatar">
+						<span class="mdl-layout-title">Fukuoka Hana Hostel</span>
+					</div>
+				</header>
+				<nav class="mdl-navigation mdl-navigation">
+					<a class="mdl-navigation__link" href="user.html"><i class="material-icons" role="presentation">home</i>Home</a>
+					<a class="mdl-navigation__link" href="user_policy.html"><i class="material-icons" role="presentation">local_hotel</i>Hotel Policy</a>
+					<a class="mdl-navigation__link" href="user_direction.html"><i class="material-icons" role="presentation">directions_bus</i>Directions</a>
+					<div class="mdl-navigation__link mdl-navigation__link--current"><i class="material-icons" role="presentation">store</i>Vicinity</div>
+					<a class="mdl-navigation__link" href="user_facility.html"><i class="material-icons" role="presentation">local_laundry_service</i>Facilities</a>
+					<a class="mdl-navigation__link" href="user_safety.html"><i class="material-icons" role="presentation">report</i>Safety</a>
+					<div class="mdl-drawer-separator"></div>
+					<a class="mdl-navigation__link" href="user_setting.html"><i class="material-icons" role="presentation">settings</i>Settings</a>
+					<div class="mdl-drawer-separator"></div>
+					<a class="mdl-navigation__link-icon" href=""><img src="img/appstore.png" width="100%"></a>
+					<a class="mdl-navigation__link-icon" href=""><img src="img/googleplay.png" width="100%"></a>
+				</nav>
+			</div>
+			<main class="mdl-layout__content mdl-color--grey-100">
+				<section class="section--center mdl-grid mdl-section-header">
+					<div class="mdl-cell mdl-cell--4-col"><h4>Sort</h4>
+						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+							<input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked />
+							<span class="mdl-radio__label">Distance</span>
+						</label>
+						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+							<input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2" />
+							<span class="mdl-radio__label">Name</span>
+						</label>
+					</div>
+					<div class="mdl-layout-spacer"></div>
+					<div class="mdl-cell mdl-cell--2-col" style="text-align: right"><h4>Filter</h4>
+						<button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">more_vert</i></button>
+
+						<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+							<li class="mdl-menu__item">
+								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+									<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked />
+									<span class="mdl-checkbox__label">Sightseeing</span>
+								</label>
+							</li>
+							<li class="mdl-menu__item">
+								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+									<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked />
+									<span class="mdl-checkbox__label">Shopping</span>
+								</label>
+							</li>
+							<li class="mdl-menu__item">
+								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
+									<input type="checkbox" id="checkbox-3" class="mdl-checkbox__input" checked />
+									<span class="mdl-checkbox__label">Eating</span>
+								</label>
+							</li>
+							<li disabled class="mdl-menu__item">
+								<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-4">
+									<input type="checkbox" id="checkbox-4" class="mdl-checkbox__input" />
+									<span class="mdl-checkbox__label">Activity</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="section--center mdl-grid">
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<a name="vicinity1"></a>
+						<div class="mdl-card__title mdl-color--red-300">
+							<h4 class="mdl-card__title-text mdl-color-text--grey-100"><i class="mdl-color-text--grey-100 material-icons" role="presentation">camera_alt</i>&nbsp; Sightseeing</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/kushinashrine.jpg" width="100%"></div>
+						<div class="mdl-card__supporting-text">
+							<h4>Kushida Shrine</h4>
+							<p>1 minute walk</p>
+							<p>[ <a href="http://yokanavi.com/eg/theme/detail/184">website</a> ] [ <a href="">map</a> ]</p>
+						</div>
+					</div>
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<a name="vicinity2"></a>
+						<div class="mdl-card__title mdl-color--green-300">
+							<h4 class="mdl-card__title-text mdl-color-text--grey-100"><i class="mdl-color-text--grey-100 material-icons" role="presentation">local_grocery_store</i>&nbsp; Shopping</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave2" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave2">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/supermarket.jpg" width="100%"></div>
+						<div class="mdl-card__supporting-text">
+							<h4>24H Supermarket</h4>
+							<p>2 minute walk</p>
+							<p>[ <a href="">map</a> ]</p>
+						</div>
+					</div>
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<a name="vicinity3"></a>
+						<div class="mdl-card__title mdl-color--orange-300">
+							<h4 class="mdl-card__title-text mdl-color-text--grey-100"><i class="mdl-color-text--grey-100 material-icons" role="presentation">local_dining</i>&nbsp; Eating</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave3" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave3">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/yatai.jpg" width="100%"></div>
+						<div class="mdl-card__supporting-text">
+							<h4>Local Yatai (Food stalls) Area</h4>
+							<p>2 minute walk</p>
+							<p>[ <a href="">map</a> ]</p>
+						</div>
+					</div>
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<a name="vicinity4"></a>
+						<div class="mdl-card__title mdl-color--red-300">
+							<h4 class="mdl-card__title-text mdl-color-text--grey-100"><i class="mdl-color-text--grey-100 material-icons" role="presentation">camera_alt</i>&nbsp; Sightseeing</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave4" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave4">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/machiya.jpg" width="100%"></div>
+						<div class="mdl-card__supporting-text">
+							<h4>Hakata Machiya Folk Museum</h4>
+							<p>3 minute walk</p>
+							<p>[ <a href="http://www.hakatamachiya.com/english">website</a> ] [ <a href="">map</a> ]</p>
+						</div>
+					</div>
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<a name="vicinity5"></a>
+						<div class="mdl-card__title mdl-color--red-300">
+							<h4 class="mdl-card__title-text mdl-color-text--grey-100"><i class="mdl-color-text--grey-100 material-icons" role="presentation">camera_alt</i>&nbsp; Sightseeing</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave5" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave5">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/craftsmuseum.jpg" width="100%"></div>
+						<div class="mdl-card__supporting-text">
+							<h4>Hakata Traditional Arts &amp; Crafts Museum</h4>
+							<p>3 minute walk</p>
+							<p>[ <a href="http://hakata-dentou-kougeikan.jp">website</a> ] [ <a href="">map</a> ]</p>
+						</div>
+					</div>
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<a name="vicinity6"></a>
+						<div class="mdl-card__title mdl-color--green-300">
+							<h4 class="mdl-card__title-text mdl-color-text--grey-100"><i class="mdl-color-text--grey-100 material-icons" role="presentation">local_grocery_store</i>&nbsp; Shopping</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave6" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave6">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/canalcity.jpg" width="100%"></div>
+						<div class="mdl-card__supporting-text">
+							<h4>Canal City</h4>
+							<p>3 minute walk</p>
+							<p>[ <a href="http://canalcity.co.jp.e.jx.hp.transer.com/">website</a> ] [ <a href="">map</a> ]</p>
+						</div>
+					</div>
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<a name="vicinity7"></a>
+						<div class="mdl-card__title mdl-color--orange-300">
+							<h4 class="mdl-card__title-text mdl-color-text--grey-100"><i class="mdl-color-text--grey-100 material-icons" role="presentation">local_dining</i>&nbsp; Eating</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave7" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave7">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/nakasuyatai.jpg" width="100%"></div>
+						<div class="mdl-card__supporting-text">
+							<h4>Nakasu Yatai (Food stalls) Area</h4>
+							<p>5 minute walk</p>
+							<p>[ <a href="">map</a> ]</p>
+						</div>
+					</div>
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<a name="vicinity8"></a>
+						<div class="mdl-card__title mdl-color--red-300">
+							<h4 class="mdl-card__title-text mdl-color-text--grey-100"><i class="mdl-color-text--grey-100 material-icons" role="presentation">camera_alt</i>&nbsp; Sightseeing</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave8" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave8">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/tochojitemple.jpg" width="100%"></div>
+						<div class="mdl-card__supporting-text">
+							<h4>Tochoji Temple</h4>
+							<p>7 minute walk</p>
+							<p>[ <a href="http://yokanavi.com/eg/theme/detail/204">website</a> ] [ <a href="">map</a> ]</p>
+						</div>
+					</div>
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<a name="vicinity9"></a>
+						<div class="mdl-card__title mdl-color--red-300">
+							<h4 class="mdl-card__title-text mdl-color-text--grey-100"><i class="mdl-color-text--grey-100 material-icons" role="presentation">camera_alt</i>&nbsp; Sightseeing</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave9" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave9">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/shofukujitemple.jpg" width="100%"></div>
+						<div class="mdl-card__supporting-text">
+							<h4>Shofukuji Temple</h4>
+							<p>7 minute walk</p>
+							<p>[ <a href="http://www.shofukuji.or.jp/">website</a> (JP) ] [ <a href="">map</a> ]</p>
+						</div>
+					</div>
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<a name="vicinity10"></a>
+						<div class="mdl-card__title mdl-color--green-300">
+							<h4 class="mdl-card__title-text mdl-color-text--grey-100"><i class="mdl-color-text--grey-100 material-icons" role="presentation">local_grocery_store</i>&nbsp; Shopping</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent"><i class="material-icons" role="presentation" id="fave10" role="presentation">favorite</i></button>
+							<div class="mdl-tooltip" for="fave10">Unpin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/tenjin.jpg" width="100%"></div>
+						<div class="mdl-card__supporting-text">
+							<h4>Tenjin Area</h4>
+							<p>12 minute walk</p>
+							<p>[ <a href="http://tenjinsite.jp/first_jp/first_eg.php">website</a> ] [ <a href="">map</a> ]</p>
+						</div>
+					</div>
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<a name="vicinity11"></a>
+						<div class="mdl-card__title mdl-color--red-300">
+							<h4 class="mdl-card__title-text mdl-color-text--grey-100"><i class="mdl-color-text--grey-100 material-icons" role="presentation">camera_alt</i>&nbsp; Sightseeing</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave11" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave11">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/ohori.jpg" width="100%"></div>
+						<div class="mdl-card__supporting-text">
+							<h4>Ohori Park</h4>
+							<p>12 minutes by subway</p>
+							<p>[ <a href="http://yokanavi.com/eg/landmark/index/53">website</a> ] [ <a href="">map</a> ]</p>
+						</div>
+					</div>
+					<div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+						<a name="vicinity12"></a>
+						<div class="mdl-card__title mdl-color--red-300">
+							<h4 class="mdl-card__title-text mdl-color-text--grey-100"><i class="mdl-color-text--grey-100 material-icons" role="presentation">camera_alt</i>&nbsp; Sightseeing</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave12" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave12">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/yafuokudome.jpg" width="100%"></div>
+						<div class="mdl-card__supporting-text">
+							<h4>Yafuoku! Dome</h4>
+							<p>~25 minutes by bus</p>
+							<p>[ <a href="http://www.softbankhawks.co.jp/global/english/index.php">website</a> ] [ <a href="">map</a> ]</p>
+						</div>
+					</div>
+				</section>
+				<footer class="mdl-mega-footer">
+					<div class="mdl-mega-footer--middle-section">
+						<div class="mdl-logo">
+							<div><i class="material-icons" role="presentation">place</i> <a href="">814-213 Kamikawabata-machi, Hakata-ku, Fukuoka City, Japan</a></div>
+							<div><i class="material-icons" role="presentation">call</i> <a href="">080-1234-5678</a></div>
+							<div><i class="material-icons" role="presentation">email</i> <a href="">fukuokahana@gmail.com</a></div>
+							<div><i class="material-icons" role="presentation">public</i> <a href="">www.fukuokahana.com</a></div>
+						</div>
+					</div>
+					<div class="mdl-mega-footer--bottom-section">
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">About this service</a></li>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Privacy and Terms</a></li>
+						</ul>
+					</div>
+				</footer>
+			</main>
+		</div>
+	</body>
+</html>

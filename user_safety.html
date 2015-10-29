@@ -1,0 +1,166 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Fukuoka Hana Hostel - Safety</title>
+		<script src="js/material.js"></script>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/script.js"></script>
+		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
+	<body class="mdl-jmlib mdl-color--white mdl-color-text--grey-700 mdl-base">
+		<div class="mdl-layout mdl-layout-transparent mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
+			<header class="mdl-layout__header mdl-color--primary">
+				<div class="mdl-layout__header-row">
+					<div class="mdl-layout-spacer"></div>
+					Hi, Marvin! &nbsp;<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" onclick="window.location.href='login.html'">Logout</button>
+				</div>
+				<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+					<h3>Welcome to Fukuoka Hana Hostel</h3>
+				</div>
+				<div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+					<h6><a class="mdl-breadcrumbs" href="user.html">Home</a> &gt; Safety</h6>
+				</div>
+			</header>
+			<div class="mdl-floating-item-container mdl-search">
+				<div class="mdl-button-container mdl-cell--12-col">
+					<button class="mdl-button mdl-button--fab mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="search">
+						<i class="material-icons" role="presentation">search</i>
+						<span class="visuallyhidden">search</span>
+					</button>
+				</div>
+				<div class="mdl-grid mdl-message-container mdl-shadow--4dp mdl-color--accent">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input mdl-color-text--accent-contrast" type="text" id="keyword" />
+						<label class="mdl-textfield__label" for="sample1">input keyword then press enter</label>
+					</div>
+					<div class="mdl-layout-spacer"></div>
+					<a href="#" class="close"><i class="material-icons mdl-color-text--accent-contrast" role="presentation">close</i></a>
+				</div>
+			</div>
+			<div class="mdl-drawer mdl-layout__drawer mdl-color--primary mdl-shadow--8dp">
+				<header class="mdl-drawer-header mdl-color--primary-dark">
+					<div class="mdl-avatar">
+						<span class="mdl-layout-title">Fukuoka Hana Hostel</span>
+					</div>
+				</header>
+				<nav class="mdl-navigation mdl-navigation">
+					<a class="mdl-navigation__link" href="user.html"><i class="material-icons" role="presentation">home</i>Home</a>
+					<a class="mdl-navigation__link" href="user_policy.html"><i class="material-icons" role="presentation">local_hotel</i>Hotel Policy</a>
+					<a class="mdl-navigation__link" href="user_direction.html"><i class="material-icons" role="presentation">directions_bus</i>Directions</a>
+					<a class="mdl-navigation__link" href="user_vicinity.html"><i class="material-icons" role="presentation">store</i>Vicinity</a>
+					<a class="mdl-navigation__link" href="user_facility.html"><i class="material-icons" role="presentation">local_laundry_service</i>Facilities</a>
+					<div class="mdl-navigation__link mdl-navigation__link--current"><i class="material-icons" role="presentation">report</i>Safety</div>
+					<div class="mdl-drawer-separator"></div>
+					<a class="mdl-navigation__link" href="user_setting.html"><i class="material-icons" role="presentation">settings</i>Settings</a>
+					<div class="mdl-drawer-separator"></div>
+					<a class="mdl-navigation__link-icon" href=""><img src="img/appstore.png" width="100%"></a>
+					<a class="mdl-navigation__link-icon" href=""><img src="img/googleplay.png" width="100%"></a>
+				</nav>
+			</div>
+			<main class="mdl-layout__content mdl-color--grey-100">
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+					<a name="safety1"></a>
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">Emergency Numbers</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave1" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave1">Pin to home</div>
+						</div>
+						<div class="mdl-card__supporting-text">
+							<h4>Hotel Staff</h4>
+							<p>092-282-5353</p>
+							<h4>Hospital</h4>
+							<p>092-123-1234</p>
+							<h4>Police</h4>
+							<p>092-123-1234</p>
+						</div>
+						<div class="mdl-card__actions">
+							<a href="http://www.rainbowfia.or.jp/en/foreigner/disaster.html" class="mdl-button">More Information in Fukuoka Disaster Prevention Website</a>
+						</div>
+					</div>
+				</section>
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+					<a name="safety2"></a>
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">Emergency Exit Sign</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave2" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave2">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/exit_sign.png"  width="100%"></div>
+						<div class="mdl-card__supporting-text">
+							<h4>非常口 EXIT</h4>
+							<p>Emergency exit sign is displayed above. </p>
+						</div>
+					</div>
+				</section>
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+					<a name="safety3"></a>
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">Evacuation Map</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave3" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave3">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><img src="img/emergencymap.jpg" width="100%"></div>
+						<div class="mdl-card__supporting-text">
+							<p>In times of emergency, please follow the map.</p>
+						</div>
+						<div class="mdl-card__actions">
+							<a href="docs/hakataku.pdf" class="mdl-button">Original File (PDF, Japanese)</a>
+						</div>
+					</div>
+				</section>
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+					<a name="safety4"></a>
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">Earthquake Preparation</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave4" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave4">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><iframe width="640" height="480" src="https://www.youtube.com/embed/QCLdYsfmCpk" frameborder="0" allowfullscreen></iframe></div>
+					</div>
+						<div class="mdl-card__actions">
+							<a href="docs/earthquake.pdf" class="mdl-button">Quick Guide during Earthquake (PDF)</a>
+						</div>
+				</section>
+				<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+					<a name="safety5"></a>
+					<div class="mdl-card mdl-cell mdl-cell--12-col">
+						<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">Typhoon/Flood Preparation</h4>
+							<div class="mdl-layout-spacer"></div>
+							<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons" role="presentation" id="fave5" role="presentation">favorite_border</i></button>
+							<div class="mdl-tooltip" for="fave5">Pin to home</div>
+						</div>
+						<div class="mdl-card__media"><iframe width="640" height="480" src="https://www.youtube.com/embed/lZm4a5UA09c" frameborder="0" allowfullscreen></iframe></div>
+					</div>
+				</section>
+				<footer class="mdl-mega-footer">
+					<div class="mdl-mega-footer--middle-section">
+						<div class="mdl-logo">
+							<div><i class="material-icons" role="presentation">place</i> <a href="">814-213 Kamikawabata-machi, Hakata-ku, Fukuoka City, Japan</a></div>
+							<div><i class="material-icons" role="presentation">call</i> <a href="">080-1234-5678</a></div>
+							<div><i class="material-icons" role="presentation">email</i> <a href="">fukuokahana@gmail.com</a></div>
+							<div><i class="material-icons" role="presentation">public</i> <a href="">www.fukuokahana.com</a></div>
+						</div>
+					</div>
+					<div class="mdl-mega-footer--bottom-section">
+						<ul class="mdl-mega-footer--link-list">
+							<li><a href="#">About this service</a></li>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Privacy and Terms</a></li>
+						</ul>
+					</div>
+				</footer>
+			</main>
+		</div>
+	</body>
+</html>
