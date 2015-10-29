@@ -1,2 +1,0 @@
-# asiboro.github.io
-asiboro
