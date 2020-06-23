@@ -304,7 +304,7 @@
                       <i class="fas fa-user"></i> Reject
                     </a>
                     <a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#process">
-                      <i class="fas fa-user"></i> Move next
+                      <i class="fas fa-walking"></i> Move next
                     </a>
                       
           <table class="table table-striped projects">
@@ -371,7 +371,7 @@
                               Reject
                           </a>
                           <a class="btn btn-info btn-sm" href="#" data-toggle="modal" data-target="#process">
-                              <i class="fas fa-pencil-alt">
+                              <i class="fas fa-walking">
                               </i>
                               Move next
                           </a>
@@ -415,7 +415,7 @@
                               Reject
                           </a>
                           <a class="btn btn-info btn-sm" href="#" data-toggle="modal" data-target="#process">
-                              <i class="fas fa-pencil-alt">
+                              <i class="fas fa-walking">
                               </i>
                               Move next
                           </a>
@@ -460,7 +460,7 @@
                               Reject
                           </a>
                           <a class="btn btn-info btn-sm" href="#" data-toggle="modal" data-target="#process">
-                              <i class="fas fa-pencil-alt">
+                              <i class="fas fa-walking">
                               </i>
                               Move next
                           </a>
@@ -477,7 +477,7 @@
                       <i class="fas fa-user"></i> Reject
                     </a>
                 <a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#process">
-                      <i class="fas fa-user"></i> Move next
+                      <i class="fas walking"></i> Move next
                     </a>
 
           <table class="table table-striped projects">
@@ -545,7 +545,7 @@
                               Reject
                           </a>
                           <a class="btn btn-info btn-sm" href="#" data-toggle="modal" data-target="#process">
-                              <i class="fas fa-pencil-alt">
+                              <i class="fas fa-walking">
                               </i>
                               Move next
                           </a>
@@ -589,7 +589,7 @@
                               Reject
                           </a>
                           <a class="btn btn-info btn-sm" href="#" data-toggle="modal" data-target="#process">
-                              <i class="fas fa-pencil-alt">
+                              <i class="fas fa-walking">
                               </i>
                               Move next
                           </a>
@@ -620,9 +620,15 @@
                           Production Manager
                       </td>
                       <td class="project-state">
-                          <span class="badge badge-warning"><a href="#">Interview scheduled</a></span>
+                          <span class="badge badge-danger"><a href="#" data-toggle="modal" data-target="#interviewschedule">Interview scheduled</a></span>
+                          
                       </td>
                       <td class="project-actions text-right">
+                          <a class="btn btn-primary btn-sm" href="tlece-applicantinterview.html">
+                              <i class="fas fa-sign-in-alt">
+                              </i>
+                              Enter room
+                          </a>
                           <a class="btn btn-primary btn-sm" href="./tlece-applicantprofile.html">
                               <i class="fas fa-folder">
                               </i>
@@ -634,7 +640,7 @@
                               Reject
                           </a>
                           <a class="btn btn-info btn-sm" href="#" data-toggle="modal" data-target="#process">
-                              <i class="fas fa-pencil-alt">
+                              <i class="fas fa-walking">
                               </i>
                               Move next
                           </a>
@@ -652,7 +658,7 @@
                       <i class="fas fa-user"></i> Reject
                     </a>
                 <a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#process">
-                      <i class="fas fa-user"></i> Move next
+                      <i class="fas fa-walking"></i> Move next
                     </a>
                       
 
@@ -720,7 +726,7 @@
                               Reject
                           </a>
                           <a class="btn btn-info btn-sm" href="#" data-toggle="modal" data-target="#process">
-                              <i class="fas fa-pencil-alt">
+                              <i class="fas fa-walking">
                               </i>
                               Move next
                           </a>
@@ -750,9 +756,14 @@
                           Production Manager
                       </td>
                       <td class="project-state">
-                          <span class="badge badge-warning"><a href="#">Interview scheduled</a></span>
+                          <span class="badge badge-danger"><a href="#" data-toggle="modal" data-target="#interviewschedule">Interview scheduled</a></span>
                       </td>
                       <td class="project-actions text-right">
+                          <a class="btn btn-primary btn-sm" href="tlece-applicantinterview.html">
+                              <i class="fas fa-sign-in-alt">
+                              </i>
+                              Enter room
+                          </a>
                           <a class="btn btn-primary btn-sm" href="./tlece-applicantprofile.html">
                               <i class="fas fa-folder">
                               </i>
@@ -764,7 +775,7 @@
                               Reject
                           </a>
                           <a class="btn btn-info btn-sm" href="#" data-toggle="modal" data-target="#process">
-                              <i class="fas fa-pencil-alt">
+                              <i class="fas fa-walking">
                               </i>
                               Move next
                           </a>
@@ -867,6 +878,53 @@
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
               <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+
+        <div class="modal fade" id="interviewschedule">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Invite applicant to interview:</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    
+                    <div class="modal-body">
+  
+                        <div class="form-group">
+                            <label>Interviewer(s):</label>
+                                <select class="select2" multiple="multiple" data-placeholder="Type email address or nickname" style="width: 100%;">
+                                <option>John Smith</option>
+                                <option>Adeline Rowe</option>
+                                <option>Zacharias Frye</option>
+                                <option>Scarlett-Rose Cain</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label>Date/time to be scheduled:</label>
+                            <div>
+                                <div>10:30, June 25, 2020</div>
+                            </div>>
+                        </div>
+
+                
+                  <div class="form-group">
+                    <label>Notes</label>
+                    <input type="text" class="form-control" placeholder="Enter notes">
+                  </div>
+                
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-primary">Enter room</button>
             </div>
           </div>
           <!-- /.modal-content -->
