@@ -310,7 +310,8 @@
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Name</a>
                                 <a class="dropdown-item" href="#">Vacancies/Job Titles</a>
-                                <a class="dropdown-item" href="#">Status</a>
+                                <a class="dropdown-item" href="#">Last applied date</a>
+                                <a class="dropdown-item" href="#">Current stage</a>
                                 <!--<div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Separated link</a>-->
                             </div>
@@ -397,13 +398,13 @@
                               </i>
                               View
                           </a>
-                          <a class="btn btn-info btn-sm" href="#">
-                              <i class="fas fa-pencil-alt">
+                          <a class="btn btn-sm">
+                              <i class="fas fa-clipboard-check">
                               </i>
                               Process
                           </a>
-                          <a class="btn btn-default btn-sm" href="#">
-                              <i class="fas fa-trash">
+                          <a class="btn btn-sm">
+                              <i class="fas fa-pencil-alt">
                               </i>
                               Shortlist
                           </a>
@@ -438,13 +439,13 @@
                               </i>
                               View
                           </a>
-                          <a class="btn btn-info btn-sm" href="#">
-                              <i class="fas fa-pencil-alt">
+                          <a class="btn  btn-sm">
+                              <i class="fas fa-clipboard-check">
                               </i>
                               Process
                           </a>
-                          <a class="btn btn-default btn-sm" href="#">
-                              <i class="fas fa-trash">
+                          <a class="btn btn-sm" href="#">
+                              <i class="fas fa-pencil-alt">
                               </i>
                               Shortlist
                           </a>
@@ -480,13 +481,14 @@
                               </i>
                               View
                           </a>
-                          <a class="btn btn-info btn-sm" href="#">
-                              <i class="fas fa-pencil-alt">
+                          <a class="btn btn-info btn-sm" href="#" data-toggle="modal" data-target="#process">
+                              <i class="fas fa-clipboard-check">
                               </i>
                               Process
                           </a>
+                          
                           <a class="btn btn-default btn-sm" href="#" data-toggle="modal" data-target="#modal-default">
-                              <i class="fas fa-trash">
+                              <i class="fas fa-pencil-alt">
                               </i>
                               Shortlist
                           </a>
@@ -499,50 +501,27 @@
       </div>
       <!-- /.card -->
 
-      <div class="modal fade" id="modal-default">
+      <div class="modal fade" id="process">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Invite new staffs</h4>
+              <h4 class="modal-title">Process applicant</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
+                Are you sure to process this applicant?
                 
-                <div class="form-group">
-                  <label>Users</label>
-                  <select class="select2" multiple="multiple" data-placeholder="Type email address or nickname" style="width: 100%;">
-                    <option>John Smith</option>
-                    <option>Adeline Rowe</option>
-                    <option>Zacharias Frye</option>
-                    <option>Scarlett-Rose Cain</option>
-                  </select>
-                </div>
-                
-                
-                <div class="form-group">
-                  <label>Role</label>
-                  <select class="form-control" style="width: 100%;">
-                    <option selected="selected">Role 1</option>
-                    <option>Role 2</option>
-                    <option>Role 3</option>
-                    <option>Role 4</option>
-                  </select>
-                </div>
-                
-
-                 <div class="form-group">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox">
-                          <label class="form-check-label">Send invites</label>
-                        </div>
-                 </div>
+                <div>
+                Name: Bentley Enriquez<br>
+                Vacancy applied: Sales Engineer<br>
+                    </div>
                 
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-primary">Add</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Process</button>
             </div>
           </div>
           <!-- /.modal-content -->
