@@ -177,29 +177,12 @@
             </a>
           </li>    
           <li class="nav-header">COMPANY</li>
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-user-friends"></i>
-              <p>
-                People
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./tlece-staffs.html" class="nav-link active">
+                <a href="tlece-companybranchprofile.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Staffs</p>
+                  <p>Company Profile</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="./tlece-applicants.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Applicants</p>
-                </a>
-              </li>
-            </ul>
-          </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-id-card"></i>
@@ -210,15 +193,15 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="tlece-companybranchprofile.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Company Profile</p>
-                </a>
-              </li>
-              <li class="nav-item">
                 <a href="tlece-recruitmentplanning.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Recruitment Planning</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./tlece-applicants.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Applicants</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -359,9 +342,12 @@
                 <ul class="nav nav-pills">
                   <li class="nav-item"><a class="nav-link active" href="#profile" data-toggle="tab">Profile</a></li>
                   <li class="nav-item"><a class="nav-link" href="#detail" data-toggle="tab">Detail</a></li>
+                    <!--
                   <li class="nav-item"><a class="nav-link" href="#cv" data-toggle="tab">CV</a></li>
+-->
+                    <!--
                   <li class="nav-item"><a class="nav-link" href="#activity" data-toggle="tab">Activity</a></li>
-                  <!--<li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Timeline</a></li>-->
+-->
                 </ul>
               </div><!-- /.card-header -->
               <div class="card-body">
@@ -376,7 +362,7 @@
                           <a href="#">Nina Mcintire</a>
                           <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
                         </span>
-                        <span class="description">Posted 5 photos - 5 days ago</span>
+                        <span class="description">Posted 5 days ago</span>
                       </div>
                       <!-- /.user-block -->
                         
@@ -406,7 +392,7 @@
                           <a href="#">Nina Mcintire</a>
                           <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
                         </span>
-                        <span class="description">Posted 5 photos - 5 days ago</span>
+                        <span class="description">Posted 5 days ago</span>
                       </div>
                       <!-- /.user-block -->
                         
@@ -433,6 +419,12 @@
                   <div class="tab-pane" id="detail">
                     <form class="form-horizontal">
                       <div class="form-group row">
+                        <label for="inputName2" class="col-sm-2 col-form-label">Nickname</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputName2" placeholder="Nickname">
+                        </div>
+                      </div>
+                      <div class="form-group row">
                         <label for="inputName" class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-10">
                           <input type="email" class="form-control" id="inputName" placeholder="Name">
@@ -451,21 +443,15 @@
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputName2" class="col-sm-2 col-form-label">Nickname</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputName2" placeholder="Nickname">
-                        </div>
-                      </div>
-                      <div class="form-group row">
                         <label for="inputSkills" class="col-sm-2 col-form-label">Education</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
+                          <input type="text" class="form-control" id="inputSkills" placeholder="Education">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="inputSkills" class="col-sm-2 col-form-label">Location</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
+                          <input type="text" class="form-control" id="inputSkills" placeholder="Location">
                         </div>
                       </div>
                       <div class="form-group row">
@@ -475,11 +461,12 @@
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputExperience" class="col-sm-2 col-form-label">Notes</label>
+                        <label for="inputExperience" class="col-sm-2 col-form-label">Note</label>
                         <div class="col-sm-10">
-                          <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
+                          <textarea class="form-control" id="inputExperience" placeholder="Note"></textarea>
                         </div>
                       </div>
+                        <!--
                       <div class="form-group row">
                         <div class="offset-sm-2 col-sm-10">
                           <div class="checkbox">
@@ -489,6 +476,7 @@
                           </div>
                         </div>
                       </div>
+                        -->
                       <div class="form-group row">
                         <div class="offset-sm-2 col-sm-10">
                           <button type="submit" class="btn btn-danger">Submit</button>
@@ -507,7 +495,7 @@
                           <a href="#">Nina Mcintire</a>
                           <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
                         </span>
-                        <span class="description">Posted 5 photos - 5 days ago</span>
+                        <span class="description">Posted 5 days ago</span>
                       </div>
                       <!-- /.user-block -->
                         
@@ -537,7 +525,7 @@
                           <a href="#">Nina Mcintire</a>
                           <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
                         </span>
-                        <span class="description">Posted 5 photos - 5 days ago</span>
+                        <span class="description">Posted 5 days ago</span>
                       </div>
                       <!-- /.user-block -->
                         
@@ -633,7 +621,7 @@
                           <a href="#">Adam Jones</a>
                           <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
                         </span>
-                        <span class="description">Posted 5 photos - 5 days ago</span>
+                        <span class="description">Posted 5 days ago</span>
                       </div>
                       <!-- /.user-block -->
                       <div class="row mb-3">
