@@ -272,7 +272,8 @@
             <div class="card">
               <div class="card-header p-2">
                 <ul class="nav nav-pills">
-                  <li class="nav-item"><a class="nav-link active" href="#stage1" data-toggle="tab">Stage 1</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="#unprocessed" data-toggle="tab">Pool</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#stage1" data-toggle="tab">Stage 1</a></li>
                   <li class="nav-item"><a class="nav-link" href="#stage2" data-toggle="tab">Stage 2</a></li>
                   <li class="nav-item"><a class="nav-link" href="#stage3" data-toggle="tab">Stage 3</a></li>
                 </ul>
@@ -281,6 +282,208 @@
               <div class="card-body">
                 <div class="tab-content">
                     
+                  <div class="active tab-pane" id="unprocessed">
+                      
+              <div >
+                  <div >
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            Search
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Name</a>
+                                <a class="dropdown-item" href="#">Vacancy/Job Title</a>
+                                <a class="dropdown-item" href="#">Status</a>
+                                <!--<div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>-->
+                            </div>
+                        </div>
+                        <input type="text" class="form-control">
+                        <div class="input-group-append">
+                            <button class="btn btn-navbar" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                      
+
+                    <a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#processmultiple">
+                      <i class="fas fa-clipboard-check"></i> Process
+                    </a>
+                    <a href="#" class="btn btn-sm" data-toggle="modal" data-target="#">
+                      <i class="fas fa-pencil-alt"></i> Shortlist
+                    </a>
+                      
+          <table class="table table-striped projects">
+              <thead>
+                  <tr>
+                      <th>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1"></label>
+                        </div>
+                      </th>
+                      <th>
+                          Cover video letter
+                      </th>
+                      <th>
+                          Name
+                      </th>
+                      <th>
+                          Vacancy/Job Title
+                      </th>
+                      <th class="text-center">
+                          Remark
+                      </th>
+                      <th>
+                      </th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td><div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LspIeUElIFA?start=13" frameborder="0" allowfullscreen=""></iframe>
+                        </div>  
+                      </td>
+                      <td>
+                          <a>
+                              Sanna Knox
+                          </a>
+                          <br/>
+                          <small>
+                              Added 01.01.2019
+                          </small>
+                      </td>
+                      <td>
+                          HR Manager
+                      </td>
+                      <td class="project-state">
+                          <span class="badge badge-info">Unprocessed</span>
+                      </td>
+                      <td class="project-actions text-right">
+                          <a class="btn btn-primary btn-sm" href="./tlece-applicantprofile.html">
+                              <i class="fas fa-folder">
+                              </i>
+                              View
+                          </a>
+                          <a class="btn btn-info btn-sm" href="#" data-toggle="modal" data-target="#process">
+                              <i class="fas fa-clipboard-check">
+                              </i>
+                              Process
+                          </a>
+                          
+                          <a class="btn btn-default btn-sm" href="#" data-toggle="modal" data-target="#modal-default">
+                              <i class="fas fa-pencil-alt">
+                              </i>
+                              Shortlist
+                          </a>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td><div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1"></label>
+                  </div>
+                      </td>
+                      <td>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/83hAgzmogk0" frameborder="0" allowfullscreen=""></iframe>
+                        </div>
+                      </td>
+                      <td>
+                          <a>
+                              Cara Herman
+                          </a>
+                          <br/>
+                          <small>
+                              Added 01.01.2019
+                          </small>
+                      </td>
+                      <td>
+                          Production Manager
+                      </td>
+                      <td class="project-state">
+                          <span class="badge badge-warning">Rejected</span>
+                      </td>
+                      <td class="project-actions text-right">
+                          <a class="btn btn-primary btn-sm" href="./tlece-applicantprofile.html">
+                              <i class="fas fa-folder">
+                              </i>
+                              View
+                          </a>
+                          <a class="btn btn-info btn-sm" href="#" data-toggle="modal" data-target="#process">
+                              <i class="fas fa-clipboard-check">
+                              </i>
+                              Process
+                          </a>
+                          
+                          <a class="btn btn-default btn-sm" href="#" data-toggle="modal" data-target="#modal-default">
+                              <i class="fas fa-pencil-alt">
+                              </i>
+                              Shortlist
+                          </a>
+                      </td>
+                  </tr>
+
+                  <tr>
+                      <td><div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1"></label>
+                  </div>
+                      </td>
+                      <td>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hgROgHctVz8" frameborder="0" allowfullscreen=""></iframe>
+                        </div>
+                      </td>
+                      <td>
+                          <a>
+                              Ismael Turnbull
+                          </a>
+                          <br/>
+                          <small>
+                              Added 01.01.2019
+                          </small>
+                      </td>
+                      <td>
+                          Production Manager
+                      </td>
+                      <td class="project-state">
+                          <span class="badge badge-info">Unprocessed</span>
+                      </td>
+                      <td class="project-actions text-right">
+                          <a class="btn btn-primary btn-sm" href="./tlece-applicantprofile.html">
+                              <i class="fas fa-folder">
+                              </i>
+                              View
+                          </a>
+                          <a class="btn btn-info btn-sm" href="#" data-toggle="modal" data-target="#process">
+                              <i class="fas fa-clipboard-check">
+                              </i>
+                              Process
+                          </a>
+                          
+                          <a class="btn btn-default btn-sm" href="#" data-toggle="modal" data-target="#modal-default">
+                              <i class="fas fa-pencil-alt">
+                              </i>
+                              Shortlist
+                          </a>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+                      
+                  </div>
+                  <!-- /.tab-pane -->
                   <div class="active tab-pane" id="stage1">
                       
               <div >
@@ -772,7 +975,11 @@
                           HR Manager
                       </td>
                       <td class="project-state">
-                          <span class="badge badge-info"><a href="#">Interview finished</a></span>
+                          <!--<span class="badge badge-info"><a href="#">Interview finished</a></span>-->
+                          
+                        <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aT0hI_ll690" frameborder="0" allowfullscreen=""></iframe>
+                        </div> 
                       </td>
                       <td class="project-actions text-right">
                           <a class="btn btn-primary btn-sm" href="./tlece-applicantprofile.html">
