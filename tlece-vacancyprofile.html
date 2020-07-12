@@ -493,6 +493,7 @@
                                 <a class="dropdown-item" href="#">Name</a>
                                 <a class="dropdown-item" href="#">Order</a>
                                 <a class="dropdown-item" href="#">Status</a>
+                                <a class="dropdown-item" href="#">Remark</a>
                                 <!--<div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Separated link</a>-->
                             </div>
@@ -530,6 +531,9 @@
                       <th class="text-center">
                           Status
                       </th>
+                      <th class="text-center">
+                          Remark
+                      </th>
                       <th>
                       </th>
                   </tr>
@@ -546,6 +550,9 @@
                       </td>
                       <td class="project-state">
                           <span class="badge badge-success">Active</span>
+                      </td>
+                      <td class="project-state">
+                          <span class="badge"><a href="tlece-questionvideo.html">Question video</a></span>
                       </td>
                       <td class="project-actions text-right">
                         <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-default">
@@ -571,6 +578,10 @@
                       <td class="project-state">
                           <span class="badge badge-success">Active</span>
                       </td>
+                      <td class="project-state">
+                          <span class="badge badge-success">Has interview</span><br>
+                          <span class="badge"><a href="tlece-questionvideo.html">Question video</a></span>
+                      </td>
                       <td class="project-actions text-right">
                         <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-default">
                             <i class="fas fa-pencil-alt"></i> Edit
@@ -594,6 +605,9 @@
                       </td>
                       <td class="project-state">
                           <span class="badge badge-warning">Archived</span>
+                      </td>
+                      <td class="project-state">
+                          <span class="badge badge-success">Has interview</span><br>
                       </td>
                       <td class="project-actions text-right">
                         <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-default">
@@ -648,7 +662,7 @@
                 
                   <div class="form-group">
                     <label>Note</label>
-                    <input type="text" class="form-control" placeholder="Enter note">
+                    <textarea class="form-control" placeholder="Enter note"></textarea>
                   </div>
               
             <div class="modal-footer">
