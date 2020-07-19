@@ -143,14 +143,34 @@
 
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="index.html" class="brand-link">
-      <img src="dist/img/tlecelogo.png"
-           alt="Tlece Logo"
-           class="brand-image img-circle elevation-3"
+    <!-- Brand Logo -->      
+        <ul class="navbar-nav ml-auto">
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="brand-link" data-toggle="dropdown" href="#">
+            
+             <img src="dist/img/tlecelogo.png" alt="Tlece Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
-    </a>
+      <span class="brand-text font-weight-light">Tlece</span>
+            
+        </a>
+        <div class="dropdown-menu ">
+          <a href="./tlece-myaccount.html" class="dropdown-item">
+                <h3 class="dropdown-item-title">  My Account
+                </h3>
+          </a>
+          <a href="./tlece-mysettings.html" class="dropdown-item">
+                <h3 class="dropdown-item-title">  My Settings
+                </h3>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="./tlece-login.html" class="dropdown-item">
+                <h3 class="dropdown-item-title">  Logout
+                </h3>
+          </a>
+        </div>
+      </li>
+    </ul>
 
     <!-- Sidebar -->
     <div class="sidebar">
@@ -221,13 +241,13 @@
                 </li>
           <li class="nav-header">SYSTEM</li> 
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="./tlece-sitemanagement.html" class="nav-link">
                 <i class="nav-icon fas fa-sitemap"></i>
             <p>Site Management</p>
             </a>
           </li> 
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="./tlece-systemmanagement.html" class="nav-link">
                 <i class="nav-icon fas fa-tools"></i>
             <p>System Management</p>
             </a>
