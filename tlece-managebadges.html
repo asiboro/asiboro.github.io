@@ -393,7 +393,7 @@
                                         <a class="btn btn-primary btn-sm" href="./tlece-vacancyprofile.html" data-toggle="modal" data-target="#modal-addbadge">
                               <i class="fas fa-folder">
                               </i>
-                              View
+                              Edit
                           </a>
                                         <a class="btn btn-warning btn-sm" href="#">
                               <i class="fas fa-trash">
@@ -414,7 +414,7 @@
                                         <a class="btn btn-primary btn-sm" href="./tlece-vacancyprofile.html" data-toggle="modal" data-target="#modal-addbadge">
                               <i class="fas fa-folder">
                               </i>
-                              View
+                              Edit
                           </a>
                                         <a class="btn btn-warning btn-sm" href="#">
                               <i class="fas fa-trash">
@@ -436,7 +436,7 @@
                                         <a class="btn btn-primary btn-sm" href="./tlece-vacancyprofile.html" data-toggle="modal" data-target="#modal-addbadge">
                               <i class="fas fa-folder">
                               </i>
-                              View
+                              Edit
                           </a>
                                         <a class="btn btn-warning btn-sm" href="#">
                               <i class="fas fa-trash">
@@ -458,7 +458,7 @@
                                         <a class="btn btn-primary btn-sm" href="./tlece-vacancyprofile.html" data-toggle="modal" data-target="#modal-addbadge">
                               <i class="fas fa-folder">
                               </i>
-                              View
+                              Edit
                           </a>
                                         <a class="btn btn-danger btn-sm" href="#">
                               <i class="fas fa-trash">
@@ -478,49 +478,45 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Add job vacancy</h4>
+                                <h4 class="modal-title">Add badge</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
                             </div>
                             <div class="modal-body">
 
-                                <div class="form-group">
-                                    <label>Job Title <span style="color: red;">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Enter job title">
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Vacancy Name</label>
-                                    <input type="text" class="form-control" placeholder="Enter vacancy name">
-                                </div>
 
 
-                                <div class="form-group">
-                                    <label>Period <span style="color: red;">*</span></label>
+                                <form class="form-horizontal">
 
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">
-                        <i class="far fa-calendar-alt"></i>
-                      </span>
+                                    <div class="form-group row">
+
+                                        <label class="col-form-label">Area (Category)</label>
+                                        <select class="form-control select2" style="width: 100%;">
+                                            <option selected="selected">All</option>
+                                            <option>Work-life balance</option>
+                                            <option>Gender equality</option>
+                                            <option>Ikigai promotion</option>
+                                        </select>
+
+                                        <label class="col-form-label">Item (Subcategory) </label>
+                                        <select class="form-control select2" style="width: 100%;">
+                                            <option selected="selected">All</option>
+                                            <option>Item 1</option>
+                                            <option>Item 2</option>
+                                            <option>Item 3</option>
+                                        </select>
+
+                                        <label class="col-form-label">Badge</label>
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="exampleInputFile">
+                                                <label class="custom-file-label" for="exampleInputFile">Choose image file</label>
+                                            </div>
                                         </div>
-                                        <input type="text" class="form-control float-right" id="reservation">
                                     </div>
-                                    <!-- /.input group -->
-                                </div>
-                                <!-- /.form group -->
 
-
-                                <div class="form-group">
-                                    <label>Slots</label>
-                                    <input type="number" class="form-control" placeholder="Enter no. of vacancies">
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Note</label>
-                                    <textarea class="form-control" placeholder="Enter note"></textarea>
-                                </div>
+                                </form>
 
                                 <!--
                       <div class="form-group">
@@ -531,7 +527,6 @@
                           </div>
                       </div>
 -->
-
                             </div>
                             <div class="modal-footer">
                                 <a class="btn btn-default btn-sm" href="#" data-dismiss="modal">
@@ -549,7 +544,6 @@
                     <!-- /.modal-dialog -->
                 </div>
                 <!-- /.modal -->
-
 
             </section>
             <!-- /.content -->
