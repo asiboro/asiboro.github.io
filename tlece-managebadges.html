@@ -368,6 +368,9 @@
                                         Badge
                                     </th>
                                     <th>
+                                        Target
+                                    </th>
+                                    <th>
                                         Area
                                     </th>
                                     <th>
@@ -384,6 +387,7 @@
                                 <tr>
                                     <td>
                                         <img class="img-circle img-sm" src="dist/img/tlecelogo.png" alt="User Image"></td>
+                                    <td>Organization</td>
                                     <td>Work-life balance</td>
                                     <td>Item 1
                                     </td>
@@ -405,6 +409,7 @@
                                 <tr>
                                     <td>
                                         <img class="img-circle img-sm" src="dist/img/tlecelogo.png" alt="User Image"></td>
+                                    <td>Organization</td>
                                     <td>Work-life balance</td>
                                     <td>Item 3
                                     </td>
@@ -427,6 +432,7 @@
                                 <tr>
                                     <td>
                                         <img class="img-circle img-sm" src="dist/img/tlecelogo.png" alt="User Image"></td>
+                                    <td>Organization<br>Person</td>
                                     <td>Gender equality</td>
                                     <td>Item 2
                                     </td>
@@ -449,6 +455,7 @@
                                 <tr>
                                     <td>
                                         <img class="img-circle img-sm" src="dist/img/tlecelogo.png" alt="User Image"></td>
+                                    <td>Person</td>
                                     <td>Gender equality</td>
                                     <td>Item 5
                                     </td>
@@ -486,35 +493,46 @@
                             <div class="modal-body">
 
 
+                                <div class="form-group">
+                                    <label class="col-form-label">Target(s) <span style="color: red;">*</span></label>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="organization">
+                                        <label class="form-check-label" for="organization">Organization</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="person">
+                                        <label class="form-check-label" for="person">Person</label>
+                                    </div>
+                                </div>
 
-                                <form class="form-horizontal">
 
-                                    <div class="form-group row">
-
-                                        <label class="col-form-label">Area (Category) <span style="color: red;">*</span></label>
-                                        <select class="form-control select2" style="width: 100%;">
+                                <div class="form-group">
+                                    <label class="col-form-label">Area (Category) <span style="color: red;">*</span></label>
+                                    <select class="form-control select2" style="width: 100%;">
                                             <option selected="selected">Work-life balance</option>
                                             <option>Gender equality</option>
                                             <option>Ikigai promotion</option>
                                         </select>
+                                </div>
 
-                                        <label class="col-form-label">Item (Subcategory) <span style="color: red;">*</span></label>
-                                        <select class="form-control select2" style="width: 100%;">
+                                <div class="form-group">
+                                    <label class="col-form-label">Item (Subcategory) <span style="color: red;">*</span></label>
+                                    <select class="form-control select2" style="width: 100%;">
                                             <option selected="selected">Item 1</option>
                                             <option>Item 2</option>
                                             <option>Item 3</option>
                                         </select>
+                                </div>
 
-                                        <label class="col-form-label">Badge <span style="color: red;">*</span></label>
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="exampleInputFile">
-                                                <label class="custom-file-label" for="exampleInputFile">Choose image file</label>
-                                            </div>
+                                <div class="form-group">
+                                    <label class="col-form-label">Badge <span style="color: red;">*</span></label>
+                                    <div class="input-group">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="exampleInputFile">
+                                            <label class="custom-file-label" for="exampleInputFile">Choose image file</label>
                                         </div>
                                     </div>
-
-                                </form>
+                                </div>
 
                                 <!--
                       <div class="form-group">
