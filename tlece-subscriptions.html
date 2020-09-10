@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tlece | Organizations and Branches</title>
+    <title>Tlece | Subscriptions</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -286,13 +286,13 @@
                         </li>
                         <li class="nav-header">SYSTEM</li>
                         <li class="nav-item">
-                            <a href="./tlece-sitemanagement.html" class="nav-link">
+                            <a href="./tlece-sitemanagement.html" class="nav-link active">
                 <i class="nav-icon fas fa-sitemap"></i>
             <p>Site Management</p>
             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./tlece-systemmanagement.html" class="nav-link active">
+                            <a href="./tlece-systemmanagement.html" class="nav-link">
                 <i class="nav-icon fas fa-tools"></i>
             <p>System Management</p>
             </a>
@@ -311,12 +311,13 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Organizations</h1>
+                            <h1>Subscriptions</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                                <li class="breadcrumb-item active">Organizations and Branches</li>
+                                <li class="breadcrumb-item active"><a href="./tlece-sitemanagement.html">Site Management</a></li>
+                                <li class="breadcrumb-item active">Subscriptions</li>
                             </ol>
                         </div>
                     </div>
@@ -334,44 +335,23 @@
                     <div class="card-body p-0">
 
 
-                        <div>
-                            <div>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            Search
-                            </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Name</a>
-                                            <a class="dropdown-item" href="#">Status</a>
-                                            <!--<div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a>-->
-                                        </div>
-                                    </div>
-                                    <input type="text" class="form-control">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-navbar" type="submit">
-                                <i class="fas fa-search"></i>
-                            </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                        <a href="./tlece-createsubscription.html" class="btn btn-sm btn-primary">
+                      <i class="fas fa-user"></i> Create subscription
+                    </a>
 
                         <table id="companiestable" class="table table-striped projects">
                             <thead>
                                 <tr>
                                     <th>
-                                        Logo
+                                        Subscription name
                                     </th>
                                     <th>
-                                        Name
+                                        Status
                                     </th>
-                                    <th class="text-center">
-                                        Verification
+                                    <th>Last billed amount
                                     </th>
-                                    <th class="text-center">
-                                        Accessibility
+                                    <th>Due date
                                     </th>
                                     <th>
                                     </th>
@@ -380,67 +360,29 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <!-- User image -->
-                                        <img class="img-circle img-sm" src="dist/img/tlecelogo.png" alt="User Image">
-                                    </td>
-                                    <td>
                                         <a>
-                              Acme Corporation
+                              Tlece subscription
                           </a>
                                         <br/>
                                         <small>
                               Added 01.01.2019
                           </small>
                                     </td>
-                                    <td class="project-state">
-                                        <span class="badge badge-success">Verified</span>
+                                    <td class="project-state text-left">
+                                        <span class="badge badge-success">Active</span>
                                     </td>
-                                    <td class="project-state">
-                                        <span class="badge badge-success">Normal</span>
+                                    <td>
+                                        45 USD
                                     </td>
+                                    <th>
+                                    </th>
+
+
                                     <td class="project-actions text-right">
-                                        <a class="btn btn-primary btn-sm" href="./tlece-companybranchprofile-verification.html">
+                                        <a class="btn btn-primary btn-sm" href="./tlece-companybranchprofile.html">
                               <i class="fas fa-folder">
                               </i>
                               View
-                          </a>
-                                        <a class="btn btn-info btn-sm" href="#">
-                              <i class="fas fa-pencil-alt">
-                              </i>
-                              Unverify
-                          </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <!-- User image -->
-                                        <img class="img-circle img-sm" src="dist/img/tlecelogo.png" alt="User Image">
-                                    </td>
-                                    <td>
-                                        <a>
-                              ABC Technologies, Inc.
-                          </a>
-                                        <br/>
-                                        <small>
-                              Added 01.01.2019
-                          </small>
-                                    </td>
-                                    <td class="project-state">
-                                        <span class="badge badge-danger">Unverified</span>
-                                    </td>
-                                    <td class="project-state">
-                                        <span class="badge badge-danger">Disabled</span>
-                                    </td>
-                                    <td class="project-actions text-right">
-                                        <a class="btn btn-primary btn-sm" href="./tlece-companybranchprofile-verification.html">
-                              <i class="fas fa-folder">
-                              </i>
-                              View
-                          </a>
-                                        <a class="btn btn-info btn-sm" href="#">
-                              <i class="fas fa-pencil-alt">
-                              </i>
-                              Verify
                           </a>
                                     </td>
                                 </tr>
@@ -456,7 +398,7 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Add organization</h4>
+                                <h4 class="modal-title">Add payment method</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -464,47 +406,43 @@
                             <div class="modal-body">
 
                                 <div class="form-group">
-                                    <label>Brand name <span style="color: red;">*</span></label>
+                                    <label>Cardholder Name <span style="color: red;">*</span></label>
                                     <input type="text" class="form-control" placeholder="Enter job title">
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Legal name </label>
+                                    <label>Card number </label>
                                     <input type="text" class="form-control" placeholder="Enter job title">
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Website </label>
+                                    <label>Expires </label>
                                     <input type="url" class="form-control" placeholder="Enter job title">
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Phone number </label>
+                                    <label>CVV </label>
                                     <input type="tel" class="form-control" placeholder="Enter vacancy name">
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Address </label>
+                                    <label>Address line 1 </label>
                                     <input type="text" class="form-control" placeholder="Enter vacancy name">
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Email </label>
+                                    <label>Address line 2 (Optional) </label>
                                     <input type="text" class="form-control" placeholder="Enter vacancy name">
                                 </div>
 
+                                <div class="form-group">
+                                    <label>City </label>
+                                    <input type="text" class="form-control" placeholder="Enter vacancy name">
+                                </div>
+                                
                                 <div class="form-group">
                                     <label>Note</label>
                                     <textarea class="form-control" placeholder="Enter note"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label>Logo</label>
-                                    <div class="input-group">
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="exampleInputFile">
-                                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                                        </div>
-                                    </div>
                                 </div>
 
                             </div>
