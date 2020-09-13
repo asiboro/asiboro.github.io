@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tlece | Profile</title>
+    <title>Tlece | Organization Verification</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -301,12 +301,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Organization Profile</h1>
+                            <h1>Organization Verification</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                                <li class="breadcrumb-item active">Organization Profile</li>
+                                <li class="breadcrumb-item active">Organization Verification</li>
                             </ol>
                         </div>
                     </div>
@@ -546,20 +546,16 @@
                                         </div>
                                         <!-- /.tab-pane -->
                                         <div class="tab-pane" id="detail">
+                                            
+                                            <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-addprofile">
+                      <i class="fas fa-check-circle"></i> Change to Verified
+                    </a>
+                                            
                                             <form class="form-horizontal">
-                                                <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">Parent <span style="color: red;">*</span></label>
-                                                    <div class="col-sm-9">
-                                                        <select class="form-control select2" style="width: 100%;">
-                    <option selected="selected">Acme Corporation</option>
-                    <option>Acme Technologies, Inc.</option>
-                  </select>
-                                                    </div>
-                                                </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label">Brand name <span style="color: red;">*</span></label>
                                                     <div class="col-sm-9">
-                                                        <input type="text" class="form-control" id="inputName" placeholder="Brand name">
+                                                        Acme Tech
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
@@ -567,71 +563,54 @@
                                                     <div class="col-sm-9">acmecorp</div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">Legal name</label>
+                                                    <label class="col-sm-3 col-form-label">Legal name <span style="color: red;">*</span></label>
                                                     <div class="col-sm-9">
-                                                        <input type="text" class="form-control" id="inputName" placeholder="Legal name">
+                                                        Acme Technologies
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label">Website</label>
                                                     <div class="col-sm-9">
-                                                        <input type="url" class="form-control" id="inputName" placeholder="Website">
+                                                        https://www.acmetech.com
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">Phone number</label>
+                                                    <label class="col-sm-3 col-form-label">Phone number <span style="color: red;">*</span></label>
                                                     <div class="col-sm-9">
-                                                        <input type="tel" class="form-control" id="inputName" placeholder="Phone number">
+                                                        +1 916-210-6276
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">Address</label>
+                                                    <label class="col-sm-3 col-form-label">Address <span style="color: red;">*</span></label>
                                                     <div class="col-sm-9">
-                                                        <input type="text" class="form-control" id="inputName" placeholder="Address">
+                                                        455 Golden Gate Ave #11000, San Francisco, CA 94102, United States
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">Email</label>
+                                                    <label class="col-sm-3 col-form-label">Email <span style="color: red;">*</span></label>
                                                     <div class="col-sm-9">
-                                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                                        corp@acmetech.com
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label">Note</label>
                                                     <div class="col-sm-9">
-                                                        <textarea class="form-control" id="inputExperience" placeholder="Note"></textarea>
+                                                        The most advanced acne treatment technology in the world
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">Logo</label>
+                                                    <label class="col-sm-3 col-form-label">Administrator's ID photo/scan <span style="color: red;">*</span></label>
                                                     <div class="col-sm-9">
                                                         <div class="input-group">
-                                                            <div class="custom-file">
-                                                                <input type="file" class="custom-file-input" id="exampleInputFile">
-                                                                <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                                                            </div>
+                                                            <a href="#"><i class="fas fa-file"></i> &nbsp;my-id-file.jpg</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">Administrator's ID photo/scan</label>
+                                                    <label class="col-sm-3 col-form-label">Organization establishment document <span style="color: red;">*</span></label>
                                                     <div class="col-sm-9">
                                                         <div class="input-group">
-                                                            <div class="custom-file">
-                                                                <input type="file" class="custom-file-input" id="exampleInputFile">
-                                                                <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">Organization establishment document</label>
-                                                    <div class="col-sm-9">
-                                                        <div class="input-group">
-                                                            <div class="custom-file">
-                                                                <input type="file" class="custom-file-input" id="exampleInputFile">
-                                                                <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                                                            </div>
+                                                            <a href="#"><i class="fas fa-file"></i> &nbsp;company-establishment-doc.pdf</a>
                                                         </div>
                                                     </div>
                                                 </div>
