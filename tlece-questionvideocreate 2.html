@@ -356,7 +356,7 @@
 
                     <div class="card-header p-2">
                         <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-default">
-                      <i class="fas fa-user"></i> Add question
+                      <i class="fas fa-user"></i> Add item
                     </a>
                     </div>
                     <!-- /.card-header -->
@@ -375,9 +375,9 @@
                                         Order
                                     </th>
                                     <th>
-                                        Set Name
+                                        Name
                                     </th>
-                                    <th>No. of Items</th>
+                                    <th>Video</th>
                                     <th>
                                     </th>
                                 </tr>
@@ -389,7 +389,7 @@
                                     </td>
                                     <td>
                                         <a>
-                              Introductory questions
+                              Tell me about yourself.
                           </a>
                                         <br/>
                                         <!--
@@ -397,14 +397,21 @@
                               Added 01.01.2019
                           </small>-->
                                     </td>
-                                    <td>
-                                        2
+                                    <td class="text-center">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ge9QOO_F8Tg?start=16&end=19" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
                                     </td>
                                     <td class="project-actions text-right">
+                                        <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-default">
+                              <i class="fas fa-pencil-alt">
+                              </i>
+                              Edit
+                          </a>
                                         <a class="btn btn-danger btn-sm" href="#">
                               <i class="fas fa-trash">
                               </i>
-                              Remove
+                              Delete
                           </a>
                                     </td>
                                 </tr>
@@ -414,17 +421,25 @@
                                     </td>
                                     <td>
                                         <a>
-                              Career questions
+                              Why do you want to work with us?
                           </a>
                                         <br/>
                                     </td>
-                                    <td>4
+                                    <td class="text-center">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ge9QOO_F8Tg?start=22&end=23" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
                                     </td>
                                     <td class="project-actions text-right">
+                                        <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-default">
+                              <i class="fas fa-pencil-alt">
+                              </i>
+                              Edit
+                          </a>
                                         <a class="btn btn-danger btn-sm" href="#">
                               <i class="fas fa-trash">
                               </i>
-                              Remove
+                              Delete
                           </a>
                                     </td>
                                 </tr>
@@ -469,81 +484,28 @@
                             <div class="modal-body">
 
                                 <div class="form-group">
-                                <label class="col-form-label">Category)</label>
-                                <select class="form-control select2" style="width: 100%;">
-                    <option selected="selected">All</option>
-                    <option selected="selected">Introductory</option>
-                    <option>Career</option>
-                                                                    </select>
+                                    <label>Name <span style="color: red;">*</span></label>
+                                    <input type="text" class="form-control" placeholder="Enter question name">
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Keyword</label>
-                                    <input type="text" class="form-control" placeholder="Enter keyword">
+                                    <label>Order <span style="color: red;">*</span></label>
+                                    <input type="number" class="form-control" placeholder="Enter question order">
                                 </div>
-                                
-                                <div>
-                        <table id="questionvideostable" class="table table-striped projects">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        Category
-                                    </th>
-                                    <th>
-                                        Set Name
-                                    </th>
-                                    <th>No. of Items</th>
-                                    <th>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        Introductory
-                                    </td>
-                                    <td>
-                                        <a>
-                              Introductory questions
-                          </a>
-                                        <br/>
-                                        <!--
-                          <small>
-                              Added 01.01.2019
-                          </small>-->
-                                    </td>
-                                    <td>
-                                        2
-                                    </td>
-                                    <td class="project-actions text-right">
-                                        <a class="btn btn-info btn-sm" href="#">
-                              <i class="fas fa-plus">
-                              </i>
-                          </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Introductory
-                                    </td>
-                                    <td>
-                                        <a>
-                              Career questions
-                          </a>
-                                        <br/>
-                                    </td>
-                                    <td>4
-                                    </td>
-                                    <td class="project-actions text-right">
-                                        <a class="btn btn-info btn-sm" href="#">
-                              <i class="fas fa-plus">
-                              </i>
-                          </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
 
+                                <div class="form-group">
+                                    <label>Video <span style="color: red;">*</span></label>
+                                    <div class="input-group">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="exampleInputFile">
+                                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Note</label>
+                                    <textarea class="form-control" id="inputExperience" placeholder="Enter note"></textarea>
                                 </div>
 
                                 <div class="modal-footer">
@@ -557,10 +519,6 @@
                     </div>
                     <!-- /.modal -->
                 </div>
-                <!-- /.modal -->
-
-                
-
 
             </section>
             <!-- /.content -->
@@ -574,6 +532,7 @@
                 <b>Version</b> 1.0.0 (
                 <script type="text/javascript">
                     document.write(document.lastModified);
+
                 </script>)
             </div>
         </footer>
@@ -698,6 +657,7 @@
             });
 
         })
+
     </script>
 </body>
 
