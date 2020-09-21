@@ -199,6 +199,8 @@
                 </li>
             </ul>
 
+
+
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user panel (optional) -->
@@ -242,6 +244,7 @@
             </a>
                         </li>
                         <li class="nav-header">ORGANIZATION<br>Acme Corp.</li>
+
                         <li class="nav-item">
                             <a href="tlece-companybranchprofile.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -258,15 +261,15 @@
             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="tlece-recruitmentplanning.html" class="nav-link active">
+                                    <a href="tlece-recruitmentplanning.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Recruitment Planning</p>
                 </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./tlece-applicants.html" class="nav-link">
+                                    <a href="./tlece-questionvideolibrary.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Applicants</p>
+                  <p>Question Video Library</p>
                 </a>
                                 </li>
                                 <li class="nav-item">
@@ -275,10 +278,17 @@
                   <p>Selection Process</p>
                 </a>
                                 </li>
+
+                                <li class="nav-item">
+                                    <a href="./tlece-applicants.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Applicants</p>
+                </a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="tlece-administrator.html" class="nav-link">
+                            <a href="./tlece-administrator.html" class="nav-link">
                     <i class="nav-icon fas fa-toolbox"></i>
                 <p>Administrator</p>
                 </a>
@@ -296,6 +306,7 @@
             <p>System Management</p>
             </a>
                         </li>
+
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -310,11 +321,13 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Question Video</h1>
+                            <h1>Question Videos</h1>
                         </div>
+
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                                <li class="breadcrumb-item active"><a href="./tlece-questionvideolibrary.html">Question Video Library</a></li>
                                 <li class="breadcrumb-item active">Question Video</li>
                             </ol>
                         </div>
@@ -355,8 +368,9 @@
                 <div class="card">
 
                     <div class="card-header p-2">
+
                         <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-default">
-                      <i class="fas fa-user"></i> Add question
+                      <i class="fas fa-plus"></i> New item
                     </a>
                     </div>
                     <!-- /.card-header -->
@@ -389,8 +403,8 @@
                                     </td>
                                     <td>
                                         <a>
-                              Introductory questions
-                          </a>
+                                            <a href="./tlece-questionvideocreate.html">Introductory questions</a>
+                                        </a>
                                         <br/>
                                         <!--
                           <small>
@@ -402,7 +416,7 @@
                                     </td>
                                     <td class="project-actions text-right">
                                         <a class="btn btn-danger btn-sm" href="#">
-                              <i class="fas fa-trash">
+                              <i class="fas fa-times">
                               </i>
                               Remove
                           </a>
@@ -414,15 +428,15 @@
                                     </td>
                                     <td>
                                         <a>
-                              Career questions
-                          </a>
+                                            <a href="./tlece-questionvideocreate.html">Career questions</a>
+                                        </a>
                                         <br/>
                                     </td>
                                     <td>4
                                     </td>
                                     <td class="project-actions text-right">
                                         <a class="btn btn-danger btn-sm" href="#">
-                              <i class="fas fa-trash">
+                              <i class="fas fa-times">
                               </i>
                               Remove
                           </a>
@@ -469,8 +483,8 @@
                             <div class="modal-body">
 
                                 <div class="form-group">
-                                <label class="col-form-label">Category)</label>
-                                <select class="form-control select2" style="width: 100%;">
+                                    <label class="col-form-label">Category)</label>
+                                    <select class="form-control select2" style="width: 100%;">
                     <option selected="selected">All</option>
                     <option selected="selected">Introductory</option>
                     <option>Career</option>
@@ -481,68 +495,68 @@
                                     <label>Keyword</label>
                                     <input type="text" class="form-control" placeholder="Enter keyword">
                                 </div>
-                                
+
                                 <div>
-                        <table id="questionvideostable" class="table table-striped projects">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        Category
-                                    </th>
-                                    <th>
-                                        Set Name
-                                    </th>
-                                    <th>No. of Items</th>
-                                    <th>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        Introductory
-                                    </td>
-                                    <td>
-                                        <a>
-                              Introductory questions
-                          </a>
-                                        <br/>
-                                        <!--
+                                    <table id="questionvideostable" class="table table-striped projects">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Category
+                                                </th>
+                                                <th>
+                                                    Set Name
+                                                </th>
+                                                <th>No. of Items</th>
+                                                <th>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Advanced
+                                                </td>
+                                                <td>
+                                                    <a>
+                                            <a href="./tlece-questionvideocreate.html">Lifestyle questions</a>
+                                                    </a>
+                                                    <br/>
+                                                    <!--
                           <small>
                               Added 01.01.2019
                           </small>-->
-                                    </td>
-                                    <td>
-                                        2
-                                    </td>
-                                    <td class="project-actions text-right">
-                                        <a class="btn btn-info btn-sm" href="#">
+                                                </td>
+                                                <td>
+                                                    2
+                                                </td>
+                                                <td class="project-actions text-right">
+                                                    <a class="btn btn-info btn-sm" href="#">
                               <i class="fas fa-plus">
                               </i>
                           </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Introductory
-                                    </td>
-                                    <td>
-                                        <a>
-                              Career questions
-                          </a>
-                                        <br/>
-                                    </td>
-                                    <td>4
-                                    </td>
-                                    <td class="project-actions text-right">
-                                        <a class="btn btn-info btn-sm" href="#">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Introductory
+                                                </td>
+                                                <td>
+                                                    <a>
+                                            <a href="./tlece-questionvideocreate.html">Study questions</a>
+                                                    </a>
+                                                    <br/>
+                                                </td>
+                                                <td>4
+                                                </td>
+                                                <td class="project-actions text-right">
+                                                    <a class="btn btn-info btn-sm" href="#">
                               <i class="fas fa-plus">
                               </i>
                           </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
 
                                 </div>
 
@@ -559,7 +573,7 @@
                 </div>
                 <!-- /.modal -->
 
-                
+
 
 
             </section>
@@ -574,6 +588,7 @@
                 <b>Version</b> 1.0.0 (
                 <script type="text/javascript">
                     document.write(document.lastModified);
+
                 </script>)
             </div>
         </footer>
@@ -698,6 +713,7 @@
             });
 
         })
+
     </script>
 </body>
 
