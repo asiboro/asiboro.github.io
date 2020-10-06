@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tlece | Applicants</title>
+    <title>Tlece | Manage Badge Categories</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -33,7 +33,7 @@
     <!-- Bootstrap4 Duallistbox -->
     <link rel="stylesheet" href="plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
 
 
 
@@ -262,7 +262,7 @@
                 </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./tlece-applicants.html" class="nav-link active">
+                                    <a href="./tlece-applicants.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Applicants</p>
                 </a>
@@ -289,7 +289,7 @@
             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./tlece-systemmanagement.html" class="nav-link">
+                            <a href="./tlece-systemmanagement.html" class="nav-link active">
                 <i class="nav-icon fas fa-tools"></i>
             <p>System Management</p>
             </a>
@@ -308,12 +308,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Applicants</h1>
+                            <h1>Manage Badge Categories</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                                <li class="breadcrumb-item active">Applicants</li>
+                                <li class="breadcrumb-item active">Manage Badge Categories</li>
                             </ol>
                         </div>
                     </div>
@@ -324,7 +324,6 @@
             <!-- Main content -->
             <section class="content">
 
-
                 <div>
                     <div>
                         <div class="input-group">
@@ -333,10 +332,8 @@
                             Search
                             </button>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Name</a>
-                                    <a class="dropdown-item" href="#">Vacancies/Job Titles</a>
-                                    <a class="dropdown-item" href="#">Last applied date</a>
-                                    <a class="dropdown-item" href="#">Current applications</a>
+                                    <a class="dropdown-item" href="#">Area</a>
+                                    <a class="dropdown-item" href="#">Item</a>
                                     <!--<div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Separated link</a>-->
                                 </div>
@@ -351,41 +348,30 @@
                     </div>
                 </div>
 
-
                 <!-- Default box -->
                 <div class="card">
-                    <!--
-              <div class="card-header p-2">
-                
-                <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-default">
-                      <i class="fas fa-user"></i> Add staffs
-                    </a>
-              </div>
--->
+                    <div class="card-header p-2">
+                        <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-addbadge">
+                      <i class="fas fa-user"></i> Add category
+                </a>
+                    </div>
                     <!-- /.card-header -->
 
 
-
-
                     <div class="card-body p-0">
+
 
                         <table class="table table-striped projects">
                             <thead>
                                 <tr>
                                     <th>
-                                        Photo
+                                        Badge
                                     </th>
                                     <th>
-                                        Name
+                                        Area
                                     </th>
                                     <th>
-                                        No. of applications
-                                    </th>
-                                    <th>
-                                        Last applied date
-                                    </th>
-                                    <th>
-                                        Current applications
+                                        No. of items
                                     </th>
                                     <th>
                                     </th>
@@ -394,131 +380,44 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <!-- User image -->
-                                        <img class="img-circle img-sm" src="dist/img/user1-128x128.jpg" alt="User Image">
-                                    </td>
-                                    <td>
-                                        <a>
-                              Zhane Ballard
-                          </a>
-                                        <br/>
-                                        <small>
-                              Looking for new opportunity
-                          </small>
-                                    </td>
-                                    <td>
-                                        3
-                                    </td>
-                                    <td>
-                                        May 26, 2020
-                                    </td>
-                                    <td>
-                                        <a href="tlece-vacancyprofile.html">Production Manager</a><br>
-                                        <a href="tlece-vacancyprofile.html">Mechanical Engineer </a>
+                                        <img class="img-circle img-sm" src="dist/img/tlecelogo.png" alt="User Image"></td>
+                                    <td>Work-life balance</td>
+                                    <td>140
                                     </td>
                                     <td class="project-actions text-right">
-                                        <a class="btn btn-primary btn-sm" href="./tlece-applicantprofile.html">
+                                        <a class="btn btn-primary btn-sm" href="./tlece-vacancyprofile.html" data-toggle="modal" data-target="#modal-addbadge">
                               <i class="fas fa-folder">
                               </i>
-                              View
+                              Edit
                           </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <!-- User image -->
-                                        <img class="img-circle img-sm" src="dist/img/user2-160x160.jpg" alt="User Image">
-                                    </td>
-                                    <td>
-                                        <a>
-                              Kerys Driscoll
-                          </a>
-                                        <br/>
-                                        <small>
-                              Entrepreneur and engineer
-                          </small>
-                                    </td>
-                                    <td>
-                                        1
-                                    </td>
-                                    <td>
-                                        June 2, 2020
-                                    </td>
-                                    <td>
-                                        <a href="tlece-vacancyprofile.html">Kitchen staffs </a>
-                                    </td>
-                                    <td class="project-actions text-right">
-                                        <a class="btn btn-primary btn-sm" href="./tlece-applicantprofile.html">
-                              <i class="fas fa-folder">
+                                        <a class="btn btn-warning btn-sm" href="#">
+                              <i class="fas fa-trash">
                               </i>
-                              View
+                              Archive
                           </a>
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td>
-                                        <!-- User image -->
-                                        <img class="img-circle img-sm" src="dist/img/user3-128x128.jpg" alt="User Image">
-                                    </td>
-                                    <td>
-                                        <a>
-                              Bentley Enriquez
-                          </a>
-                                        <br/>
-                                        <small>
-                              Professional in marketing
-                          </small>
-                                    </td>
-                                    <td>
-                                        2
-                                    </td>
-                                    <td>
-                                        May 14, 2020
-                                    </td>
-                                    <td class="project-state">
-
+                                        <img class="img-circle img-sm" src="dist/img/tlecelogo.png" alt="User Image"></td>
+                                    <td>Gender equality</td>
+                                    <td>2345
                                     </td>
                                     <td class="project-actions text-right">
-                                        <a class="btn btn-primary btn-sm" href="./tlece-applicantprofile.html">
+                                        <a class="btn btn-primary btn-sm" href="./tlece-vacancyprofile.html" data-toggle="modal" data-target="#modal-addbadge">
                               <i class="fas fa-folder">
                               </i>
-                              View
+                              Edit
+                          </a>
+                                        <a class="btn btn-warning btn-sm" href="#">
+                              <i class="fas fa-trash">
+                              </i>
+                              Archive
                           </a>
                                     </td>
                                 </tr>
 
-                                <tr>
-                                    <td>
-                                        <!-- User image -->
-                                        <img class="img-circle img-sm" src="dist/img/user3-128x128.jpg" alt="User Image">
-                                    </td>
-                                    <td>
-                                        <a>
-                              Grace Bender
-                          </a>
-                                        <br/>
-                                        <small>
-                              Professional in marketing
-                          </small>
-                                    </td>
-                                    <td>
-                                        3
-                                    </td>
-                                    <td>
-                                        May 14, 2020
-                                    </td>
-                                    <td class="project-state">
-
-                                    </td>
-                                    <td class="project-actions text-right">
-                                        <a class="btn btn-primary btn-sm" href="./tlece-applicantprofile.html">
-                              <i class="fas fa-folder">
-                              </i>
-                              View
-                          </a>
-                                    </td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -526,68 +425,169 @@
                 </div>
                 <!-- /.card -->
 
-                <div class="modal fade" id="process">
+                <div class="modal fade" id="modal-addbadge">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Process applicant</h4>
+                                <h4 class="modal-title">Add category</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
                             </div>
                             <div class="modal-body">
-                                Are you sure to process this applicant?
 
-                                <div>
-                                    Name: Bentley Enriquez<br> Vacancy applied: Sales Engineer<br>
+
+                                <div class="form-group">
+                                    <label class="col-form-label">Area (Category) <span style="color: red;">*</span></label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Brand name">
                                 </div>
 
+                                <div>
+                                    <label class="col-form-label">Relationship <span style="color: red;">*</span></label>
+
+                                    <div class="input-group mb-3">
+                                        <select class="form-control select2" style="width: 100%;">
+                                            <option selected="selected">Work-life balance</option>
+                                            <option>Gender equality</option>
+                                            <option>Ikigai promotion</option>
+                                        </select>
+                                        <span class="input-group-append">
+                    <button type="button" class="btn btn-sm btn-primary"> <i class="fas fa-plus"></i></button>
+                  </span>
+                                    </div>
+
+
+                                    <table class="table table-head-fixed text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th>Area</th>
+                                                <th>Relatedness</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Work-life balance</td>
+                                                <th><select class="form-control select2" style="width: 100%;">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option selected="selected">3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </th>
+                                                <th><button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button></th>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td>Work-life balance</td>
+                                                <th><select class="form-control select2" style="width: 100%;">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option selected="selected">5</option>
+                                                    </select>
+                                                </th>
+                                                <th><button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Gender equality</td>
+                                                <th><select class="form-control select2" style="width: 100%;">
+                                                        <option>1</option>
+                                                        <option selected="selected">2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </th>
+                                                <th><button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Work-life balance</td>
+                                                <th><select class="form-control select2" style="width: 100%;">
+                                                        <option selected="selected">1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </th>
+                                                <th><button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Gender equality</td>
+                                                <th><select class="form-control select2" style="width: 100%;">
+                                                        <option>1</option>
+                                                        <option selected="selected">2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </th>
+                                                <th><button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Gender equality</td>
+                                                <th><select class="form-control select2" style="width: 100%;">
+                                                        <option selected="selected">1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </th>
+                                                <th><button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Gender equality</td>
+                                                <th><select class="form-control select2" style="width: 100%;">
+                                                        <option selected="selected">1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </th>
+                                                <th><button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Work-life balance</td>
+                                                <th><select class="form-control select2" style="width: 100%;">
+                                                        <option selected="selected">1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </th>
+                                                <th><button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button></th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <!--
+                      <div class="form-group">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
+                            </label>
+                          </div>
+                      </div>
+-->
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Process</button>
-                            </div>
-                        </div>
-                        <!-- /.modal-content -->
-                    </div>
-                    <!-- /.modal-dialog -->
-                </div>
-                <!-- /.modal -->
-
-                <div class="modal fade" id="processmultiple">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Process applicants</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-                            </div>
-                            <div class="modal-body">
-                                Are you sure to process these applicants?
-
-
-                                <table class="table table-striped">
-                                    <thead>
-                                        <th>Name</th>
-                                        <th>Vacancy applied</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Zhane Ballard</td>
-                                            <td>Executive Secretary</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Bentley Enriquez</td>
-                                            <td>Sales Engineer</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Process</button>
+                                <a class="btn btn-default btn-sm" href="#" data-dismiss="modal">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Cancel
+                </a>
+                                <a class="btn btn-primary btn-sm" href="tlece-vacancyprofile.html">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Submit
+                </a>
                             </div>
                         </div>
                         <!-- /.modal-content -->
@@ -608,7 +608,6 @@
                 <b>Version</b> 1.0.0 (
                 <script type="text/javascript">
                     document.write(document.lastModified);
-
                 </script>)
             </div>
         </footer>
@@ -724,7 +723,6 @@
             });
 
         })
-
     </script>
 </body>
 
