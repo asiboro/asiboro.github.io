@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kopoka | Cashout</title>
+    <title>Kopoka | System Topup</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -172,6 +172,7 @@
                     </div>
                 </li>
             </ul>
+
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user (optional) -->
@@ -201,7 +202,7 @@
             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="wallet.html" class="nav-link active">
+                            <a href="wallet.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Wallet
@@ -233,7 +234,7 @@
                         </li>
                         <li class="nav-header">Management</li>
                         <li class="nav-item">
-                            <a href="system-management.html" class="nav-link">
+                            <a href="system-management.html" class="nav-link active">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 System Management
@@ -254,12 +255,13 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Cashout</h1>
+                            <h1>System Topup</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active">Cashout</li>
+                                <li class="breadcrumb-item active"><a href="system-management.html">System Management</a></li>
+                                <li class="breadcrumb-item active">System Topup</li>
                             </ol>
                         </div>
                     </div>
@@ -276,47 +278,30 @@
                             <!-- Horizontal Form -->
                             <div class="card card-info">
                                 <div class="card-header">
-                                    <h3 class="card-title">Cashout commission</h3>
+                                    <h3 class="card-title">Topup Kopoka's wallet</h3>
                                 </div>
                                 <!-- /.card-header -->
                                 <!-- form start -->
                                 <form class="form-horizontal">
                                     <div class="card-body">
                                         <div class="form-group row">
-                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Balance</label>
-                                            <div class="col-sm-10">
-                                                Rp 4,500,000
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Destination</label>
-                                            <div class="col-sm-10">
-                                                <label>Bank name</label>
-                                                <input type="text" class="form-control" id="inputPassword3" placeholder="Name of destination bank">
-                                                <label>Account No.</label>
-                                                <input type="text" class="form-control" id="inputPassword3" placeholder="Account number">
-                                                <label>Account holder name</label>
-                                                <input type="text" class="form-control" id="inputPassword3" placeholder="Account holder name">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
                                             <label for="inputPassword3" class="col-sm-2 col-form-label">Amount</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="inputPassword3" placeholder="Amount to be withdrawn">
+                                                <input type="text" class="form-control" id="inputPassword3" placeholder="Amount">
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Remark</label>
+                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Note</label>
                                             <div class="col-sm-10">
-                        <textarea class="form-control" rows="3" placeholder="Remark for your own record"></textarea>
+                        <textarea class="form-control" rows="3" placeholder="Note"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- /.card-body -->
                                     <div class="card-footer">
-                                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-transfer">Cashout</button>
+                                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-transfer">Topup</button>
                                         
-                                        <a href="wallet.html"><button type="button" class="btn btn-default float-right">Cancel</button></a>
+                                        <a href="system-management.html"><button type="button" class="btn btn-default float-right">Cancel</button></a>
                                     </div>
                                     <!-- /.card-footer -->
                                 </form>
@@ -328,36 +313,28 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Cashout Confirmation</h4>
+              <h4 class="modal-title">System Topup Confirmation</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <p>Are you sure to do the following withdrawal?</p>
+              <p>Are you sure to do the following system topup?</p>
                 
                 
                                 <!-- form start -->
                                 <form class="form-horizontal">
                                     <div class="card-body">
                                         <div class="form-group row">
-                                            <label for="inputPassword3" class="col-sm-2 col-form-label">To</label>
-                                            <div class="col-sm-10">
-                                                Bank Mandiri<br>
-                                                13000119910100<br>
-                                                John Smith
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
                                             <label for="inputPassword3" class="col-sm-2 col-form-label">Amount</label>
                                             <div class="col-sm-10">
-                                                Rp 1,000,000
+                                                Rp 1,000,000,000
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Remark</label>
+                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Note</label>
                                             <div class="col-sm-10">
-                                                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
+                                                Regular topup
                                             </div>
                                         </div>
                                     </div>

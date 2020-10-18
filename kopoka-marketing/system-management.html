@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kopoka | Cashout</title>
+    <title>Kopoka | System Management</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="./dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -58,7 +58,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                                <img src="./dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Brad Diesel
@@ -74,7 +74,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="./dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         John Pierce
@@ -90,7 +90,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="./dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Nora Silvester
@@ -178,7 +178,7 @@
                 <!--
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                        <img src="./dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
                         <a href="#" class="d-block">Alexander Pierce</a>
@@ -201,7 +201,7 @@
             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="wallet.html" class="nav-link active">
+                            <a href="wallet.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Wallet
@@ -233,7 +233,7 @@
                         </li>
                         <li class="nav-header">Management</li>
                         <li class="nav-item">
-                            <a href="system-management.html" class="nav-link">
+                            <a href="system-management.html" class="nav-link active">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 System Management
@@ -254,12 +254,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Cashout</h1>
+                            <h1>System Management</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active">Cashout</li>
+                                <li class="breadcrumb-item active">System Management</li>
                             </ol>
                         </div>
                     </div>
@@ -267,128 +267,103 @@
                 <!-- /.container-fluid -->
             </section>
 
-            <!-- Main content -->
             <section class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <!-- left column -->
-                        <div class="col-md-12">
-                            <!-- Horizontal Form -->
-                            <div class="card card-info">
-                                <div class="card-header">
-                                    <h3 class="card-title">Cashout commission</h3>
+                        <div class="col-12">
+
+                            <!--
+            <div class="callout callout-info">
+              <h5><i class="fas fa-info"></i> Note:</h5>
+              This page has been enhanced for printing. Click the print button at the bottom of the invoice to test.
+            </div>
+-->
+
+
+                            <!-- Main content -->
+
+                            <div class="content">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="card">
+                                                <div class="card-header border-0">
+                                                    <div class="d-flex justify-content-between">
+                                                        <h3 class="card-title">Agency</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    
+                                                    <p><a href="system-management-team.html">Agents </a>
+                                                        <br/><small>Agents list</small></p>
+
+                                                    <p><a href="system-management-sales.html">Sales </a>
+                                                        <br/><small>Sales information</small></p>
+                                                    
+                                                    <p><a href="system-management-topup.html">System Topup </a>
+                                                        <br/><small>Topup Kopoka's wallet</small></p>
+
+                                                </div>
+                                            </div>
+                                            <!-- /.card -->
+
+                                            <!--
+                            <div class="card">
+                                <div class="card-header border-0">
+                                    <h3 class="card-title">Recruitment</h3>
+
                                 </div>
-                                <!-- /.card-header -->
-                                <!-- form start -->
-                                <form class="form-horizontal">
-                                    <div class="card-body">
-                                        <div class="form-group row">
-                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Balance</label>
-                                            <div class="col-sm-10">
-                                                Rp 4,500,000
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Destination</label>
-                                            <div class="col-sm-10">
-                                                <label>Bank name</label>
-                                                <input type="text" class="form-control" id="inputPassword3" placeholder="Name of destination bank">
-                                                <label>Account No.</label>
-                                                <input type="text" class="form-control" id="inputPassword3" placeholder="Account number">
-                                                <label>Account holder name</label>
-                                                <input type="text" class="form-control" id="inputPassword3" placeholder="Account holder name">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Amount</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="inputPassword3" placeholder="Amount to be withdrawn">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Remark</label>
-                                            <div class="col-sm-10">
-                        <textarea class="form-control" rows="3" placeholder="Remark for your own record"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /.card-body -->
-                                    <div class="card-footer">
-                                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-transfer">Cashout</button>
-                                        
-                                        <a href="wallet.html"><button type="button" class="btn btn-default float-right">Cancel</button></a>
-                                    </div>
-                                    <!-- /.card-footer -->
-                                </form>
+                                <div class="card-body">
+                                    <a href="tlece-selectionstages.html">Selection stages </a>
+                                    <br/><small>Manage selection stages templates</small>
+                                </div>
                             </div>
-                            <!-- /.card -->
-                            
-                            
-                                  <div class="modal fade" id="modal-transfer">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Cashout Confirmation</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>Are you sure to do the following withdrawal?</p>
-                
-                
-                                <!-- form start -->
-                                <form class="form-horizontal">
-                                    <div class="card-body">
-                                        <div class="form-group row">
-                                            <label for="inputPassword3" class="col-sm-2 col-form-label">To</label>
-                                            <div class="col-sm-10">
-                                                Bank Mandiri<br>
-                                                13000119910100<br>
-                                                John Smith
-                                            </div>
+-->
+                                            <!-- /.card -->
                                         </div>
-                                        <div class="form-group row">
-                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Amount</label>
-                                            <div class="col-sm-10">
-                                                Rp 1,000,000
+                                        <!-- /.col-md-6 -->
+                                        <div class="col-lg-6">
+                                            <div class="card">
+                                                <div class="card-header border-0">
+                                                    <div class="d-flex justify-content-between">
+                                                        <h3 class="card-title">Wallet</h3>
+                                                        <!--<a href="javascript:void(0);">View Report</a>-->
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-body">
+
+                                                    <p><a href="system-management-team.html">Cashout Requests </a>
+                                                        <br/><small>Cashout requests from agents</small></p>
+
+                                                </div>
                                             </div>
+                                            <!-- /.card -->
+
                                         </div>
-                                        <div class="form-group row">
-                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Remark</label>
-                                            <div class="col-sm-10">
-                                                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
-                                            </div>
-                                        </div>
+                                        <!-- /.col-md-6 -->
                                     </div>
-                                    <!-- /.card-body -->
-                                </form>
-                
-            </div>
-            <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-primary">Submit</button>
-            </div>
-          </div>
-          <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-      </div>
-      <!-- /.modal -->
+                                    <!-- /.row -->
+                                </div>
+                                <!-- /.container-fluid -->
+                            </div>
+                            <!-- /.content -->
 
-                            
 
+
+
+
+                            <!-- /.row -->
                         </div>
-                        <!--/.col (left) -->
+                        <!-- /.container-fluid -->
                     </div>
-                    <!-- /.row -->
                 </div>
                 <!-- /.container-fluid -->
             </section>
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-        <footer class="main-footer">
+        <footer class="main-footer no-print">
             <div class="float-right d-none d-sm-block">
                 <b>Version</b> 3.0.5
             </div>
@@ -404,19 +379,13 @@
     <!-- ./wrapper -->
 
     <!-- jQuery -->
-    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <script src="./plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
-    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- bs-custom-file-input -->
-    <script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+    <script src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="../../dist/js/adminlte.min.js"></script>
+    <script src="./dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="../../dist/js/demo.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            bsCustomFileInput.init();
-        });
-    </script>
+    <script src="./dist/js/demo.js"></script>
 </body>
+
 </html>

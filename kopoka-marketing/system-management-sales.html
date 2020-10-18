@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kopoka | Wallet</title>
+    <title>Kopoka | Sales</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="./dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-
     <!-- daterange picker -->
     <link rel="stylesheet" href="./plugins/daterangepicker/daterangepicker.css">
     <!-- iCheck for checkboxes and radio inputs -->
@@ -45,7 +44,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../../index3.html" class="nav-link">Home</a>
+                    <a href="./index3.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
@@ -219,7 +218,7 @@
             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="wallet.html" class="nav-link active">
+                            <a href="wallet.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Wallet
@@ -251,7 +250,7 @@
                         </li>
                         <li class="nav-header">Management</li>
                         <li class="nav-item">
-                            <a href="system-management.html" class="nav-link">
+                            <a href="system-management.html" class="nav-link active">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 System Management
@@ -272,12 +271,13 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Wallet</h1>
+                            <h1>Sales</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active">Wallet</li>
+                                <li class="breadcrumb-item active"><a href="system-management.html">System Management</a></li>
+                                <li class="breadcrumb-item active">Sales</li>
                             </ol>
                         </div>
                     </div>
@@ -299,190 +299,144 @@
 
 
                             <!-- Main content -->
+
                             <div class="invoice p-3 mb-3">
-                                <!-- title row -->
+
+
+
                                 <div class="row">
                                     <div class="col-12">
 
                                         <button type="button" class="btn btn-default float-right" id="daterange-btn" style="margin-right: 5px;"><i class="far fa-calendar-alt"></i> Date range <i class="fas fa-caret-down"></i></button>
-
-                                        <ul class="nav nav-tabs" id="custom-content-above-tab" role="tablist">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" id="custom-content-above-home-tab" data-toggle="pill" href="#custom-content-above-home" role="tab" aria-controls="custom-content-above-home" aria-selected="true">Main</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" id="custom-content-above-profile-tab" data-toggle="pill" href="#custom-content-above-profile" role="tab" aria-controls="custom-content-above-profile" aria-selected="false">Commission</a>
-                                            </li>
-                                        </ul>
-
-                                        <!--
-                                        <div class="tab-custom-content">
-                                            <p class="lead mb-0">Balance: 1,600,000 IDR</p>
-                                        </div>
--->
-                                        <div class="tab-content" id="custom-content-above-tabContent">
-
-                                            <div class="tab-pane fade show active" id="custom-content-above-home" role="tabpanel" aria-labelledby="custom-content-above-home-tab">
-
-                                                <div class="col-12">
-                                                    <a href="wallet-transfer-main.html"><button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Transfer
-                  </button></a>
-
-
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <p class="lead">Balance: Rp 11,500,000</p>
-                                                    </div>
-                                                </div>
-
-
-
-                                                <!-- Table row -->
-                                                <div class="row">
-                                                    <div class="col-12 table-responsive">
-                                                        <table class="table table-striped">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Date</th>
-                                                                    <th>Description</th>
-                                                                    <th>Subtotal</th>
-                                                                    <th>Balance</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>October 1, 2020</td>
-                                                                    <td>El snort testosterone trophy driving gloves handsome</td>
-                                                                    <td>Rp 64.50</td>
-                                                                    <td>Rp 164.50</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>October 1, 2020</td>
-                                                                    <td>Wes Anderson umami biodiesel</td>
-                                                                    <td>Rp 50.00</td>
-                                                                    <td>Rp 164.50</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>October 1, 2020</td>
-                                                                    <td>Terry Richardson helvetica tousled street art master</td>
-                                                                    <td>Rp 10.70</td>
-                                                                    <td>Rp 164.50</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>October 1, 2020</td>
-                                                                    <td>Tousled lomo letterpress</td>
-                                                                    <td>Rp 25.99</td>
-                                                                    <td>Rp 164.50</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <!-- /.col -->
-                                                </div>
-                                                <!-- /.row -->
-
-
-
+                                        <div class="form-group row float-right">
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="inputPassword3" placeholder="Agent name">
                                             </div>
+                                        </div>    
 
-                                            <div class="tab-pane fade" id="custom-content-above-profile" role="tabpanel" aria-labelledby="custom-content-above-profile-tab">
+                                        
+                                        <p class="lead">Grand Total: Rp 110,500,000</p>
 
+           
+                                        
+                                    </div>
+                                </div>
 
+                                <!-- title row -->
+                                <div class="row">
+                                    <div class="col-12">
 
-                                                <div class="col-12">
-                                                    <a href="wallet-transfer-commission.html"><button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Transfer
-                                                        </button></a>
-                                                    <a href="wallet-cashout.html"><button type="button" class="btn btn-primary float-right" style="margin-right: 5px;">
-                    <i class="fas fa-download"></i> Cash out
-                                                        </button></a>
+                                        <div class="row">
+                                            <div class="col-5 col-sm-3">
+                                                <div class="nav flex-column nav-tabs h-100" id="vert-tabs-tab" role="tablist" aria-orientation="vertical">
+                                                    
+                                                    <a class="nav-link active" id="vert-tabs-home-tab" data-toggle="pill" href="#vert-tabs-home" role="tab" aria-controls="vert-tabs-home" aria-selected="true">John Smith<br>202010010002</a>
+                                                    <a class="nav-link" id="vert-tabs-profile-tab" data-toggle="pill" href="#vert-tabs-profile" role="tab" aria-controls="vert-tabs-profile" aria-selected="false">Jack Black</a>
+                                                    <a class="nav-link" id="vert-tabs-messages-tab" data-toggle="pill" href="#vert-tabs-messages" role="tab" aria-controls="vert-tabs-messages" aria-selected="false">Melissa Brown</a>
+                                                    <a class="nav-link" id="vert-tabs-settings-tab" data-toggle="pill" href="#vert-tabs-settings" role="tab" aria-controls="vert-tabs-settings" aria-selected="false">Steve James</a>
                                                 </div>
+                                            </div>
+                                            <div class="col-7 col-sm-9">
+                                                <div class="tab-content" id="vert-tabs-tabContent">
+                                                    <div class="tab-pane text-left fade show active" id="vert-tabs-home" role="tabpanel" aria-labelledby="vert-tabs-home-tab">
+
+                                                        <div class="col-12">
+
+                                                            <a href="sales-sell.html"><button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Sell
+                                                        </button></a>
+                                                            <a href="sales-refer.html"><button type="button" class="btn btn-primary float-right" style="margin-right: 5px;">
+                    <i class="fas fa-download"></i> Refer
+                                                        </button></a>
 
 
 
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <p class="lead">Balance: Rp 1,600,000</p>
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <p class="lead">Total: Rp 11,500,000</p>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                            <!-- Table row -->
+                                                            <div class="row">
+                                                                <div class="col-12 table-responsive">
+                                                                    <table class="table table-striped">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Date</th>
+                                                                                <th>Description</th>
+                                                                                <th>Subtotal</th>
+                                                                                <th>Balance</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>October 1, 2020</td>
+                                                                                <td>El snort testosterone trophy driving gloves handsome</td>
+                                                                                <td>Rp 64.50</td>
+                                                                                <td>Rp 164.50</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>October 1, 2020</td>
+                                                                                <td>Wes Anderson umami biodiesel</td>
+                                                                                <td>Rp 50.00</td>
+                                                                                <td>Rp 164.50</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>October 1, 2020</td>
+                                                                                <td>Terry Richardson helvetica tousled street art master</td>
+                                                                                <td>Rp 10.70</td>
+                                                                                <td>Rp 164.50</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>October 1, 2020</td>
+                                                                                <td>Tousled lomo letterpress</td>
+                                                                                <td>Rp 25.99</td>
+                                                                                <td>Rp 164.50</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <!-- /.col -->
+                                                            </div>
+                                                            <!-- /.row -->
+
+
+
+
+
+
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="tab-pane fade" id="vert-tabs-profile" role="tabpanel" aria-labelledby="vert-tabs-profile-tab">
+
+                                                        TBD
+                                                    </div>
+                                                    <div class="tab-pane fade" id="vert-tabs-messages" role="tabpanel" aria-labelledby="vert-tabs-messages-tab">
+
+                                                        TBD
+                                                    </div>
+                                                    <div class="tab-pane fade" id="vert-tabs-settings" role="tabpanel" aria-labelledby="vert-tabs-settings-tab">
+
+                                                        TBD
                                                     </div>
                                                 </div>
-
-                                                <!-- Table row -->
-                                                <div class="row">
-                                                    <div class="col-12 table-responsive">
-                                                        <table class="table table-striped">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Date</th>
-                                                                    <th>Description</th>
-                                                                    <th>Subtotal</th>
-                                                                    <th>Balance</th>
-                                                                    <th></th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>October 1, 2020</td>
-                                                                    <td>Cashout requested</td>
-                                                                    <td>Rp 64.50</td>
-                                                                    <td>Rp 164.50</td>
-                                                                    <td>
-
-
-                                                                                <i class="right fas fa-ellipsis-v" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                      <span class="sr-only">Toggle Dropdown</span>
-                      <div class="dropdown-menu" role="menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
-                      </div>
-                    </i>
-
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>October 1, 2020</td>
-                                                                    <td>Wes Anderson umami biodiesel</td>
-                                                                    <td>Rp 50.00</td>
-                                                                    <td>Rp 164.50</td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>October 1, 2020</td>
-                                                                    <td>Terry Richardson helvetica tousled street art master</td>
-                                                                    <td>Rp 10.70</td>
-                                                                    <td>Rp 164.50</td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>October 1, 2020</td>
-                                                                    <td>Tousled lomo letterpress</td>
-                                                                    <td>Rp 25.99</td>
-                                                                    <td>Rp 164.50</td>
-                                                                    <td></td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <!-- /.col -->
-                                                </div>
-                                                <!-- /.row -->
-
                                             </div>
                                         </div>
-
 
 
                                     </div>
-                                    <!-- /.invoice -->
                                 </div>
-                                <!-- /.col -->
                             </div>
-                            <!-- /.row -->
+
+
+
+
+                            <!-- /.container-fluid -->
                         </div>
-                        <!-- /.container-fluid -->
                     </div>
                 </div>
                 <!-- /.container-fluid -->
