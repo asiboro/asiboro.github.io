@@ -1,0 +1,1 @@
+search_result['2382']=["topic_00000000000005B0.html","RecruitmentHistoryDetailDto.PostVacancyStageId Property",""];

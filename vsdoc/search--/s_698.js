@@ -1,0 +1,1 @@
+search_result['698']=["topic_000000000000017C.html","TleceAccountController.Register Method","/// Register new account API\r\n        ///"];

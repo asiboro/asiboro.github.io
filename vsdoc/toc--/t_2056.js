@@ -1,0 +1,1 @@
+c['2056']=[['2057',"CompanyId Property","topic_00000000000006FF.html",0],['2058',"IsActive Property","topic_0000000000000701.html",0],['2059',"RoleId Property","topic_00000000000006FE.html",0],['2060',"RoleName Property","topic_0000000000000700.html",0]];

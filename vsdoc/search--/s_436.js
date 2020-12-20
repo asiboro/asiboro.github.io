@@ -1,0 +1,1 @@
+search_result['436']=["topic_00000000000000D6.html","LocaleHelper.GetLocaleDateFormat Method","Get Date format by locale\r\nsee cloudscribe.DateTimeUtils.ConvertToLocalTime(DateTime utcDateTime, string timeZoneId)\r\ntimeZoneId is cs_User.TimeZoneId for current login user\r\nto convert datetime utc t..."];

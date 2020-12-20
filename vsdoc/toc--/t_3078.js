@@ -1,0 +1,1 @@
+c['3078']=[['3079',"PaymentException(SerializationInfo, StreamingContext) Constructor","topic_0000000000000AE8.html",0],['3080',"PaymentException() Constructor","topic_0000000000000AE5.html",0],['3081',"PaymentException(string) Constructor","topic_0000000000000AE6.html",0],['3082',"PaymentException(string, Exception) Constructor","topic_0000000000000AE7.html",0]];

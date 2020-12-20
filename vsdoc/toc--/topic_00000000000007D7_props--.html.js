@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"SOLUTION-WIDE PROPERTIES Reference","topic_0000000000000C16.html"],['2267',"Tlece.Recruitment.Models.RecruitmentPlanning Namespace","topic_0000000000000692.html"],['2330',"ApplicationBriefDto Class","topic_00000000000007D7.html"],['2331',"Properties","topic_00000000000007D7_props--.html"]];

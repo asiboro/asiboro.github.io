@@ -1,0 +1,1 @@
+c['437']=[['438',"DetailAsync Method","topic_00000000000001A6.html",0],['439',"GetData Method","topic_00000000000001A7.html",0],['440',"GetDataOrganization Method","topic_00000000000001A9.html",0],['441',"GetDataPerson Method","topic_00000000000001A8.html",0],['442',"Index Method","topic_00000000000001A5.html",0]];

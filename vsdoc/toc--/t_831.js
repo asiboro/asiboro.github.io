@@ -1,0 +1,1 @@
+c['831']=[['832',"BadgeId Property","topic_0000000000000309.html",0],['833',"CreatedUtc Property","topic_000000000000030A.html",0],['834',"Id Property","topic_0000000000000307.html",0],['835',"UserId Property","topic_0000000000000308.html",0]];

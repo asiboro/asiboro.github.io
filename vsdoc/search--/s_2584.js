@@ -1,0 +1,1 @@
+search_result['2584']=["topic_0000000000000628.html","BadgesCategoryResponseDto Class",""];

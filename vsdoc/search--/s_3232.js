@@ -1,0 +1,1 @@
+search_result['3232']=["topic_00000000000007C0.html","ApplicantDetailResponseDto Class",""];

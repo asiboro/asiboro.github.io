@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"SOLUTION-WIDE PROPERTIES Reference","topic_0000000000000C16.html"],['122',"Tlece.Common.Swagger Namespace","topic_00000000000000E7.html"],['126',"SwaggerUploadFile Class","topic_00000000000000EA.html"],['127',"Properties","topic_00000000000000EA_props--.html"]];

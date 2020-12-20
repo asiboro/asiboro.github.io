@@ -1,0 +1,1 @@
+c['1491']=[['1492',"InvoiceDetailDto Constructor","topic_0000000000000A15.html",0],['1493',"Properties","topic_0000000000000A14_props--.html",1]];

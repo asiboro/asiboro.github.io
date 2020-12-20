@@ -1,0 +1,1 @@
+c['980']=[['981',"tlece_InvoiceItem Constructor","topic_0000000000000399_overloads--.html",1],['984',"Properties","topic_0000000000000398_props--.html",1]];

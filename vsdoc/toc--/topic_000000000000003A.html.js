@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"SOLUTION-WIDE PROPERTIES Reference","topic_0000000000000C16.html"],['3323',"Tlece.Twillio.Configurations Namespace","topic_0000000000000036.html"],['3324',"TwilioChatOptions Class","topic_0000000000000037.html"],['3325',"Properties","topic_0000000000000037_props--.html"],['3327',"ApiKey Property","topic_000000000000003A.html"]];

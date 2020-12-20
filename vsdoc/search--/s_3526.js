@@ -1,0 +1,1 @@
+search_result['3526']=["topic_0000000000000878.html","JobVacancySimpleDto Class",""];

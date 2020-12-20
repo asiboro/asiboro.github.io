@@ -1,0 +1,1 @@
+c['2471']=[['2472',"JobVacancyDetailVm Constructor","topic_0000000000000856.html",0],['2473',"Properties","topic_0000000000000853_props--.html",1]];

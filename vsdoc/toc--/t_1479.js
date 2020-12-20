@@ -1,0 +1,1 @@
+c['1479']=[['1480',"Data Property","topic_0000000000000A02.html",0],['1481',"TotalDisplayRecords Property","topic_0000000000000A01.html",0],['1482',"TotalRecords Property","topic_0000000000000A00.html",0]];

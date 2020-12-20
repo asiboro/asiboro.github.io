@@ -1,0 +1,1 @@
+c['2942']=[['2943',"AddRecruitments(this IServiceCollection, IConfiguration, bool) Method","topic_0000000000000BC4.html",0],['2944',"AddRecruitments(this IEndpointRouteBuilder, bool) Method","topic_0000000000000BC5.html",0]];

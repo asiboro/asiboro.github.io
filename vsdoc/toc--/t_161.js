@@ -1,0 +1,1 @@
+c['161']=[['162',"TleceDbContext() Constructor","topic_0000000000000BC7.html",0],['163',"TleceDbContext(DbContextOptions\u003cTleceDbContext\u003e) Constructor","topic_0000000000000BC8.html",0]];

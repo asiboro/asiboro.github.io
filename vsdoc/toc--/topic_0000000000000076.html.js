@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"SOLUTION-WIDE PROPERTIES Reference","topic_0000000000000C16.html"],['3377',"Tlece.Twillio.Models Namespace","topic_000000000000006B.html"],['3389',"SyncAccessTokenDto Class","topic_0000000000000075.html"],['3390',"Properties","topic_0000000000000075_props--.html"],['3392',"Token Property","topic_0000000000000076.html"]];

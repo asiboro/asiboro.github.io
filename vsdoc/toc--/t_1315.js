@@ -1,0 +1,1 @@
+c['1315']=[['1316',"GenerateInvoiceNumber Method","topic_00000000000004C3.html",0]];

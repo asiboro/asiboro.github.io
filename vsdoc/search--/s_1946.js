@@ -1,0 +1,1 @@
+search_result['1946']=["topic_00000000000004BB.html","CompanyStatus.Rejected Property",""];

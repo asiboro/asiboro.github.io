@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"SOLUTION-WIDE PROPERTIES Reference","topic_0000000000000C16.html"],['11',"Microsoft.Extensions.DependencyInjection Namespace","topic_0000000000000000.html"],['28',"Localization Class","topic_000000000000000C.html"],['29',"Methods","topic_000000000000000C_methods--.html"],['30',"SetupLocalization Method","topic_000000000000000D.html"]];

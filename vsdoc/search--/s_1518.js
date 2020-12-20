@@ -1,0 +1,1 @@
+search_result['1518']=["topic_00000000000003A0.html","tlece_InvoiceItem.StartPeriod Property",""];

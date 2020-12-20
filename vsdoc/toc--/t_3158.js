@@ -1,0 +1,1 @@
+c['3158']=[['3159',"TleceAccountService Constructor","topic_0000000000000B32.html",0],['3160',"Properties","topic_0000000000000B2C_props--.html",1],['3166',"Methods","topic_0000000000000B2C_methods--.html",1]];

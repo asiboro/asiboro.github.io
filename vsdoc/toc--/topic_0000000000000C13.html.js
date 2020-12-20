@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"SOLUTION-WIDE PROPERTIES Reference","topic_0000000000000C16.html"],['143',"Tlece.Payment.AzureFunctionScheduler Namespace","topic_0000000000000C0E.html"],['144',"PaymentFunction Class","topic_0000000000000C10.html"],['145',"Properties","topic_0000000000000C10_props--.html"],['149',"_LoggerFactory Property","topic_0000000000000C13.html"]];

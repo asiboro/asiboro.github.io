@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"SOLUTION-WIDE PROPERTIES Reference","topic_0000000000000C16.html"],['89',"Tlece.Common.Helpers Namespace","topic_00000000000000CE.html"],['110',"StringExtension Class","topic_00000000000000DE.html"],['111',"Methods","topic_00000000000000DE_methods--.html"],['112',"GetNumberOnly Method","topic_00000000000000DF.html"]];

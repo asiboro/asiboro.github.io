@@ -1,0 +1,1 @@
+c['160']=[['161',"TleceDbContext Constructor","topic_0000000000000BC7_overloads--.html",1],['164',"Properties","topic_0000000000000BC6_props--.html",1],['227',"Methods","topic_0000000000000BC6_methods--.html",1],['230',"Fields","topic_0000000000000BC6_vars--.html",1]];

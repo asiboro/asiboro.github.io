@@ -1,0 +1,1 @@
+search_result['2628']=["topic_0000000000000645.html","BadgesCompanyDto.AreaId Property",""];

@@ -1,0 +1,1 @@
+c['647']=[['648',"TleceTemplateController Constructor","topic_000000000000025F.html",0],['649',"Methods","topic_000000000000025E_methods--.html",1]];

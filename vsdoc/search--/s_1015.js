@@ -1,0 +1,1 @@
+search_result['1015']=["topic_000000000000024B.html","SystemManagementController.GetAreaAndItemBadges Method",""];

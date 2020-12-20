@@ -1,0 +1,1 @@
+search_result['4125']=["topic_00000000000009DF.html","RegisterRequestDto.BirthdateStr Property","format date is fixed: MM/DD/YYYY"];

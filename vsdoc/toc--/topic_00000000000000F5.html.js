@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"SOLUTION-WIDE PROPERTIES Reference","topic_0000000000000C16.html"],['232',"Tlece.Recruitment.Components Namespace","topic_00000000000000EF.html"],['237',"CustomRegistrationHandler Class","topic_00000000000000F3.html"],['239',"Methods","topic_00000000000000F3_methods--.html"],['240',"GetRegisterViewName Method","topic_00000000000000F5.html"]];

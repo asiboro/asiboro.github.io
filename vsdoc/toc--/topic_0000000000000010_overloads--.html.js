@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"SOLUTION-WIDE PROPERTIES Reference","topic_0000000000000C16.html"],['4',"Microsoft.AspNetCore.Builder Namespace","topic_000000000000000E.html"],['5',"RoutingAndMvc Class","topic_000000000000000F.html"],['6',"Methods","topic_000000000000000F_methods--.html"],['8',"UseCustomRoutes Method","topic_0000000000000010_overloads--.html"]];

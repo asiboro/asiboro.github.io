@@ -1,0 +1,1 @@
+search_result['4692']=["topic_0000000000000B63.html","VacancyService.GetApplications Method","get applicants who applied job vacancy info list"];

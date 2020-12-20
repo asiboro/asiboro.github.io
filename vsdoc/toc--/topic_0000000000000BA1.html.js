@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"SOLUTION-WIDE PROPERTIES Reference","topic_0000000000000C16.html"],['3251',"Tlece.Recruitment.Services.Uploader Namespace","topic_0000000000000B98.html"],['3252',"VideoUploaderService Class","topic_0000000000000B99.html"],['3261',"Methods","topic_0000000000000B99_methods--.html"],['3263',"QueueVideoFile Method","topic_0000000000000BA1.html"]];

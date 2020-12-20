@@ -1,0 +1,1 @@
+c['3245']=[['3246',"GetTemplateById Method","topic_0000000000000B80.html",0],['3247',"GetTemplatesByCompanyId Method","topic_0000000000000B7F.html",0],['3248',"GetTleceTemplates Method","topic_0000000000000B7E.html",0],['3249',"InsertOrUpdateTemplate Method","topic_0000000000000B81.html",0],['3250',"RemoveTemplateById Method","topic_0000000000000B82.html",0]];

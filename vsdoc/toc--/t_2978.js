@@ -1,0 +1,1 @@
+c['2978']=[['2979',"CompanyService Constructor","topic_0000000000000A8F.html",0],['2980',"Properties","topic_0000000000000A84_props--.html",1],['2991',"Methods","topic_0000000000000A84_methods--.html",1]];

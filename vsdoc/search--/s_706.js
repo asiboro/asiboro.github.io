@@ -1,0 +1,1 @@
+search_result['706']=["topic_0000000000000184.html","TleceAccountController.GenerateJwtTokenAsync Method","///  Generate Jwt Token for bearer authentication\r\n        ///  see https://www.esdm.co.uk/using-cloudscribe-with-identity-server-4-with-a-sql-server-store-on-net-core-2-mvc-securing-apis\r\n        ///..."];
