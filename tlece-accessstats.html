@@ -1,34 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tlece | Access Statistics</title>
+    <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Tlece | Administrator</title>
-
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
-    <!-- IonIcons -->
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Theme style -->
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- overlayScrollbars -->
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+
+
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+
+
+
 </head>
-<!--
-BODY TAG OPTIONS:
-=================
-Apply one or more of the following classes to to the body tag
-to get the desired effect
-|---------------------------------------------------------|
-|LAYOUT OPTIONS | sidebar-collapse                        |
-|               | sidebar-mini                            |
-|---------------------------------------------------------|
--->
 
 <body class="hold-transition sidebar-mini">
+    <!-- Site wrapper -->
     <div class="wrapper">
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -185,8 +197,6 @@ to get the desired effect
                 </li>
             </ul>
 
-
-
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user panel (optional) -->
@@ -230,7 +240,6 @@ to get the desired effect
             </a>
                         </li>
                         <li class="nav-header">ORGANIZATION<br>Acme Corp.</li>
-
                         <li class="nav-item">
                             <a href="tlece-companybranchprofile.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -253,28 +262,21 @@ to get the desired effect
                 </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="tlece-selectionprocess.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Selection Process</p>
-                </a>
-                                </li>
-
-                                <li class="nav-item">
                                     <a href="./tlece-applicants.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Applicants</p>
                 </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./tlece-videolibrary.html" class="nav-link">
+                                    <a href="tlece-selectionprocess.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Question Video Library</p>
+                  <p>Selection Process</p>
                 </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="./tlece-administrator.html" class="nav-link active">
+                            <a href="tlece-administrator.html" class="nav-link">
                     <i class="nav-icon fas fa-toolbox"></i>
                 <p>Administrator</p>
                 </a>
@@ -288,11 +290,10 @@ to get the desired effect
                         </li>
                         <li class="nav-item">
                             <a href="./tlece-systemmanagement.html" class="nav-link">
-                <i class="nav-icon fas fa-tools"></i>
+                <i class="nav-icon fas fa-th"></i>
             <p>System Management</p>
             </a>
                         </li>
-
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -303,105 +304,176 @@ to get the desired effect
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
-            <div class="content-header">
+            <section class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Administrator</h1>
+                            <h1>Access Statistics</h1>
                         </div>
-                        <!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                                <li class="breadcrumb-item active">Administrator</li>
+                                <li class="breadcrumb-item active">Access Statistics</li>
                             </ol>
                         </div>
-                        <!-- /.col -->
                     </div>
-                    <!-- /.row -->
                 </div>
                 <!-- /.container-fluid -->
-            </div>
-            <!-- /.content-header -->
+            </section>
 
             <!-- Main content -->
-            <div class="content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-header border-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h3 class="card-title">General</h3>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-
-                                    <p><a href="#">Roles </a>
-                                        <br/><small>Roles to be assigned to staffs</small></p>
-
-                                    <p><a href="tlece-accessstats.html">Statistics </a>
-                                        <br/><small>Usage statistics</small></p>
+            <section class="content">
 
 
-                                </div>
-                            </div>
-                            <!-- /.card -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">Home</h5>
 
-                            <!--
-                            <div class="card">
-                                <div class="card-header border-0">
-                                    <h3 class="card-title">Recruitment</h3>
-
-                                </div>
-                                <div class="card-body">
-                                    <a href="tlece-selectionstages.html">Selection stages </a>
-                                    <br/><small>Manage selection stages templates</small>
-                                </div>
-                            </div>
--->
-                            <!-- /.card -->
-                        </div>
-                        <!-- /.col-md-6 -->
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-header border-0">
-                                    <div class="d-flex justify-content-between">
-                                        <h3 class="card-title">Organisation</h3>
-                                        <!--<a href="javascript:void(0);">View Report</a>-->
-                                    </div>
-                                </div>
-
-                                <div class="card-body">
-
-                                    <p><a href="./tlece-staffs.html">Staffs </a>
-                                        <br/><small>Invite and manage staffs</small></p>
-
-                                    <p><a href="./tlece-companiesbranches.html">Organizations and Branches </a>
-                                        <br/><small>Manage organizations and branches</small></p>
-
-                                    <p><a href="./tlece-agencydata.html">Agency Data </a>
-                                        <br/><small>See agency data</small></p>
-                                </div>
-                            </div>
-                            <!-- /.card -->
-
-                        </div>
-                        <!-- /.col-md-6 -->
-                    </div>
-                    <!-- /.row -->
+                <div class="card-tools">
+                  <div class="btn-group">
+                                        <button type="button" class="btn btn-default float-right" id="daterange-btn" style="margin-right: 5px;"><i class="far fa-calendar-alt"></i> Date range <i class="fas fa-caret-down"></i></button>
+                  </div>
                 </div>
-                <!-- /.container-fluid -->
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="text-center">
+                      <strong>1 Jan, 2020 - 30 Jul, 2020</strong>
+                    </p>
+
+                    <div class="progress-group">
+                      <a href="tlece-accessstats-graph.html">John Smith</a>
+                      <span class="float-right"><b>160</b></span>
+                      <div class="progress progress-sm">
+                        <div class="progress-bar bg-primary" style="width: 80%"></div>
+                      </div>
+                    </div>
+                    <!-- /.progress-group -->
+
+                    <div class="progress-group">
+                      <a href="tlece-accessstats-graph.html">Nancy Taylor</a>
+                      <span class="float-right"><b>310</b></span>
+                      <div class="progress progress-sm">
+                        <div class="progress-bar bg-danger" style="width: 75%"></div>
+                      </div>
+                    </div>
+
+                    <!-- /.progress-group -->
+                    <div class="progress-group">
+                      <span class="progress-text"><a href="tlece-accessstats-graph.html">Mike Adams</a></span>
+                      <span class="float-right"><b>480</b></span>
+                      <div class="progress progress-sm">
+                        <div class="progress-bar bg-success" style="width: 60%"></div>
+                      </div>
+                    </div>
+
+                    <!-- /.progress-group -->
+                    <div class="progress-group">
+                      <a href="tlece-accessstats-graph.html">Diane Jones</a>
+                      <span class="float-right"><b>250</b></span>
+                      <div class="progress progress-sm">
+                        <div class="progress-bar bg-warning" style="width: 50%"></div>
+                      </div>
+                    </div>
+                    <!-- /.progress-group -->
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!-- ./card-body -->
+              <div class="card-footer">
+                <!-- /.row -->
+              </div>
+              <!-- /.card-footer -->
             </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">Vacancy</h5>
+
+                <div class="card-tools">
+                  <div class="btn-group">
+                                        <button type="button" class="btn btn-default float-right" id="daterange-btn" style="margin-right: 5px;"><i class="far fa-calendar-alt"></i> Date range <i class="fas fa-caret-down"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="text-center">
+                      <strong>1 Jan, 2020 - 30 Jul, 2020</strong>
+                    </p>
+
+                    <div class="progress-group">
+                      <a href="tlece-accessstats-graph.html">Programmer at ABC, Inc.</a>
+                      <span class="float-right"><b>160</b></span>
+                      <div class="progress progress-sm">
+                        <div class="progress-bar bg-primary" style="width: 80%"></div>
+                      </div>
+                    </div>
+                    <!-- /.progress-group -->
+
+                    <div class="progress-group">
+                      <a href="tlece-accessstats-graph.html">Secretary at Acme Corp.</a>
+                      <span class="float-right"><b>310</b></span>
+                      <div class="progress progress-sm">
+                        <div class="progress-bar bg-danger" style="width: 75%"></div>
+                      </div>
+                    </div>
+
+                    <!-- /.progress-group -->
+                    <div class="progress-group">
+                      <span class="progress-text"><a href="tlece-accessstats-graph.html">Web programmer at Acme Technologies, Inc.</a></span>
+                      <span class="float-right"><b>480</b></span>
+                      <div class="progress progress-sm">
+                        <div class="progress-bar bg-success" style="width: 60%"></div>
+                      </div>
+                    </div>
+
+                    <!-- /.progress-group -->
+                    <div class="progress-group">
+                      <a href="tlece-accessstats-graph.html">Clerk at XYZ, Inc.</a>
+                      <span class="float-right"><b>250</b></span>
+                      <div class="progress progress-sm">
+                        <div class="progress-bar bg-warning" style="width: 50%"></div>
+                      </div>
+                    </div>
+                    <!-- /.progress-group -->
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!-- ./card-body -->
+              <div class="card-footer">
+                <!-- /.row -->
+              </div>
+              <!-- /.card-footer -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+
+            </section>
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-        </aside>
-        <!-- /.control-sidebar -->
 
         <!-- Main Footer -->
         <footer class="main-footer">
@@ -414,22 +486,120 @@ to get the desired effect
                 </script>)
             </div>
         </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
 
-    <!-- REQUIRED SCRIPTS -->
-
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap -->
+    <!-- Bootstrap 4 -->
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- AdminLTE -->
-    <script src="dist/js/adminlte.js"></script>
-
-    <!-- OPTIONAL SCRIPTS -->
-    <script src="plugins/chart.js/Chart.min.js"></script>
+    <!-- Select2 -->
+    <script src="plugins/select2/js/select2.full.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
-    <script src="dist/js/pages/dashboard3.js"></script>
+
+
+    <!-- Bootstrap4 Duallistbox -->
+    <script src="plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+    <!-- InputMask -->
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap color picker -->
+    <script src="plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Bootstrap Switch -->
+    <script src="plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+
+
+    <!-- Page script -->
+    <script>
+        $(function() {
+            //Initialize Select2 Elements
+            $('.select2').select2()
+
+            //Initialize Select2 Elements
+            $('.select2bs4').select2({
+                theme: 'bootstrap4'
+            })
+
+            //Datemask dd/mm/yyyy
+            $('#datemask').inputmask('dd/mm/yyyy', {
+                'placeholder': 'dd/mm/yyyy'
+            })
+            //Datemask2 mm/dd/yyyy
+            $('#datemask2').inputmask('mm/dd/yyyy', {
+                'placeholder': 'mm/dd/yyyy'
+            })
+            //Money Euro
+            $('[data-mask]').inputmask()
+
+            //Date range picker
+            $('#reservationdate').datetimepicker({
+                format: 'L'
+            });
+            //Date range picker
+            $('#reservation').daterangepicker()
+            //Date range picker with time picker
+            $('#reservationtime').daterangepicker({
+                timePicker: true,
+                timePickerIncrement: 30,
+                locale: {
+                    format: 'MM/DD/YYYY hh:mm A'
+                }
+            })
+            //Date range as a button
+            $('#daterange-btn').daterangepicker({
+                    ranges: {
+                        'Today': [moment(), moment()],
+                        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                        'This Month': [moment().startOf('month'), moment().endOf('month')],
+                        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                    },
+                    startDate: moment().subtract(29, 'days'),
+                    endDate: moment()
+                },
+                function(start, end) {
+                    $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+                }
+            )
+
+            //Timepicker
+            $('#timepicker').datetimepicker({
+                format: 'LT'
+            })
+
+            //Bootstrap Duallistbox
+            $('.duallistbox').bootstrapDualListbox()
+
+            //Colorpicker
+            $('.my-colorpicker1').colorpicker()
+            //color picker with addon
+            $('.my-colorpicker2').colorpicker()
+
+            $('.my-colorpicker2').on('colorpickerChange', function(event) {
+                $('.my-colorpicker2 .fa-square').css('color', event.color.toString());
+            });
+
+            $("input[data-bootstrap-switch]").each(function() {
+                $(this).bootstrapSwitch('state', $(this).prop('checked'));
+            });
+
+        })
+
+    </script>
 </body>
 
 </html>

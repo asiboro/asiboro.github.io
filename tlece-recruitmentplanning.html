@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tlece | Recruitment Planning</title>
+    <title>Tlece | Vacancies List</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -262,7 +262,7 @@
                 </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./tlece-applicants.html" class="nav-link">
+                                    <a href="tlece-applicants.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Applicants</p>
                 </a>
@@ -308,12 +308,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Recruitment Planning</h1>
+                            <h1>Vacancies List</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                                <li class="breadcrumb-item active">Recruitment Planning</li>
+                                <li class="breadcrumb-item active">Vacancies List</li>
                             </ol>
                         </div>
                     </div>
@@ -324,8 +324,22 @@
             <!-- Main content -->
             <section class="content">
 
-                <div>
-                    <div>
+                <!-- Default box -->
+                <div class="card">
+                    <div class="card-header p-2">
+                        <div class="btn btn-sm">
+                            <i class="fas fa-user"></i> Vacancies list</div>
+                        <!--<a href="tlece-vacancyprofile.html" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-default">-->
+                        <a href="tlece-vacancynew.html" class="btn btn-sm btn-primary">
+                      <i class="fas fa-user"></i> New vacancy
+                        </a>
+                        <a href="tlece-selectionstages.html" class="btn btn-sm btn-primary">
+                      <i class="fas fa-user"></i> Selection stages
+                        </a>
+                    </div>
+                    
+                    
+                    
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -334,8 +348,8 @@
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Job Title</a>
                                     <a class="dropdown-item" href="#">Name</a>
-                                    <a class="dropdown-item" href="#">Period</a>
                                     <a class="dropdown-item" href="#">Status</a>
+                                    <a class="dropdown-item" href="#">Stages</a>
                                     <!--<div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Separated link</a>-->
                                 </div>
@@ -347,16 +361,23 @@
                             </button>
                             </div>
                         </div>
-                    </div>
+                    
+                    
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> All
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Running
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Draft
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Ended
+                  </label>
                 </div>
-
-                <!-- Default box -->
-                <div class="card">
-                    <div class="card-header p-2">
-                        <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-default">
-                      <i class="fas fa-user"></i> Add job vacancy
-                </a>
-                    </div>
+                    
                     <!-- /.card-header -->
 
 
@@ -367,19 +388,31 @@
                             <thead>
                                 <tr>
                                     <th>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1"></label>
+                                        </div>
+                                    </th>
+                                    <th>Video
+                                    </th>
+                                    <th>
                                         Job Title
                                     </th>
                                     <th>
                                         Name
                                     </th>
-                                    <th>
-                                        Period
-                                    </th>
-                                    <th>
-                                        Slots
-                                    </th>
                                     <th class="text-center">
                                         Status
+                                    </th>
+                                    <!--
+                                    <th>
+                                        Period
+                                    </th>-->
+                                    <th>
+                                        Applications
+                                    </th>
+                                    <th>
+                                        Stages
                                     </th>
                                     <th>
                                     </th>
@@ -388,25 +421,39 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        Mechanical Engineer
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1"></label>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a>
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LspIeUElIFA?start=13" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="tlece-vacancyprofile.html">Mechanical Engineer</a>
+                                    </td>
+                                    <td>
+                                        <a href="tlece-vacancyprofile.html">
                               Join us and create innovative machineries
-                          </a>
+                                        </a>
                                         <br/>
                                         <small>
                               Added 01.01.2019
-                          </small>
-                                    </td>
-                                    <td>
-                                        June 1, 2020 - June 25, 2020
-                                    </td>
-                                    <td>
-                                        2
+                                        </small>
                                     </td>
                                     <td class="project-state">
                                         <span class="badge badge-success">Active</span>
+                                    </td>
+                                    <!--
+                                    <td>
+                                        June 1, 2020 - June 25, 2020
+                                    </td>-->
+                                    <td>
+                                        <a href="tlece-selectionprocess.html">2</a>
+                                    </td>
+                                    <td>1st stage, 2nd stage
                                     </td>
                                     <td class="project-actions text-right">
                                         <a class="btn btn-primary btn-sm" href="./tlece-vacancyprofile.html">
@@ -423,25 +470,39 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        Kitchen staffs
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1"></label>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a>
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LspIeUElIFA?start=13" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="tlece-vacancyprofile.html">Kitchen staffs</a>
+                                    </td>
+                                    <td>
+                                        <a href="tlece-vacancyprofile.html">
                               Work with best chefs
                           </a>
                                         <br/>
                                         <small>
                               Added 01.01.2019
-                          </small>
-                                    </td>
-                                    <td>
-                                        June 1, 2020 - June 25, 2020
-                                    </td>
-                                    <td>
-                                        10
+                                        </small>
                                     </td>
                                     <td class="project-state">
                                         <span class="badge badge-warning">Expired</span>
+                                    </td>
+                                    <!--
+                                    <td>
+                                        June 1, 2020 - June 25, 2020
+                                    </td>-->
+                                    <td>
+                                        <a href="tlece-selectionprocess.html">10</a>
+                                    </td>
+                                    <td>1st stage, 2nd stage, Interview
                                     </td>
                                     <td class="project-actions text-right">
                                         <a class="btn btn-primary btn-sm" href="./tlece-vacancyprofile.html">
@@ -459,10 +520,21 @@
 
                                 <tr>
                                     <td>
-                                        Production Manager
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1"></label>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a>
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LspIeUElIFA?start=13" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="tlece-vacancyprofile.html">Production Manager</a>
+                                    </td>
+                                    <td>
+                                        <a href="tlece-vacancyprofile.html">Come and join us!
                               
                           </a>
                                         <br/>
@@ -470,14 +542,17 @@
                               Added 01.01.2019
                           </small>
                                     </td>
-                                    <td>
-                                        June 1, 2020 - June 25, 2020
-                                    </td>
-                                    <td>
-                                        1
-                                    </td>
                                     <td class="project-state">
                                         <span class="badge badge-danger">Inactive</span>
+                                    </td>
+                                    <!--
+                                    <td>
+                                        June 1, 2020 - June 25, 2020
+                                    </td>-->
+                                    <td>
+                                        <a href="tlece-selectionprocess.html">1</a>
+                                    </td>
+                                    <td>1st stage, 2nd stage
                                     </td>
                                     <td class="project-actions text-right">
                                         <a class="btn btn-primary btn-sm" href="./tlece-vacancyprofile.html">
@@ -506,7 +581,7 @@
                                 <h4 class="modal-title">Add job vacancy</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-              </button>
+                                </button>
                             </div>
                             <div class="modal-body">
 
