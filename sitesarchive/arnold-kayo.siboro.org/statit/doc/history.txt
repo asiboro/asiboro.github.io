@@ -1,0 +1,216 @@
+Version history:
+
+2.3f 08.02.2002
+     - little fixes
+     - add languages (...)
+
+2.3e 27.07.2001
+     - add danish config file
+     - little fix with double IP-addresses
+
+2.3d 15.05.2001
+     - little changes in statistic
+     - you can now disable the referer checking
+
+2.3c 01.04.2001
+     - add hungarian config file
+     - add automatic backup function for pages.log
+     - showing log files in statistic can be disabled
+     - add some searchengines
+
+2.3b 07.02.2001
+     - some fixes
+     - remove date bug
+     - new file format in stat.log (run update.php3)
+     - polish _config.inc is now available
+     - add some searchengines
+
+2.3a 18.02.2001
+     - you can now set the text style in statistic
+     - with the admin.php3 you can now change all values
+     - fix bug with reload blocker in normal mode
+
+2.3  13.02.2001
+     - fix bug with server exclusion
+     - add reload blocker
+
+2.2d 12.02.2001
+     - add install script (still beta)
+     - add some searchengines
+     - better query recognition of searchengines
+     - add correct time function
+     - some fixes
+
+2.2c 07.02.2001
+     - add searchengine queries to statistic
+     - add multiple server exclusion 
+     - new admin.php3 with more functions
+
+2.2b 04.02.2001
+     - now the log files will be created by the scripts (easier install)
+     - italian _config.inc is now available
+     - some language files updated
+     - changes in _short.inc
+     - add counter for unique visitors in normal mode (READ StatIt.html!)
+     - minor bug fixes
+     (if you update please update all files also the _tld.inc!!)
+
+2.2a 31.01.2001
+     - add total size of log files to statistic
+     - add admin.php3 to edit _config.inc and reset stats
+     - now all variables are set to st_variable (so if you update copy all .php3 
+       and .inc files to your server!)
+     - add flock function cause sometimes the log files will be corrupt (so minimum
+       requirement is now PHP3.0.7)
+     - add _lopa.inc.php3 for authentification (before anyone can view the login and password)
+     - some changes in _config.inc 
+
+2.2  27.01.2001
+     - remove visible counter code from normal/statit.php3 (it's now separate
+       in showcount.php3). Read StatIt.html!
+     - add system.log and browser.log for recognition of system- and browser-version
+     - add server exclusion (clicks from a special server will not be counted)
+     - some changes in _config.inc and _short.inc
+     - indonesian _config.inc available
+     - max length of statistic bars can be set
+     - to show IP address can be disabled
+     - add top day to statistic (change stat.log)
+     - some little fixes
+
+2.1c 21.01.2001
+     - add visible text counter in normal mode
+     - fix bug with the sort function and too long bars on some servers 
+     - add links in short info
+     - change file format in last.log
+     - some little fixes
+
+2.1b 17.01.2001
+     - fix bug with auth function that came with the V2.0
+
+2.1a 16.01.2001
+     - fix bug with local links on statistic
+     - add abspath.php3 to normal (script to get the absolut path). Read StatIt.html!
+     - some little fixes
+
+2.1  13.01.2001
+     - add visible graphical counter in normal mode
+     - remove page count code from normal/statit.php3
+       (ATTENTION: Read StatIt.html)
+     - add complete list for referer domains, origin of visitors and website calls
+     - some little fixes
+
+2.0c 09.01.2001
+     - _config.inc in other languages are fixed
+     - sort function in /normal/statit.php work now
+     - tlds in upper cases will be recognized correct 
+
+2.0b 07.01.2001
+     - replace fgetcsv with fgets (now all functions PHP3 i hope)
+     - fix bug with last.log (in some cases it will be greater than 20 lines)
+
+2.0a 04.01.2001
+     - remove bug in statistic (origin of visitors - territory)
+     - add some tlds in _tld.inc
+     - some fixes
+
+2.0  03.01.2001
+     - some fixes
+     - new file format for stat.log (now 110 values)
+     - add file sizes of logfiles, total visitors, prediction of daily visitors 
+       and the origin of visitors to statistic
+     - some changes in _config.inc and _short.inc
+
+1.9c 27.12.2000
+     - french _config.inc available
+     - add percentage and bars to referers and page hits
+     - some fixes
+
+1.9b 22.12.2000
+     - remove bug in auth function
+
+1.9a 21.12.2000
+     - better recognition of browser
+     - spanish _config.inc available
+     - remove bug with wrong referers (now correct linked)
+
+1.9  19.12.2000
+     - remove little bug (recognition of colors)
+     - add help file
+     - add simple version of script for people who have only a free PHP server account
+
+1.8b 14.12.2000
+     - little changes in statit.php3 (better recognition of system and screen resolution and color)
+     - danish _config.inc available
+
+1.8a 12.12.2000
+     - little change in _config.inc and _short.inc (The Version Number is now in _short.inc)
+     - _config.inc in english, dutch and brazilian portuguese available
+     - new file format for stat.log (now 107 values)
+     - add 24 bit to colors and Links to browser
+
+1.8  09.12.2000
+     - new file format for stat.log (now 98 values)
+     - add FreeBSD and IRIX to system and Konqueror and Lynx to browser
+     - remove arsort bug (error message if domain.log or pages.log were empty)
+
+1.7e 07.12.2000
+     - set the path declarations to absolut path declarations
+     - remove special characters from HTTP_ACCEPT_LANGUAGE
+
+1.7d 05.12.2000
+     - remove the divide to null bug
+
+1.7c 04.12.2000
+     - little changes (HTML Code is now better)
+
+1.7b 03.12.2000
+     - the sort bug is removed
+
+1.7a 03.12.2000
+     - changes _files.inc to _short.inc (add $statp in _short.inc)
+     - the sort bug is still alive (2 > 10, 3 > 20 ...)
+       if anyone know a solution please mail me!
+
+1.7  03.12.2000
+     - the Netscape browser will be better recognized
+     - little change the command in calling page (see installation) for the
+       Netscape users (width and height set to 1)
+     - remove bug (domain.log - new line error)
+     - add webpage count 
+
+1.6  02.12.2000
+     - replace array_multisort (PHP4) with PHP3 function
+     - add short info to statistic
+
+1.5  01.12.2000
+     - add screen resolution and color to statistic
+     - new file format for stat.log (now 94 values)
+     - new command in calling page (see installation)
+     - remove bug (remove comma from HTTP_ACCEPT_LANGUAGE) 
+     - remove bug (work days count false)    
+
+1.4a 30.11.2000
+     - remove a big bug that came with the date function (i used the leaving 
+       zero but an array don't work with it)
+
+1.4  29.11.2000
+     - add HTTP auth
+     - top referers are links now
+     - little changes in _config.inc
+
+1.3  28.11.2000
+     - add work days (language) in _config.inc
+     - remove german language from statit.php3
+     - little change in statit.php3 and statistik.php3 (domain.log now 
+       only 2 values)
+
+1.2  27.11.2000
+     - replace localtime (PHP4) with date (PHP3)
+     - the work days begin now with Sunday (before change with Monday)
+
+1.1  27.11.2000
+     - little changes in statistik.php3 for Netscape users
+     - add percentage
+
+1.0  23.11.2000
+     - first release

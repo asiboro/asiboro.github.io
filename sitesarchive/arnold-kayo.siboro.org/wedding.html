@@ -1,0 +1,58 @@
+<!--  -->
+<!--  -->
+<HTML>
+<HEAD>
+<TITLE>wedding</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</HEAD>
+<BODY bgColor="#FFFFFF">
+
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+var ShockMode = 0;
+if (navigator.mimeTypes && navigator.mimeTypes["application/x-director"] && navigator.mimeTypes["application/x-director"].enabledPlugin) {
+	if (navigator.plugins && navigator.plugins["Shockwave for Director"] && (versionIndex = navigator.plugins["Shockwave for Director"].description.indexOf(".")) != - 1) {
+		var versionString = navigator.plugins["Shockwave for Director"].description.substring(versionIndex-1, versionIndex);
+		var subVersionString = navigator.plugins["Shockwave for Director"].description.substring(versionIndex+1, versionIndex+2);
+		versionIndex = parseInt( versionString );
+		subVersionIndex = parseInt(subVersionString);
+		if ( versionIndex = 8 ) {
+			if (subVersionIndex >= 5)
+				ShockMode = 1;
+		}
+		else if ( versionIndex >8 ) {
+			ShockMode = 1;
+		}
+	}
+}
+else if (navigator.userAgent && navigator.userAgent.indexOf("MSIE")>=0 
+   && (navigator.userAgent.indexOf("Windows 95")>=0 || navigator.userAgent.indexOf("Windows 98")>=0 || navigator.userAgent.indexOf("Windows NT")>=0 )) {
+	document.write('<SCRIPT LANGUAGE=VBScript\> \n');
+	document.write('on error resume next \n');
+	document.write('ShockMode = (IsObject(CreateObject("SWCtl.SWCtl.8.5"))) \n');
+	document.write('</SCRIPT\> \n');
+}
+if ( ShockMode ) {
+	document.write('<OBJECT classid="clsid:166B1BCA-3F9C-11CF-8075-444553540000"');
+	document.write(' codebase="http://download.macromedia.com/pub/shockwave/cabs/director/sw.cab#version=8,5,0,0"');
+	document.write(' ID=wedding WIDTH=400 HEIGHT=240>');
+	document.write('<PARAM NAME=src VALUE="wedding.dcr">');
+	document.write('<PARAM NAME=swStretchStyle VALUE=none>');
+	document.write('<PARAM NAME=swRemote VALUE="');
+	document.write("swSaveEnabled='true' swVolume='true' swRestart='true' swPausePlay='true' swFastForward='true' swcontextmenu='1' ");
+	document.write('">\n');
+	document.write('<EMBED SRC="wedding.dcr"');
+	document.write(' bgColor=#FFFFFF  WIDTH=400 HEIGHT=240 swStretchStyle=none ');
+	document.write('swRemote="');
+	document.write("swSaveEnabled='true' swVolume='true' swRestart='true' swPausePlay='true' swFastForward='true' swcontextmenu='1' ");
+	document.write('"');
+	document.write(' TYPE="application/x-director" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveDirector">');
+	document.write('</EMBED>');
+	document.write('</OBJECT>');
+} else if (!(navigator.appName && navigator.appName.indexOf("Netscape")>=0 && navigator.appVersion.indexOf("2.")>=0)){
+	document.write('A newer version of Shockwave must be installed to display this content. Please update your Shockwave installation.');
+}
+//-->
+</SCRIPT>
+<NOEMBED>A newer version of Shockwave must be installed to display this content. Please update your Shockwave installation.</NOEMBED>
+<NOSCRIPT>A newer version of Shockwave must be installed to display this content. Please update your Shockwave installation.</NOSCRIPT>

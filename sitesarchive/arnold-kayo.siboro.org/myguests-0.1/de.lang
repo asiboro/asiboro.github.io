@@ -1,0 +1,23 @@
+<?php
+
+# german language file
+# written by Matthias Keller
+
+$langSubmit = "eintrag senden";
+$langAt = "um";
+$langTime = "am";
+$langEntry = "eintrag";
+$langText = "beitrag";
+$langBy = "von";
+$langPage = "seite";
+$langEmailSubject = "Neuer Gästebucheintrag Nr. ";
+$langError1 = "du hast ung&uuml;ltige angaben gemacht!";
+$langNoEntry = "es sind keine eintr&auml;ge vorhanden";
+$langSuccessful = "der eintrag wurde &uuml;bernommen.";
+$langPassword = "passwort";
+$langDeleteEntry = "eintrag l&ouml;schen";
+$langAddComment = "kommentar hinzuf&uuml;gen";
+$langComment = "kommentar";
+
+
+?>

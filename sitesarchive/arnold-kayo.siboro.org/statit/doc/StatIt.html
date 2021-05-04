@@ -1,0 +1,600 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 //EN">
+<html>
+<head>
+<title>StatIt</title>
+<meta name="author" content="Helge Orthmann otter@otterware.de">
+<meta name="generator" content="Ulli Meybohms HTML EDITOR">
+</head>
+<body text="#000000" background="../normal/grund.gif" link="#FF0000" alink="#FF0000" vlink="#FF0000">
+<table width=100%>
+<tr>
+ <td>
+   <font size="+1"><b>StatIt</b></font> <font size="-1">by <i>Helge Orthmann</i></font> <font size="-2"><a href="http://www.otterware.de">www.otterware.de</a></font>
+ </td>
+ <td align=right>
+   <img src="statit.gif" border="0" alt="StatIt">
+ </td>
+</tr>
+</table>
+<hr>
+a) <a href="#overview">Overview</a><br>
+b) <a href="#config files">config files</a><br>
+c) <a href="#installation">Installation</a><br>
+d) <a href="#admin">Administration</a><br>
+e) <a href="#problems">Known problems</a><br>
+f) <a href="#contact">Contact</a><br>
+<hr noshade size="1">
+<a name="overview"></a>
+<h2>a) Overview</h2>
+StatIt is a script written in PHP. It is a web page logger that keeps track<br>
+of visitor count and other information such as system, browser, referal<br>
+domains, screen resolution, color etc. A web-based statistics page is available.<br>
+MySQL is <u>not</u> needed but the script is fast and the logfiles need not too many diskspace!<br>
+The scripts are PHP3 conform and should be <u>work on almost every</u> PHP3 or higher server!<br>
+Minimum PHP3.0.8 required!<br><br>
+This will be shown:<br><br>
+- visitors totay<br>
+- prediction of daily visitors<br>
+- visitors yesterday<br>
+- monthly average of visitors<br>
+- visitors for the actual month<br>
+- total (and unique) visitors<br>
+- the best month, workday, hour, screen resolution, screen color, browser, system, referer, <br>
+&nbsp;&nbsp;&nbsp;searchengine query, top level domain and site<br>
+- the best day with count<br>
+- the last visitors with IP-address, hostname, referer, system, browser, language<br>
+- the visitors of the actual month<br>
+- the visitors of the day<br>
+- the visitors of the work day<br>
+- the visitors of the year (only one year will be shown)<br>
+- the browser of the visitors<br>
+- the system of the visitors<br>
+- the mostly frequent referer<br>
+- the screen resolution<br>
+- the colors of the screen<br>
+- the searchengine queries<br>
+- the probability of visitors of a day<br>
+- the size of the log files<br>
+- the origin of the visitors (top level domain and continent)<br><br>
+others:<br><br>
+- authentification for the statistic is possible<br>
+- to count single web pages is possible<br>
+- visible counter available (graphical or text)<br>
+- admin tool available<br>
+- reload blocker available<br>
+- statistic in this languages available:<br>
+german, english, dutch, portuguese, spanish, french, indonesian, italian, polish, hungarian<br><br>
+<b>Any translations are welcome!</b><br><br>
+StatIt is Freeware!<br>
+You can change the code if you want! But never change or delete the header in the files!! <br>
+Read the <a href="license.txt">license.txt</a>!<br><br>
+StatIt is <b>FREEWARE</b>, but if you like the program you can support me!<br><br>
+<table border=1 bordercolor=red cellspacing=1>
+ <tr><td valign=center><br>
+  <pre>
+  This is my bank-account:
+  Helge Orthmann
+  BLZ: 760 300 80    ConSors       (bank ID) 
+  Kto: 930 746 032                 (account number)</pre>
+ </td></tr>
+</table>
+<br>
+Any amount is welcome!<br><br>
+<hr noshade size="5">
+<a name="config files"></a>
+<h2>b) config files</h2>
+1) <a href="#config">_config.inc</a><br>
+2) <a href="#lopa">_lopa.inc.php3</a><br>
+3) <a href="#shortn">_short.inc in normal mode</a><br>
+4) <a href="#shorts">_short.inc in simple mode</a><br>
+<hr noshade size="1">
+<a name="config"></a>
+<h3>1) _config.inc</h3>
+<pre>// table backgrounds
+$st_table1 = "#408488";    background for the table (the fine lines, not seen in Netscape)
+$st_table2 = "#58AC97";    background for the headlines in tables
+$st_table3 = "#58ACB0";    background for the rest in tables
+// background file (if not set, bgcolor will be used)
+$st_backg = "grund.gif";   graphical background image for statistic
+// body style
+$st_text   = "#000000";    text color in statistic
+$st_link   = "#FF0000";    text color for not visited links
+$st_alink  = "#FF0000";    text color for clicked links
+$st_vlink  = "#FF0000";    text color for visited links
+$st_bgcolor= "#FFFFFF";    background color for statistic if background file not set
+// text style
+$st_textsize1 = "4"; // greater text (1-7)
+$st_textsize2 = "1"; // smaller text (1-7)
+$st_textfont = "Verdana";
+// max height and width of the bars
+$st_dwidth = "100";        max bar width
+$st_dheight = "100";       max bar height
+// want to show IP address in statistic ("on" or "off")?
+$st_showip = "on";         IP address was shown if "on" and not shown if "off"
+// want to show log files in statistic ("on" or "off")?
+$st_showlog = "on";
+// language
+$st_l1 = "Statistik";               // document title
+$st_l2 = "Letzte Besucher";         // last visitors
+$st_l3 = "Zeitpunkt";               // time of last visit
+$st_l4 = "IP-Adresse";              // IP address
+$st_l5 = "Hostname";                // hostname
+$st_l6 = "Sprache";                 // language
+$st_l7 = "Browser";                 // browser
+$st_l8 = "System";                  // system (win, mac etc.)
+$st_l9 = "Referer";                 // referer
+$st_l10 = "Besucher Monat";         // vistors for the actual month
+$st_l11 = "Tagesverlauf";           // day statistik
+$st_l12 = "Wochentage";             // week-days
+$st_l13 = "Jahresverlauf";          // year statistic
+$st_l14 = "Andere";                 // other
+$st_l15 = "Top Referer Domains";    // top referer domains
+$st_l16 = "Domain";                 // domain
+$st_l17 = "Hits";                   // hits
+$st_l18 = "von";                    // by
+$st_l19 = "So";                     // sunday    |
+$st_l20 = "Mo";                     // monday    |
+$st_l21 = "Di";                     // tuesday   |
+$st_l22 = "Mi";                     // wednesday + work days (short form)
+$st_l23 = "Do";                     // thursday  |
+$st_l24 = "Fr";                     // friday    |
+$st_l25 = "Sa";                     // saturday  |
+$st_l26 = "Bildschirm-Aufl&ouml;sung";   // screen size
+$st_l27 = "Farbtiefe";              // colors  
+$st_l28 = "heute";                  // today
+$st_l29 = "gestern";                // yesterday
+$st_l30 = "akt. Monat";             // actual month
+$st_l31 = "Top Monat";              // top month
+$st_l32 = "Top Wochentag";          // top work day
+$st_l33 = "Top Stunde";             // top hour
+$st_l34 = "Top Browser";            // top browser
+$st_l35 = "Top System";             // top system
+$st_l36 = "Top Aufl&ouml;sung";          // top screen size
+$st_l37 = "Top Farbtiefe";          // top colors
+$st_l38 = "Kurz-Info Besucher";     // short visitor info
+$st_l39 = "Uhr";                    // o'clock  
+$st_l40 = "Januar";                 // January
+$st_l41 = "Februar";                // February
+$st_l42 = "M&auml;rz";                   // March
+$st_l43 = "April";                  // April
+$st_l44 = "Mai";                    // May
+$st_l45 = "Juni";                   // June
+$st_l46 = "Juli";                   // July
+$st_l47 = "August";                 // August
+$st_l48 = "September";              // September
+$st_l49 = "Oktober";                // October
+$st_l50 = "November";               // November
+$st_l51 = "Dezember";               // December
+$st_l52 = "Schnitt";                // average
+$st_l53 = "Webseiten Aufrufe";      // websites calls
+$st_l54 = "Seite";                  // site
+$st_l55 = "total";                  // total visitors
+$st_l56 = "Gr&ouml;&szlig;e der log-files";    // size of log files
+$st_l57 = "Herkunft der Besucher";  // origin of visitors 
+$st_l58 = "top level domain";       // tld
+$st_l59 = "Territorien";            // territories
+$st_l60 = "Europa";                 // europe
+$st_l61 = "Amerika";                // america
+$st_l62 = "Afrika";                 // africa
+$st_l63 = "Asien";                  // asia
+$st_l64 = "Ozeanien";               // ozeania
+$st_l65 = "GUS";                    // GUS (former sovjet union)
+$st_l66 = "Antarktis";              // antarctica
+$st_l67 = "Unbekannt";              // unknown
+$st_l68 = "Top referer";            // top referer domain
+$st_l69 = "Top tld";                // top tld (top level domain)
+$st_l70 = "Top Territorium";        // top territory
+$st_l71 = "Top Seite";              // top site
+$st_l72 = "Top Tag";                // top day
+$st_l73 = "gesamt";                 // total (for log file size)
+$st_l74 = "Suchmaschinen";          // searchengine
+$st_l75 = "Abfragen";               // queries
+$st_l76 = "Top Abfrage";            // top query
+$st_l77 = "Datei";                  // file
+$st_l78 = "Gr&ouml;&szlig;e (bytes)";          // size (bytes)
+$st_l79 = "backups";                // backups
+$st_l80 = "Datei Monat.Jahr";       // file month.year
+// admin.php3 
+$st_la1 = "Admin Area Statistik";   // admin area statistic
+$st_la2 = "Log files zur&uuml;cksetzen"; // reset log files
+$st_la3 = "Werte zur&uuml;cksetzen";     // reset values
+$st_la4 = "Login";                  // login
+$st_la5 = "Passwort";               // password
+$st_la6 = "Wiederholung";           // repetition
+$st_la7 = "zur&uuml;ckgesetzt";          // reset
+$st_la8 = "ge&auml;ndert";               // changed
+$st_la9 = "_config.inc bearbeiten"; // edit _config.inc
+$st_la10 = "Authentifikation";      // authentification statistic
+$st_la11 = "an";                    // on
+$st_la12 = "aus";                   // off
+$st_la13 = "H&ouml;he der Balken";       // height of bars
+$st_la14 = "Breite der Balken";     // width of bars
+$st_la15 = "IP-Adresse Statistik";  // IP address statistic
+$st_la16 = "Passw&ouml;rter ungleich";   // passwords are different
+$st_la17 = "Fehler";                // error
+$st_la18 = "Meldung(en)";           // message(s)
+$st_la19 = "Sicherung";             // backup (the)
+$st_la20 = "sichern";               // backup
+$st_la21 = "herstellen";            // restore
+$st_la22 = "kopieren nicht m&ouml;glich"; // copy not successfull 
+$st_la23 = "gesichert";             // backuped
+$st_la24 = "wiederhergestellt";     // restored
+$st_la25 = "noch kein backup";      // no backup available
+$st_la26 = "Log files";             // log files
+$st_la27 = "letzte Sicherung";      // last backup time
+$st_la28 = "Passwort -> mindestens 4 Zeichen";  // password -> minimum 4 characters
+$st_la29 = "_short.inc bearbeiten"; // edit _short.inc
+$st_la30 = "sichtbarer Counter";    // visible counter
+$st_la31 = "Text";                  // text
+$st_la32 = "Grafiken";              // graphical
+$st_la33 = "Counterl&auml;nge";          // number of digits counter
+$st_la34 = "Erstbesucher anzeigen"; // show unique visitors
+$st_la35 = "h&ouml;chstens 8 Counter Stellen";  // max 8 digists for counter
+$st_la36 = "include path/statit.php3 mu&szlig; in der \nersten Zeile der aufrufenden Seite stehen";
+// include path/statit.php3 must set to first line in calling page
+$st_la37 = "Text Gr&ouml;&szlig;e Counter";    // text size counter
+$st_la38 = "Schriftfarbe Counter";  // text color counter
+$st_la39 = "Hintergrundfarbe Counter"; // background color counter
+$st_la40 = "Schriftart Counter";    // font counter
+$st_la41 = "Farbe table";           // color table
+$st_la42 = "Farbe";                 // color
+$st_la43 = "h&ouml;chstens Countergr&ouml;&szlig;e 6"; // max text counter size 6
+$st_la44 = "Farbformat #123456 einhalten"; // color format #123456
+$st_la45 = "Reload Sperre";         // reload blocker
+$st_la46 = "Zeitzone Server";       // timezone server
+$st_la47 = "Format +(-)Zeit einhalten"; // format +(-)time
+$st_la48 = "Hintergrundbild";       // background file
+$st_la49 = "existiert nicht";       // doesn't exist
+$st_la50 = "Teil";                  // part
+$st_la51 = "gro&szlig;";                  // big
+$st_la52 = "klein";                 // small
+$st_la53 = "Schriftart";            // font
+$st_la54 = "Hintergrundfarbe";      // background color
+$st_la55 = "Webseitenaufrufe z&auml;hlen";   // Count all files
+$st_la56 = "include path/statitp.php3 mu&szlig; in jede\nSeite, die gez&auml;hlt werden soll!";
+// include path/statit.php3 must set in every\nsite which will be count!
+$st_la57 = "Server blocken (s1,s2)";// server block
+$st_la58 = "Schriftgr&ouml;&szlig;e von 1-7";  // fontsize from 1-7
+$st_la59 = "Server geblockt:";      // server blocked
+$st_la60 = "kein Server wird geblockt";  // no server will be blocked
+$st_la61 = "Log Files anzeigen";     // show log files</pre>
+<hr noshade size="1">
+<a name="lopa"></a>
+<h3>2) _lopa.inc.php3</h3>
+<pre>// HTTP auth "on" or "off" (works only with PHP Apache module)
+$st_auth = "off";
+// set your login and passwort (it is important to change the password because
+// the admin.php3 use the login and password also you have $st_auth = "off"!!!)
+$st_LOGIN = "login";
+$st_PASSWORD = "password";</pre>
+<hr noshade size="1">
+<a name="shortn"></a>
+<h3>3) _short.inc in normal mode</h3>
+<pre>// set the absolut path (not http://) begins with slash!!!
+$st_abspath = "/absolut path";
+// filenames
+$st_log = "$st_abspath/stat.log";
+$st_last20 = "$st_abspath/last.log";
+$st_dom = "$st_abspath/domain.log";
+$st_pages = "$st_abspath/pages.log";
+$st_country = "$st_abspath/country.log";
+$st_browserlog = "$st_abspath/browser.log";
+$st_systemlog = "$st_abspath/system.log";
+$st_search = "$st_abspath/search.log";
+$st_iplog =  "$st_abspath/ip.log";
+$st_lopa = "$st_abspath/_lopa.inc.php3";
+$st_sengine = "$st_abspath/_search.inc";
+$st_rel = "$st_abspath/_reload.inc";
+// check link function: ("on" or "off") (use off if you are behind a firewall)
+$st_checklink = "off";
+// reload blocker ("on" or "off")?
+$st_reloadblock = "off";
+// change timezone of your server (e.g. +3 or -4)! No spaces between + or - and hour!!
+$st_tzone = "+0";
+// do you want use statitp.php3 to count all your webfiles ("on" or "off")?
+$st_statp = "off";         if you want to count all PHP pages on your server set "on"
+                           (you must place the statitp.php3 include in every file)
+// if "on", do you want to make backups of the pages.log every month?
+$st_statbackup = "on";
+// do you want to show unique visitors ("on" or "off")? If "on" the 
+// php include "path/statit.php3"
+// MUST be in the FIRST line of your calling site before any HTML code!!!
+$st_unique = "off";
+                            If you turn this on only the visitors who visit the first time your
+                            site (or visitors who have cookies disabled) will count to the
+                            unique visitors
+// place the server from which clicks will not be counted (e.g. www.server.de or www.server.de/user)
+// place "#dummy" if you want no server (an empty string "" returns an error!)
+// if you want more than one server separate the server with commata , !! 
+$st_cserver = "#dummy";           
+// text counter ("text") or graphical counter ("graphic")? 
+$st_ctype = "graphic";           if you want a visible counter set the type
+// if text counter select font, fontcolor, backcolor and size
+$st_cfont = "Verdana";           counter font
+$st_cfcolor = "#ffffff";         counter font color
+$st_cbcolor = "#000000";         counter font background color
+$st_csize = "3";                 counter size
+// digits of counter (max 8)
+$st_countlen = "6";
+// set the http path to counter pics (slash at the end)!!!
+$st_images="http://yourserver/pics/";       
+$st_imagesext=".gif";
+// ##############################################################
+// don't change!!!!!!
+if(!file_exists($st_log)){
+  for ($st_i = 0; $st_i <= 109; $st_i++){$st_data[$st_i] = 0;}
+  $st_fp2 = fopen ("$st_log", "w"); 
+  $st_newzeile = implode (",", $st_data);
+  fputs ($st_fp2, "$st_newzeile");
+  fclose($st_fp2);
+}
+$st_logfiles = array($st_last20,$st_dom,$st_browserlog,$st_systemlog,$st_country,$st_pages,$st_search,$st_iplog);
+while(list($st_keylog,$st_vallog)=each($st_logfiles)) {
+  if(!file_exists($st_vallog)){
+    $st_fp2 = fopen ("$st_vallog", "w"); 
+    fclose($st_fp2);
+    chmod($st_vallog, 0660);
+  }
+}</pre>
+<hr noshade size="1">
+<a name="shorts"></a>
+<h3>4) _short.inc in simple mode</h3>
+<pre>$st_log = "stat.log";
+$st_last20 = "last.log";
+$st_dom = "domain.log";
+$st_country = "country.log";
+$st_browserlog = "browser.log";
+$st_systemlog = "system.log";
+$st_search = "search.log";
+$st_iplog =  "ip.log";
+$st_lopa = "_lopa.inc.php3";
+$st_sengine = "_search.inc";
+$st_rel = "_reload.inc";
+// check link function: ("on" or "off") (use off if you are behind a firewall)
+$st_checklink = "off";
+// reload blocker ("on" or "off")?
+$st_reloadblock = "off";
+// change timezone of your server (e.g. +3 or -4)! No spaces between + or - and hour!!
+$st_tzone = "+0";
+// place the server from which clicks will not be counted (e.g. www.server.de or www.server.de/user)
+// place "#dummy" if you want no server (an empty string "" returns an error!)
+// if you want more than one server separate the server with commata , !! 
+$st_cserver = "#dummy";
+// #######################################################
+// don't change!!!!!!
+if(!file_exists($st_log)){
+  for ($st_i = 0; $st_i <= 109; $st_i++){$st_data[$st_i] = 0;}
+  $st_fp2 = fopen ("$st_log", "w"); 
+  $st_newzeile = implode (",", $st_data);
+  fputs ($st_fp2, "$st_newzeile");
+  fclose($st_fp2);
+}
+$st_logfiles = array($st_last20,$st_dom,$st_browserlog,$st_systemlog,$st_country,$st_search,$st_iplog);
+while(list($st_keylog,$st_vallog)=each($st_logfiles)) {
+  if(!file_exists($st_vallog)){
+    $st_fp2 = fopen ("$st_vallog", "w"); 
+    fclose($st_fp2);
+    chmod($st_vallog, 0660);
+  }
+}</pre>
+<hr noshade size="5">
+<a name="installation"></a>
+<h2>c) Installation</h2>
+<table>
+<tr>
+ <td>a)</td>
+ <td colspan=2>&nbsp;</td>
+ <td><a href="#script">Install script (still beta)</a></td>
+</tr>
+<tr>
+ <td>b)</td>
+ <td colspan=2>&nbsp;</td>
+ <td><a href="#hand">Install manually</a></td>
+</tr>
+<tr>
+ <td>&nbsp;</td>
+ <td>1.</td>
+ <td>&nbsp;</td>
+ <td><a href="#1.">You have a PHP server.</a></td>
+</tr>
+<tr>
+ <td colspan=2>&nbsp;</td>
+ <td>1.1.</td>
+ <td><a href="#1.1.">You work with frames.</a></td>
+</tr>
+<tr>
+ <td colspan=2>&nbsp;</td>
+ <td>1.2.</td>
+ <td><a href="#1.2.">You work without frames.</a></td>
+</tr>
+<tr>
+ <td colspan=2>&nbsp;</td>
+ <td>1.3.</td>
+ <td><a href="#1.3.">You want to track only the start page (e.g. index.php3).</a></td>
+</tr>
+<tr>
+ <td colspan=2>&nbsp;</td>
+ <td>1.4.</td>
+ <td><a href="#1.4.">You want to track all PHP files on your server.</a></td>
+</tr>
+<tr>
+ <td colspan=2>&nbsp;</td>
+ <td>1.5.</td>
+ <td><a href="#1.5.">You want to have a visible counter</a></td>
+</tr>
+<tr>
+ <td>&nbsp;</td>
+ <td>2.</td>
+ <td>&nbsp;</td>
+ <td><a href="#2.">You have your files on a server without PHP support but you have another server with PHP support.</a></td>
+</tr>
+<tr>
+ <td colspan=2>&nbsp;</td>
+ <td>2.1.</td>
+ <td><a href="#2.1.">You work with frames.</a></td>
+</tr>
+<tr>
+ <td colspan=2>&nbsp;</td>
+ <td>2.2.</td>
+ <td><a href="#2.2.">You work without frames.</a></td>
+</tr>
+</table><hr noshade size="1">
+<a name="script"></a>
+<h3>a) Install script (still beta)</h3>
+a) Upload all files (include directories normal, simple and language)!<br>
+c) chmod the directories to 777!<br>
+d) Run install.php3 (rename install.php3 to install.php if you have a PHP4 server and the script won't run<br>
+&nbsp;&nbsp;&nbsp;but <b>not</b> rename any files without the install.php3 before running the install script!!)<br>
+e) Follow the install instructions!<br>
+f) If you have any problems with the install script try the <a href="#hand">manual install</a>!<br><hr noshade size="1">
+<a name="hand"></a>
+<h3>b) Install manually</h3>
+<a name="1."></a>
+<h3>1. You have a PHP server.</h3>
+a) Edit _config.inc in dir <b>normal</b>, if needed (other languages in dir /languages)!<br>
+b) Edit statit.php3, statitp.php3, showcount.php3 in dir <b>normal</b> (set absolut path in require function)!<br>
+If you don't know your absolut path run abspath.php3!<br>
+c) Edit _short.inc in dir <b>normal</b> (set absolut path)!<br>
+d) Edit _lopa.inc.php3 in dir <b>normal</b> (set login and password)<br>
+You work <a href="#1.1.">with frames</a> or you work <a href="#1.2.">without frames</a>.<br><hr noshade size="1">
+<a name="1.1."></a>
+<h3>1.1. You work with frames.</h3>
+a) Add<br><br>
+&lt;script language="javascript"><br>
+&lt;!--<br>
+document.write("&lt;img width=1 height=1 border=0 src=path/statitjs.php3?1,"+screen.width+","+screen.colorDepth+">");<br>
+//--><br>
+&lt;/script><br><br>
+between the body tags of a part of your frameset (e.g. menue.html or menue.php3)!<br>
+b) Add<br><br>
+&lt;?php include "path/statit.php3" ?><br><br>
+to the calling page (e.g. index.php3)! If you want to count unique visitors the include <b><u>must be in the first line before any HTML code!</u></b><br>
+The calling page must be a php page and must be on the same server!<br>
+A http:// in path doesn't work!!!<br>
+You want to <a href="#1.3.">track only the start page</a> or you want to <a href="#1.4.">track all PHP files</a>.<br><hr noshade size="1">
+<a name="1.2."></a>
+<h3>1.2. You work without frames.</h3>
+a) Add<br><br>
+&lt;script language="javascript"><br>
+&lt;!--<br>
+document.write("&lt;img width=1 height=1 border=0 src=path/statitjs.php3?1,"+screen.width+","+screen.colorDepth+">");<br>
+//--><br>
+&lt;/script><br><br>
+between the body tags in the calling page (e.g index.php3) and<br><br>
+&lt;?php include "path/statit.php3" ?><br><br>
+to the calling page (e.g index.php3)! If you want to count unique visitors the include <b><u>must be in the first line before any HTML code!</u></b><br>
+The calling page must be a php page and must be on the same server!<br>
+A http:// in path doesn't work!!!<br>
+You want to <a href="#1.3.">track only the start page</a> or you want to <a href="#1.4.">track all PHP files</a>.<br><hr noshade size="1">
+<a name="1.3."></a>
+<h3>1.3. You want to track only the start page (e.g. index.php3).</h3>
+a) Edit _short.inc in dir <b>normal</b>: Set $st_statp = "off";<br>
+Set the absolut path to variables! If you don't know the absolut path run abspath.php3!!<br>
+b) Create a directory (e.g. stat)<br>
+c) chmod directory to 777<br>
+d) Upload the files from dir <b>normal</b> to directory (image files in BINARY mode, other files in ASCII mode)<br>
+e) If you update from older version run update.php3 to change file format in stat.log!<br>
+f) Run statistik.php3 to show statistic of your website!<br><hr noshade size="1">
+<a name="1.4."></a>
+<h3>1.4. You want to track all PHP files on your server.</h3>
+a) Edit _short.inc: Set $st_statp = "on";<br>
+Set the absolut path to variables! If you don't know the absolut path run abspath.php3!!<br>
+b) Add<br><br>
+&lt;?php include "path/statitp.php3" ?><br><br>
+to <u>all</u> PHP pages you want to track <u>also</u> the file where you added the &lt;?php include "path/statit.php3" ?><br>
+A http:// in path doesn't work!!!<br>
+c) Create a directory (e.g. stat)<br>
+b) chmod directory to 777<br>
+c) Upload the files from dir <b>normal</b> to directory (image files in BINARY mode, other files in ASCII mode)<br>
+d) If you update from older version run update.php3 to change file format in stat.log!<br>
+e) Run statistik.php3 to show statistic of your website!<br><hr noshade size="1">
+<a name="1.5."></a>
+<h3>1.5. You want to have a visible counter.</h3>
+a) Edit _short.inc:<br>
+You can change the counter type (text or graphic), the number of digits and if you choose text, you can change the font, colors and size!<br>
+If you choose graphical counter you have to set the picture path and the type (.gif, .jpg etc.)!<br>
+b) Add<br><br>
+&lt;?php include "path/showcount.php3" ?><br><br>
+to the PHP page you want the visible counter!<br>
+A http:// in path doesn't work!!!<br>
+Place the code after the &lt;?php include "path/statit.php3" ?> if you place it in the same page!<br><hr noshade size="1">
+<a name="2."></a>
+<h3>2. You have your files on a server without PHP support but you have another server with PHP support.</h3>
+a) Edit _config.inc in dir <b>simple</b>, if needed (other languages in dir /languages)!<br>
+You work <a href="#2.1.">with frames</a> or you work <a href="#2.2.">without frames</a>.<br><hr noshade size="1">
+<a name="2.1."></a>
+<h3>2.1. You work with frames.</h3>
+a) Add<br><br>
+&lt;script language="javascript"><br>
+&lt;!--<br>
+document.write("&lt;img width=1 height=1 border=0 src=http://your PHP server/statitjs.php3?1,"+screen.width+","+screen.colorDepth+","+top.document.referrer+">");  <br>
+//--><br>
+&lt;/script><br><br>
+to one of your frame pages (<u>not</u> the file included the frame set e.g. index.html! This doesn't work!!)<br>
+<b>ATTENTION !! The script will count only referers, a direct input or a bookmark will not be counted, i don't know why!</b><br>
+b) Create a directory (e.g. stat)<br>
+c) chmod directory to 777<br>
+d) Upload the files from dir <b>simple</b> to directory (image files in BINARY mode, other files in ASCII mode)<br>
+e) If you update from older version run update.php3 to change file format in stat.log!<br>
+f) Run statistik.php3 to show statistic of your website!<br><hr noshade size="1">
+<a name="2.2."></a>
+<h3>2.2. You work without frames.</h3>
+a) Add<br><br>
+&lt;script language="javascript"><br>
+&lt;!--<br>
+document.write("&lt;img width=1 height=1 border=0 src=http://your PHP server/statitjs.php3?1,"+screen.width+","+screen.colorDepth+","+document.referrer+">"); <br>
+//--><br>
+&lt;/script><br><br>
+to the start page (e.g. index.html)<br>
+b) Create a directory (e.g. stat)<br>
+c) chmod directory to 777<br>
+d) Upload the files from dir <b>simple</b> to directory (image files in BINARY mode, other files in ASCII mode)<br>
+e) If you update from older version run update.php3 to change file format in stat.log!<br>
+f) Run statistik.php3 to show statistic of your website!<br><br>
+<hr noshade size="5">
+<a name="admin"></a>
+<h2>d) Administration</h2>
+With the script admin.php3 you can:<br><br>
+- reset the log files domain.log, country.log, browser.log and system.log<br>
+- make backups of log files<br>
+- reset screen resolution, screen colors, work days and day statistic in stat.log<br>
+- change login and passwort<br>
+- change HTTP-authentification (on or off)<br>
+- change max size of the bars ( height and width)<br>
+- change IP-address showing (on or off)<br><br>
+<b>ATTENTION:</b> Change the login and password in the _lopa.inc.php3 or everyone who know StatIt can reset your statistic!!<br>
+If the auth function doesn't work on your server you can't use the admin script!<br><br>
+<hr noshade size="5">
+<a name="problems"></a>
+<h2>e) Known problems</h2>
+a) If you have a PHP4 Server and the script doesn't work, try to rename all files from .php3 to .php!<br>
+&nbsp;&nbsp;&nbsp;But if you install the script via install.php3 only rename the install.php3!<br>
+b) Notice: It's <u><b>impossible</b></u> to recognize all browsers or systems correct!<br>
+c) In some cases referers will not linked in the "last 20 visitors table" although they are attainable! <br>
+d) If you are behind a firewall the script have some problems!<br>
+e) If you got an 500 error from the server when you run admin.php3 your server doesn't support HTTP-auth!<br><br>
+<hr noshade size="5">
+<a name="contact"></a>
+<h2>f) Contact</h2>
+If you have any problems with the script, please contact me!<br><br>
+email: <a href="mailto:otter@otterware.de">otter@otterware.de</a><br>
+web: <a href="http://www.otterware.de">www.otterware.de</a><br>
+board: <a href="http://www.otterware.f2s.com/apboard/">www.otterware.f2s.com/apboard/</a><br>
+StatIt Example Page: <a href="http://www.mycgiserver.com/~otter/statistik/test_statit.html">StatIt</a><br><br><br>
+------<br>
+cu<br>
+Helge Orthmann<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+<table width=100%>
+<tr>
+ <td>
+   <font size="+1"><b>StatIt</b></font> <font size="-1">by <i>Helge Orthmann</i></font> <font size="-2"><a href="http://www.otterware.de">www.otterware.de</a></font>
+ </td>
+ <td align=right>
+   <img src="statit.gif" border="0" alt="StatIt">
+ </td>
+</tr>
+</table>
+</body>
+</html>
