@@ -321,7 +321,18 @@
                                             
                                             <div class="dropdown float-right" style="margin-right: 5px;">
                                                 <button class="btn btn-secondary dropdown-toggle" type="button" 
-                                                id="sampleDropdownMenu" data-toggle="dropdown"> Cash-out Method
+                                                id="sampleDropdownMenu" data-toggle="dropdown"> Status
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <button class="dropdown-item" type="button">
+                                                     <input type="checkbox"> Done
+                                                     </button>
+                                                    <button class="dropdown-item" type="button">
+                                                     <input type="checkbox"> Not done
+                                                    </button>
+                                                    </div>
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" 
+                                                id="sampleDropdownMenu" data-toggle="dropdown"> Method
                                                 </button>
                                                 <div class="dropdown-menu">
                                                 <button class="dropdown-item" type="button">
@@ -353,6 +364,7 @@
                                                                 <th>Requestor</th>
                                                                 <th>Destination</th>
                                                                 <th>Amount</th>
+                                                                <th>Status</th>
                                                                 <th></th>
                                                             </tr>
                                                         </thead>
@@ -363,9 +375,9 @@
                                                                 <td>Bank Mandiri<br> 13000119910101
                                                                     <br></td>
                                                                 <td>Rp 1,664,500</td>
+                                                                <td>Done</td>
                                                                 <td>
-                                                                    <button type="button" class="btn btn-primary float-right" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-process"><i class="fas fa-download"></i> Process</button>
-                                                                    <button type="button" class="btn btn-danger float-right" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-cancel"><i class="fas fa-window-close"></i> Cancel</button>
+                                                                    <button type="button" class="btn btn-warning float-right" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-cancel"><i class="fas fa-undo"></i> Unprocess</button>
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -374,6 +386,7 @@
                                                                 <td>Bank Mandiri<br> 12000110910102
                                                                     <br></td>
                                                                 <td>Rp 50,000,000</td>
+                                                                <td></td>
                                                                 <td><button type="button" class="btn btn-primary float-right" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-process"><i class="fas fa-download"></i> Process</button>
                                                                     <button type="button" class="btn btn-danger float-right" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-cancel"><i class="fas fa-window-close"></i> Cancel</button>
                                                                 </td>
@@ -384,6 +397,7 @@
                                                                 <td>Bank BCA<br> 14000112910120
                                                                     <br></td>
                                                                 <td>Rp 10,700,000</td>
+                                                                <td></td>
                                                                 <td><button type="button" class="btn btn-primary float-right" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-process"><i class="fas fa-download"></i> Process</button>
                                                                     <button type="button" class="btn btn-danger float-right" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-cancel"><i class="fas fa-window-close"></i> Cancel</button>
                                                                 </td>
@@ -394,8 +408,8 @@
                                                                 <td>Bank Mandiri<br> 13100121910100
                                                                     <br></td>
                                                                 <td>Rp 25,990,000</td>
-                                                                <td><button type="button" class="btn btn-primary float-right" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-process"><i class="fas fa-download"></i> Process</button>
-                                                                    <button type="button" class="btn btn-danger float-right" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-cancel"><i class="fas fa-window-close"></i> Cancel</button>
+                                                                <td>Done</td>
+                                                                <td><button type="button" class="btn btn-warning float-right" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-cancel"><i class="fas fa-undo"></i> Unprocess</button>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
