@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kopoka | Cash-out Requests</title>
+    <title>Kopoka | Token Purchase Orders</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -275,13 +275,13 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Cash-out Requests</h1>
+                            <h1>Purchase Orders</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                 <li class="breadcrumb-item active"><a href="system-management.html">System Management</a></li>
-                                <li class="breadcrumb-item active">Cash-out Requests</li>
+                                <li class="breadcrumb-item active">Purchase Orders</li>
                             </ol>
                         </div>
                     </div>
@@ -331,9 +331,10 @@
                                                      <input type="checkbox"> Not done
                                                     </button>
                                                     </div>
+                                                    <!--
                                                 <button class="btn btn-secondary dropdown-toggle" type="button" 
                                                 id="sampleDropdownMenu" data-toggle="dropdown"> Method
-                                                </button>
+                                                </button>-->
                                                 <div class="dropdown-menu">
                                                 <button class="dropdown-item" type="button">
                                                  <input type="checkbox"> iSaku
@@ -361,9 +362,8 @@
                                                         <thead>
                                                             <tr>
                                                                 <th>Date/Time</th>
-                                                                <th>Requestor</th>
-                                                                <th>Destination</th>
-                                                                <th>Amount</th>
+                                                                <th>Purchaser</th>
+                                                                <th>Token ordered</th>
                                                                 <th>Status</th>
                                                                 <th></th>
                                                             </tr>
@@ -372,9 +372,7 @@
                                                             <tr>
                                                                 <td>October 1, 2020<br>08:45:01</td>
                                                                 <td>John Smith</td>
-                                                                <td>Bank Mandiri<br> 13000119910101
-                                                                    <br></td>
-                                                                <td>Rp 1,664,500</td>
+                                                                <td>6,000,000</td>
                                                                 <td>Done</td>
                                                                 <td>
                                                                     <button type="button" class="btn btn-warning float-right" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-cancel"><i class="fas fa-undo"></i> Unprocess</button>
@@ -383,9 +381,7 @@
                                                             <tr>
                                                                 <td>October 1, 2020<br>09:55:12</td>
                                                                 <td>Adam Anderson</td>
-                                                                <td>Bank Mandiri<br> 12000110910102
-                                                                    <br></td>
-                                                                <td>Rp 50,000,000</td>
+                                                                <td>6,000,000</td>
                                                                 <td></td>
                                                                 <td><button type="button" class="btn btn-primary float-right" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-process"><i class="fas fa-download"></i> Process</button>
                                                                     <button type="button" class="btn btn-danger float-right" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-cancel"><i class="fas fa-window-close"></i> Cancel</button>
@@ -394,9 +390,7 @@
                                                             <tr>
                                                                 <td>October 1, 2020<br>11:40:24</td>
                                                                 <td>Terry Richardson</td>
-                                                                <td>Bank BCA<br> 14000112910120
-                                                                    <br></td>
-                                                                <td>Rp 10,700,000</td>
+                                                                <td>20,000,000</td>
                                                                 <td></td>
                                                                 <td><button type="button" class="btn btn-primary float-right" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-process"><i class="fas fa-download"></i> Process</button>
                                                                     <button type="button" class="btn btn-danger float-right" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-cancel"><i class="fas fa-window-close"></i> Cancel</button>
@@ -405,9 +399,7 @@
                                                             <tr>
                                                                 <td>October 1, 2020<br>13:15:56</td>
                                                                 <td>Tousled Lomo</td>
-                                                                <td>Bank Mandiri<br> 13100121910100
-                                                                    <br></td>
-                                                                <td>Rp 25,990,000</td>
+                                                                <td>6,000,000</td>
                                                                 <td>Done</td>
                                                                 <td><button type="button" class="btn btn-warning float-right" style="margin-right: 5px;" data-toggle="modal" data-target="#modal-cancel"><i class="fas fa-undo"></i> Unprocess</button>
                                                                 </td>
@@ -425,48 +417,47 @@
                                                 <div class="modal-dialog">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h4 class="modal-title">Process cash-out request</h4>
+                                                            <h4 class="modal-title">Process token purchase order</h4>
                                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
                                                         </div>
                                                         <div class="modal-body">
-                                                            <p>Are you sure to set this request as already done? Make sure you already transfered the amount to the designated bank account as requested.</p>
+                                                            <p>Are you sure to transfer the ordered token to this agent? Make sure the amount for this purchase is already received at the designated bank account.</p>
 
 
                                                             <!-- form start -->
                                                             <form class="form-horizontal">
                                                                 <div class="card-body">
                                                                     <div class="form-group row">
-                                                                        <label for="inputPassword3" class="col-sm-3 col-form-label">To</label>
+                                                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Token</label>
                                                                         <div class="col-sm-9">
-                                                                            Bank Mandiri<br>13000119910101<br>John Smith
+                                                                            6,000,000
                                                                         </div>
                                                                     </div>
                                                                     <div class="form-group row">
-                                                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Amount</label>
+                                                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Token's price</label>
                                                                         <div class="col-sm-9">
-                                                                            Rp 1,664,500
+                                                                            Rp 5,000,000
                                                                         </div>
                                                                     </div>
+                                                                    
                                                                     <div class="form-group row">
-                                                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Transfer complete message</label>
+                                                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Money received</label>
                                                                         <div class="col-sm-9">
                                                                             <div class="col-sm-9">
-                        <textarea class="form-control" rows="3" placeholder="Paste transfer proof text from internet banking, or attach below"></textarea>
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input" type="checkbox">
+                                                                                    <label class="form-check-label">Yes</label>
+                                                                                  </div>
+                                                                                  <div>Date:</div>
+                                                                                  
                                                                             </div>
                                                                         </div>
                                                                         
                                                                     </div>
                                                                     
                                                                     
-                                                                    <div class="form-group row">
-                                                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Screenshot proof</label>
-                                                                    <div class="custom-file col-sm-7">
-                      <input type="file" class="custom-file-input" id="customFile">
-                      <label class="custom-file-label" for="customFile">Choose screenshot</label>
-                    </div>
-                                                                    </div>
                                                                     
                                                                 </div>
                                                                 <!-- /.card-body -->
@@ -489,35 +480,35 @@
                                                 <div class="modal-dialog">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h4 class="modal-title">Cancel cash-out request</h4>
+                                                            <h4 class="modal-title">Cancel token purchase order</h4>
                                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
                                                         </div>
                                                         <div class="modal-body">
-                                                            <p>Are you sure to cancel this request? The requested amount will be returned to agent's commission wallet.</p>
+                                                            <p>Are you sure to cancel this purchase order?</p>
 
 
                                                             <!-- form start -->
                                                             <form class="form-horizontal">
                                                                 <div class="card-body">
                                                                     <div class="form-group row">
-                                                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Requested to</label>
+                                                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Token</label>
                                                                         <div class="col-sm-9">
-                                                                            Bank Mandiri<br>13000119910101<br>John Smith
+                                                                            6,000,000
                                                                         </div>
                                                                     </div>
                                                                     <div class="form-group row">
-                                                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Requested amount</label>
+                                                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Token's price</label>
                                                                         <div class="col-sm-9">
-                                                                            Rp 1,664,500
+                                                                            Rp 5,000,000
                                                                         </div>
                                                                     </div>
                                                                     <div class="form-group row">
-                                                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Request cancellation message</label>
+                                                                        <label for="inputPassword3" class="col-sm-3 col-form-label">Order cancellation message</label>
                                                                         <div class="col-sm-9">
                                                                             <div class="col-sm-9">
-                        <textarea class="form-control" rows="3" placeholder="Type cash-out request cancellation reason etc."></textarea>
+                        <textarea class="form-control" rows="3" placeholder="Type token purchase order cancellation reason etc."></textarea>
                                             </div>
                                                                             
                                                                             

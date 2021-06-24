@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kopoka | System Management</title>
+    <title>Kopoka | Purchase</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="./plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
@@ -205,7 +205,7 @@
             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="wallet.html" class="nav-link">
+                            <a href="wallet.html" class="nav-link active">
               <i class="nav-icon fas fa-wallet"></i>
               <p>
                 Wallet
@@ -237,7 +237,7 @@
                         </li>
                         <li class="nav-header">Management</li>
                         <li class="nav-item">
-                            <a href="system-management.html" class="nav-link active">
+                            <a href="system-management.html" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 System Management
@@ -258,12 +258,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>System Management</h1>
+                            <h1>Purchase</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active">System Management</li>
+                                <li class="breadcrumb-item active">Purchase</li>
                             </ol>
                         </div>
                     </div>
@@ -271,105 +271,146 @@
                 <!-- /.container-fluid -->
             </section>
 
+            <!-- Main content -->
             <section class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12">
-
-                            <!--
-            <div class="callout callout-info">
-              <h5><i class="fas fa-info"></i> Note:</h5>
-              This page has been enhanced for printing. Click the print button at the bottom of the invoice to test.
-            </div>
--->
-
-
-                            <!-- Main content -->
-
-                            <div class="content">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="card">
-                                                <div class="card-header border-0">
-                                                    <div class="d-flex justify-content-between">
-                                                        <h3 class="card-title">Agency</h3>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    
-                                                    <p><a href="system-management-team.html">Agents </a>
-                                                        <br/><small>Agents list</small></p>
-
-                                                    <p><a href="system-management-sales.html">Sales </a>
-                                                        <br/><small>Sales information</small></p>
-                                                    
-                                                    <p><a href="system-management-topups.html">System Topups </a>
-                                                        <br/><small>Topup Kopoka's wallet</small></p>
-
-                                                </div>
-                                            </div>
-                                            <!-- /.card -->
-
-                                            <!--
-                            <div class="card">
-                                <div class="card-header border-0">
-                                    <h3 class="card-title">Recruitment</h3>
-
+                        <!-- left column -->
+                        <div class="col-md-12">
+                            <!-- Horizontal Form -->
+                            <div class="card card-info">
+                                <div class="card-header">
+                                    <h3 class="card-title">Purchase token from Kopoka</h3>
                                 </div>
-                                <div class="card-body">
-                                    <a href="selectionstages.html">Selection stages </a>
-                                    <br/><small>Manage selection stages templates</small>
-                                </div>
-                            </div>
--->
-                                            <!-- /.card -->
+                                <!-- /.card-header -->
+                                <!-- form start -->
+                                <form class="form-horizontal">
+                                    <div class="card-body">
+                                        <div class="form-group row">
+                                        Select the token you want to purchase, then transfer the amount to the following bank account:
                                         </div>
-                                        <!-- /.col-md-6 -->
-                                        <div class="col-lg-6">
-                                            <div class="card">
-                                                <div class="card-header border-0">
-                                                    <div class="d-flex justify-content-between">
-                                                        <h3 class="card-title">Wallet</h3>
-                                                        <!--<a href="javascript:void(0);">View Report</a>-->
+                                        <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-2 col-form-label">Bank account</label>
+                                        <div class="col-sm-9">
+                                            Bank Mandiri<br>13300119910201<br>PT Kopoka Solusi Indonesia
+                                        </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Token amount</label>
+                                            <div class="col-sm-10">
+                                                <div class="form-group">
+                                                    <select id="payoutmethodselector" class="form-control select2">
+                                                      <option value="1" selected="selected">6,000,000 token for Rp 5,000,000</option>
+                                                      <option value="2">20,000,000 token for Rp 15,000,000</option>
+                                                      <option value="2">75,000,000 token for Rp 50,000,000</option>
+                                                    </select>
                                                     </div>
-                                                </div>
-
-                                                <div class="card-body">
-
-                                                    <p><a href="system-management-cashouts.html">Cash-out Requests </a>
-                                                        <br/><small>Cash-out requests from agents</small></p>
-                                                    <p><a href="system-management-purchaseorders.html">Token orders </a>
-                                                        <br/><small>Purchase orders of tokens from agents</small></p>
-
-                                                </div>
                                             </div>
-                                            <!-- /.card -->
-
                                         </div>
-                                        <!-- /.col-md-6 -->
+                                        <div class="form-group row">
+                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Remark</label>
+                                            <div class="col-sm-10">
+                        <textarea class="form-control" rows="3" placeholder="Remark for your own record"></textarea>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <!-- /.row -->
-                                </div>
-                                <!-- /.container-fluid -->
+                                    <!-- /.card-body -->
+                                    <div class="card-footer">
+                                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-transfer">Purchase</button>
+                                        
+                                        <a href="wallet.html"><button type="button" class="btn btn-default float-right">Cancel</button></a>
+                                    </div>
+                                    <!-- /.card-footer -->
+                                </form>
                             </div>
-                            <!-- /.content -->
+                            <!-- /.card -->
+                            
+                            
+                                  <div class="modal fade" id="modal-transfer">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Purchase Confirmation</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Are you sure you have transfered the amount to our bank account?</p>
+                
+                
+                                <!-- form start -->
+                                <form class="form-horizontal">
+                                    <div class="card-body">
+                                        <div class="form-group row">
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Token amount</label>
+                                            <div class="col-sm-10">
+                                                6,000,000
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Remark</label>
+                                            <div class="col-sm-10">
+                                                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
+                                            </div>
+                                        </div>
 
+                                        <div class="form-group row">
+                                            <label for="inputPassword3" class="col-sm-3 col-form-label">Transfer complete message</label>
+                                            <div class="col-sm-9">
+                                                <div class="col-sm-9">
+<textarea class="form-control" rows="3" placeholder="Paste transfer proof text from internet banking, or attach below"></textarea>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputPassword3" class="col-sm-3 col-form-label">Screenshot proof</label>
+                                        <div class="custom-file col-sm-7">
+<input type="file" class="custom-file-input" id="customFile">
+<label class="custom-file-label" for="customFile">Choose screenshot</label>
+</div>
+                                        </div>
 
+                                        <!--
+                                        <div class="form-group row">
+                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Authorization code</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="inputPassword3" placeholder="Enter code sent to your email">
+                                            </div>
+                                        </div>
+                                        -->
+                                    </div>
+                                    <!-- /.card-body -->
+                                </form>
+                
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
 
+                            
 
-
-                            <!-- /.row -->
                         </div>
-                        <!-- /.container-fluid -->
+                        <!--/.col (left) -->
                     </div>
+                    <!-- /.row -->
                 </div>
                 <!-- /.container-fluid -->
             </section>
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-        <footer class="main-footer no-print">
+        <footer class="main-footer">
             <div class="float-right d-none d-sm-block">
                 <b>Version</b> 3.0.5
             </div>
@@ -388,10 +429,25 @@
     <script src="./plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- bs-custom-file-input -->
+    <script src="./plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
     <!-- AdminLTE App -->
     <script src="./dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="./dist/js/demo.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            bsCustomFileInput.init();
+        });
+    </script>
+    <script>
+$(function() {    // Makes sure the code contained doesn't run until
+                  //     all the DOM elements have loaded
+    $('#payoutmethodselector').change(function(){
+        $('.payoutmethod').hide();
+        $('#' + $(this).val()).show();
+    });
+});
+    </script>
 </body>
-
 </html>
