@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tlece | Applicants</title>
+    <title>Tlece | Manage Virtual Backgrounds</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -33,7 +33,7 @@
     <!-- Bootstrap4 Duallistbox -->
     <link rel="stylesheet" href="plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
 
 
 
@@ -227,82 +227,75 @@
                 </div>
 -->
                 <!-- Sidebar Menu -->
-                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                    <!-- Add icons to the links using the .nav-icon class
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                    <li class="nav-item">
-                        <a href="./tlece-index-organization.html" class="nav-link active">
+                        <li class="nav-item">
+                            <a href="./tlece-index-organization.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Home
               </p>
             </a>
-                    </li>
-                    <li class="nav-header">ORGANIZATION<br>Acme Corp.</li>
-
-                    <li class="nav-item">
-                        <a href="tlece-companybranchprofile.html" class="nav-link">
+                        </li>
+                        <li class="nav-header">ORGANIZATION<br>Acme Corp.</li>
+                        <li class="nav-item">
+                            <a href="tlece-companybranchprofile.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Organization Profile</p>
                 </a>
-                    </li>
-                    <li class="nav-item has-treeview">
-                        <a href="#" class="nav-link">
+                        </li>
+                        <li class="nav-item has-treeview menu-open">
+                            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-id-card"></i>
               <p>
                 Recruitment
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="tlece-recruitmentplanning.html" class="nav-link">
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="tlece-recruitmentplanning.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Recruitment Planning</p>
                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="tlece-selectionprocess.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Selection Process</p>
-                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="./tlece-applicants.html" class="nav-link">
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./tlece-applicants.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Applicants</p>
                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./tlece-videolibrary.html" class="nav-link">
+                                </li>
+                                <li class="nav-item">
+                                    <a href="tlece-selectionprocess.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Question Video Library</p>
+                  <p>Selection Process</p>
                 </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./tlece-administrator.html" class="nav-link">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tlece-administrator.html" class="nav-link">
                     <i class="nav-icon fas fa-toolbox"></i>
                 <p>Administrator</p>
                 </a>
-                    </li>
-                    <li class="nav-header">SYSTEM</li>
-                    <li class="nav-item">
-                        <a href="./tlece-sitemanagement.html" class="nav-link">
+                        </li>
+                        <li class="nav-header">SYSTEM</li>
+                        <li class="nav-item">
+                            <a href="./tlece-sitemanagement.html" class="nav-link">
                 <i class="nav-icon fas fa-sitemap"></i>
             <p>Site Management</p>
             </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./tlece-systemmanagement.html" class="nav-link">
+                        </li>
+                        <li class="nav-item">
+                            <a href="./tlece-systemmanagement.html" class="nav-link active">
                 <i class="nav-icon fas fa-tools"></i>
             <p>System Management</p>
             </a>
-                    </li>
-
-                </ul>
+                        </li>
+                    </ul>
+                </nav>
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->
@@ -315,12 +308,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Applicants</h1>
+                            <h1>Virtual Backgrounds</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                                <li class="breadcrumb-item active">Applicants</li>
+                                <li class="breadcrumb-item active">Virtual Backgrounds</li>
                             </ol>
                         </div>
                     </div>
@@ -331,33 +324,16 @@
             <!-- Main content -->
             <section class="content">
 
-
-                <!-- Default box -->
-                <div class="card">
-
-                    <div class="card-header p-2">
-
-                        
-                        <div class="btn btn-sm">
-                            <i class="fas fa-user"></i> Applicants
-                        </div>
-                        <a href="tlece-interviews.html" class="btn btn-sm btn-primary">
-                      <i class="fas fa-user"></i> Interviews
-                        </a>
-                        <a href="tlece-selectionprocess.html" class="btn btn-sm btn-primary">
-                      <i class="fas fa-user"></i> Applications
-                        </a>
-                        
+                <div>
+                    <div>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             Search
                             </button>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Name</a>
-                                    <a class="dropdown-item" href="#">Vacancies/Job Titles</a>
-                                    <a class="dropdown-item" href="#">Last applied date</a>
-                                    <a class="dropdown-item" href="#">Current applications</a>
+                                    <a class="dropdown-item" href="#">Area</a>
+                                    <a class="dropdown-item" href="#">Item</a>
                                     <!--<div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Separated link</a>-->
                                 </div>
@@ -369,38 +345,45 @@
                             </button>
                             </div>
                         </div>
-
-                        <!--
-                <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-default">
-                      <i class="fas fa-user"></i> Add staffs
-                    </a>
--->
                     </div>
+                </div>
 
+                <!-- Default box -->
+                <div class="card">
+                    <div class="card-header p-2">
+                        <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-addbadge">
+                      <i class="fas fa-user"></i> Add video
+                </a>
+                        <a href="./tlece-managebadgecategories.html" class="btn btn-sm btn-primary">
+                      <i class="fas fa-user"></i> Manage categories
+                </a>
+                    </div>
                     <!-- /.card-header -->
 
 
-
-
                     <div class="card-body p-0">
+
 
                         <table class="table table-striped projects">
                             <thead>
                                 <tr>
                                     <th>
+                                        Video
+                                    </th>
+                                    <th>
                                         Name
                                     </th>
                                     <th>
-                                        Photo
+                                        Category
                                     </th>
                                     <th>
-                                        No. of applications
+                                        Description
                                     </th>
                                     <th>
-                                        Last applied date
+                                        Keywords
                                     </th>
                                     <th>
-                                        Current applications
+                                        Status
                                     </th>
                                     <th>
                                     </th>
@@ -409,129 +392,104 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <a>
-                              Zhane Ballard
-                          </a>
-                                        <br/>
-                                        <small>
-                              Looking for new opportunity
-                          </small>
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/i3iYMbNEEtU" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </td>
+                                    <td>New York skyline</td>
+                                    <td>Big cities</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus hendrerit sem, nec euismod libero semper ac. Nullam a suscipit elit. Suspendisse et ultricies tellus. 
                                     </td>
                                     <td>
-                                        <!-- User image -->
-                                        <img class="img-circle img-sm" src="dist/img/user1-128x128.jpg" alt="User Image">
+                                        city, building, cosmopolitan
                                     </td>
                                     <td>
-                                        3
-                                    </td>
-                                    <td>
-                                        May 26, 2020
-                                    </td>
-                                    <td>
-                                        <a href="tlece-vacancyprofile.html">Production Manager</a><br>
-                                        <a href="tlece-vacancyprofile.html">Mechanical Engineer </a>
+                                        Enabled
                                     </td>
                                     <td class="project-actions text-right">
-                                        <a class="btn btn-primary btn-sm" href="./tlece-applicantprofile.html">
-                              <i class="fas fa-folder">
-                              </i>
-                              View
-                          </a>
+                                        <a class="btn btn-primary btn-sm" href="./tlece-vacancyprofile.html" data-toggle="modal" data-target="#modal-addbadge">
+                                            <i class="fas fa-folder"></i>Edit
+                                        </a>
+                                        <a class="btn btn-danger btn-sm" href="#">
+                                            <i class="fas fa-trash"></i>Delete
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a>
-                              Kerys Driscoll
-                          </a>
-                                        <br/>
-                                        <small>
-                              Entrepreneur and engineer
-                          </small>
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/i3iYMbNEEtU" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </td>
+                                    <td>Dubai desert</td>
+                                    <td>Big cities</td>
+                                    <td>Quisque eleifend imperdiet rhoncus. Nunc et eleifend quam. Sed pellentesque nisl nisl, quis mattis neque malesuada sit amet. Sed vestibulum libero a nibh scelerisque ornare non eu eros.
                                     </td>
                                     <td>
-                                        <!-- User image -->
-                                        <img class="img-circle img-sm" src="dist/img/user2-160x160.jpg" alt="User Image">
+                                        nature, arab, patriarchal
                                     </td>
                                     <td>
-                                        1
-                                    </td>
-                                    <td>
-                                        June 2, 2020
-                                    </td>
-                                    <td>
-                                        <a href="tlece-vacancyprofile.html">Kitchen staffs </a>
+                                        Enabled
                                     </td>
                                     <td class="project-actions text-right">
-                                        <a class="btn btn-primary btn-sm" href="./tlece-applicantprofile.html">
-                              <i class="fas fa-folder">
-                              </i>
-                              View
-                          </a>
+                                        <a class="btn btn-primary btn-sm" href="./tlece-vacancyprofile.html" data-toggle="modal" data-target="#modal-addbadge">
+                                            <i class="fas fa-folder"></i>Edit
+                                        </a>
+                                        <a class="btn btn-danger btn-sm" href="#">
+                                            <i class="fas fa-trash"></i>Delete
+                                        </a>
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td>
-                                        <a>
-                              Bentley Enriquez
-                          </a>
-                                        <br/>
-                                        <small>
-                              Professional in marketing
-                          </small>
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/i3iYMbNEEtU" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </td>
+                                    <td>Exotic Bali</td>
+                                    <td>Resort</td>
+                                    <td>Morbi justo metus, rhoncus ultrices bibendum vitae, sodales eget arcu.
                                     </td>
                                     <td>
-                                        <!-- User image -->
-                                        <img class="img-circle img-sm" src="dist/img/user3-128x128.jpg" alt="User Image">
+                                        paddy field, traditional
                                     </td>
                                     <td>
-                                        2
-                                    </td>
-                                    <td>
-                                        May 14, 2020
-                                    </td>
-                                    <td class="project-state">
-
+                                        Enabled
                                     </td>
                                     <td class="project-actions text-right">
-                                        <a class="btn btn-primary btn-sm" href="./tlece-applicantprofile.html">
-                              <i class="fas fa-folder">
-                              </i>
-                              View
-                          </a>
+                                        <a class="btn btn-primary btn-sm" href="./tlece-vacancyprofile.html" data-toggle="modal" data-target="#modal-addbadge">
+                                            <i class="fas fa-folder"></i>Edit
+                                        </a>
+                                        <a class="btn btn-danger btn-sm" href="#">
+                                            <i class="fas fa-trash"></i>Delete
+                                        </a>
                                     </td>
                                 </tr>
 
                                 <tr>
                                     <td>
-                                        <a>
-                              Grace Bender
-                          </a>
-                                        <br/>
-                                        <small>
-                              Professional in marketing
-                          </small>
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/i3iYMbNEEtU" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </td>
+                                    <td>Sumatera Jungle</td>
+                                    <td>Nature</td>
+                                    <td>Sed malesuada ornare tortor imperdiet suscipit. 
                                     </td>
                                     <td>
-                                        <!-- User image -->
-                                        <img class="img-circle img-sm" src="dist/img/user3-128x128.jpg" alt="User Image">
+                                        forest, tiger, elephant
                                     </td>
                                     <td>
-                                        3
-                                    </td>
-                                    <td>
-                                        May 14, 2020
-                                    </td>
-                                    <td class="project-state">
-
+                                        Disabled
                                     </td>
                                     <td class="project-actions text-right">
-                                        <a class="btn btn-primary btn-sm" href="./tlece-applicantprofile.html">
-                              <i class="fas fa-folder">
-                              </i>
-                              View
-                          </a>
+                                        <a class="btn btn-primary btn-sm" href="./tlece-vacancyprofile.html" data-toggle="modal" data-target="#modal-addbadge">
+                                            <i class="fas fa-folder"></i>Edit
+                                        </a>
+                                        <a class="btn btn-danger btn-sm" href="#">
+                                            <i class="fas fa-trash"></i>Delete
+                                        </a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -541,68 +499,80 @@
                 </div>
                 <!-- /.card -->
 
-                <div class="modal fade" id="process">
+                <div class="modal fade" id="modal-addbadge">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Process applicant</h4>
+                                <h4 class="modal-title">Add virtual background video</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
                             </div>
                             <div class="modal-body">
-                                Are you sure to process this applicant?
 
-                                <div>
-                                    Name: Bentley Enriquez<br> Vacancy applied: Sales Engineer<br>
+
+                                <div class="form-group">
+                                    <label class="col-form-label">Status <span style="color: red;">*</span></label>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="organization">
+                                        <label class="form-check-label" for="organization">Enabled</label>
+                                    </div>
                                 </div>
 
+                                <div class="form-group">
+                                    <label class="col-form-label">Name <span style="color: red;">*</span></label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Video name">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-form-label">Category <span style="color: red;">*</span></label>
+                                    <select class="form-control select2" style="width: 100%;">
+                                            <option selected="selected">Big cities</option>
+                                            <option>Resort</option>
+                                            <option>Nature</option>
+                                        </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-form-label">Description</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Video description">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-form-label">Keywords</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Keywords">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-form-label">Video <span style="color: red;">*</span></label>
+                                    <div class="input-group">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="exampleInputFile">
+                                            <label class="custom-file-label" for="exampleInputFile">Choose video file</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!--
+                      <div class="form-group">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
+                            </label>
+                          </div>
+                      </div>
+-->
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Process</button>
-                            </div>
-                        </div>
-                        <!-- /.modal-content -->
-                    </div>
-                    <!-- /.modal-dialog -->
-                </div>
-                <!-- /.modal -->
-
-                <div class="modal fade" id="processmultiple">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Process applicants</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-                            </div>
-                            <div class="modal-body">
-                                Are you sure to process these applicants?
-
-
-                                <table class="table table-striped">
-                                    <thead>
-                                        <th>Name</th>
-                                        <th>Vacancy applied</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Zhane Ballard</td>
-                                            <td>Executive Secretary</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Bentley Enriquez</td>
-                                            <td>Sales Engineer</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Process</button>
+                                <a class="btn btn-default btn-sm" href="#" data-dismiss="modal">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Cancel
+                </a>
+                                <a class="btn btn-primary btn-sm" href="tlece-vacancyprofile.html">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Submit
+                </a>
                             </div>
                         </div>
                         <!-- /.modal-content -->
@@ -623,7 +593,6 @@
                 <b>Version</b> 1.0.0 (
                 <script type="text/javascript">
                     document.write(document.lastModified);
-
                 </script>)
             </div>
         </footer>
@@ -739,7 +708,6 @@
             });
 
         })
-
     </script>
 </body>
 
