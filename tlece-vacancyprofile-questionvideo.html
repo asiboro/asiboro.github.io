@@ -4,18 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tlece | Vacancy Detail</title>
+    <title>Tlece | Question Video</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="./plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="./dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+
 
     <!-- daterange picker -->
     <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
@@ -33,9 +35,12 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
 
+
+
 </head>
 
 <body class="hold-transition sidebar-mini">
+    <!-- Site wrapper -->
     <div class="wrapper">
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -257,7 +262,7 @@
                 </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./tlece-applicants.html" class="nav-link">
+                                    <a href="tlece-applicants.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Applicants</p>
                 </a>
@@ -266,6 +271,12 @@
                                     <a href="tlece-selectionprocess.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Selection Process</p>
+                </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./tlece-videolibrary.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Video Library</p>
                 </a>
                                 </li>
                             </ul>
@@ -303,13 +314,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Vacancy Detail</h1>
+                            <h1>Question Video</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                                <li class="breadcrumb-item active"><a href="./tlece-vacancyprofile.html">Vacancy Detail</a></li>
-                                <li class="breadcrumb-item active">Question Videos</li>
+                                <li class="breadcrumb-item active">Question Video</li>
                             </ol>
                         </div>
                     </div>
@@ -319,180 +329,134 @@
 
             <!-- Main content -->
             <section class="content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-3">
 
-                            <!-- Profile Image -->
-                            <div class="card card-primary card-outline">
-                                <div class="card-body box-profile">
-                                    <div class="text-center">
-                                        <img class="profile-user-img img-fluid img-circle" src="./dist/img/tlecelogo.png" alt="User profile picture">
-                                    </div>
-
-                                    <h3 class="profile-username text-center">Mechanical Engineer </h3>
-
-                                    <p class="text-muted text-center">Join us and create innovative machineries </p>
-
-                                    <ul class="list-group list-group-unbordered mb-3">
-                                        <li class="list-group-item">
-                                            <b>Viewed</b> <a class="float-right">1,322</a>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <b>Liked</b> <a class="float-right">543</a>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <b>Applied</b> <a class="float-right">13,287</a>
-                                        </li>
-                                    </ul>
-
-                                    <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
-                                </div>
-                                <!-- /.card-body -->
-                            </div>
-                            <!-- /.card -->
-
-                            <!-- About Me Box -->
-                            <div class="card card-primary">
-                                <div class="card-header">
-                                    <h3 class="card-title">About this vacancy</h3>
-                                </div>
-                                <!-- /.card-header -->
-                                <div class="card-body">
-                                    <strong><i class="fas fa-book mr-1"></i> Period</strong>
-
-                                    <p class="text-muted">
-                                        June 1, 2020 - June 25, 2020
-                                    </p>
-
-                                    <hr>
-
-                                    <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
-
-                                    <p class="text-muted">Malibu, California</p>
-
-                                    <hr>
-
-                                    <strong><i class="fas fa-pencil-alt mr-1"></i> Slots</strong>
-
-                                    <p class="text-muted">
-                                        <span class="tag tag-danger">2</span>
-                                    </p>
-
-                                    <hr>
-
-                                    <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
-
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
-                                </div>
-                                <!-- /.card-body -->
-                            </div>
-                            <!-- /.card -->
+                <!-- Default box -->
+                <div class="card">
+                    <div class="card-header p-2">
+                        <div><a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-default">
+                            <i class="fas fa-user"></i> Add question</a>
                         </div>
-                        <!-- /.col -->
-                        <div class="col-md-9">
-                            <div class="card">
-                                <div class="card-header p-2">
-
-                                    Question Videos
-
-                                    <div><a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-default">
-                      <i class="fas fa-user"></i> Add question
-                    </a>
-                                    </div>
-
+                    </div>
+                    
+                    
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            Search
+                            </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Name</a>
+                                    <a class="dropdown-item" href="#">Description</a>
+                                    <a class="dropdown-item" href="#">Stage</a>
+                                    <!--<div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>-->
                                 </div>
-                                <!-- /.card-header -->
-                                <div class="card-body">
+                            </div>
+                            <input type="text" class="form-control">
+                            <div class="input-group-append">
+                                <button class="btn btn-navbar" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            </div>
+                        </div>
 
-                                    <table id="questionvideostable" class="table table-striped projects">
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    Order
-                                                </th>
-                                                <th>
-                                                    Set Name
-                                                </th>
-                                                <th>No. of Items</th>
-                                                <th>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    1
-                                                </td>
-                                                <td>
-                                                    <a>
-                                            <a href="./tlece-questionvideocreate.html">Introductory questions</a>
-                                                    </a>
-                                                    <br/>
-                                                    <!--
-                          <small>
-                              Added 01.01.2019
-                          </small>-->
-                                                </td>
-                                                <td>
-                                                    2
-                                                </td>
-                                                <td class="project-actions text-right">
-                                                    <a class="btn btn-danger btn-sm" href="#">
-                              <i class="fas fa-trash">
-                              </i>
-                              Remove
-                          </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    2
-                                                </td>
-                                                <td>
-                                                    <a>
-                                            <a href="./tlece-questionvideocreate.html">Career questions</a>
-                                                    </a>
-                                                    <br/>
-                                                </td>
-                                                <td>4
-                                                </td>
-                                                <td class="project-actions text-right">
-                                                    <a class="btn btn-danger btn-sm" href="#">
-                              <i class="fas fa-trash">
-                              </i>
-                              Remove
-                          </a>
-                                                </td>
-                                            </tr>
 
-                                            <!--
-                  <tr>
-                      <td>
-                          3
-                      </td>
-                      <td>
-                          <a>
-                              What do you want to become in 5 years?
-                          </a>
-                          <br/>
-                      </td>
-                      <td class="text-center">   
-                    <i class="fas text-danger fa-exclamation-triangle"></i>
-                      </td>
-                      <td class="project-actions text-right">
-                        <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-default">
-                            <i class="fas fa-pencil-alt"></i> Edit
-                        </a>
-                      </td>
-                  </tr>
-                  -->
-                                        </tbody>
-                                    </table>
+                    <!-- /.card-header -->
 
-                                </div>
-                                <!-- /.card-body -->
-                                
+
+                    <div class="card-body p-0">
+
+
+                        <table id="questionvideostable" class="table table-striped projects">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Order
+                                    </th>
+                                    <th>
+                                        Set Name
+                                    </th>
+                                    <th>No. of Items</th>
+                                    <th>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        <a>
+                                <a href="./tlece-questionvideocreate.html">Introductory questions</a>
+                                        </a>
+                                        <br/>
+                                        <!--
+              <small>
+                  Added 01.01.2019
+              </small>-->
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td class="project-actions text-right">
+                                        <a class="btn btn-danger btn-sm" href="#">
+                  <i class="fas fa-trash">
+                  </i>
+                  Remove
+              </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        <a>
+                                <a href="./tlece-questionvideocreate.html">Career questions</a>
+                                        </a>
+                                        <br/>
+                                    </td>
+                                    <td>4
+                                    </td>
+                                    <td class="project-actions text-right">
+                                        <a class="btn btn-danger btn-sm" href="#">
+                  <i class="fas fa-trash">
+                  </i>
+                  Remove
+              </a>
+                                    </td>
+                                </tr>
+
+                                <!--
+      <tr>
+          <td>
+              3
+          </td>
+          <td>
+              <a>
+                  What do you want to become in 5 years?
+              </a>
+              <br/>
+          </td>
+          <td class="text-center">   
+        <i class="fas text-danger fa-exclamation-triangle"></i>
+          </td>
+          <td class="project-actions text-right">
+            <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal-default">
+                <i class="fas fa-pencil-alt"></i> Edit
+            </a>
+          </td>
+      </tr>
+      -->
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+
                 <div class="modal fade" id="modal-default">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -595,19 +559,12 @@
                 </div>
                 <!-- /.modal -->
 
-                                
-                            </div>
-                            <!-- /.nav-tabs-custom -->
-                        </div>
-                        <!-- /.col -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.container-fluid -->
+
             </section>
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
+
         <!-- Main Footer -->
         <footer class="main-footer">
             <strong>Copyright &copy; 2020 <a href="http://tlece.com">Tlece</a>.</strong> All rights reserved.
@@ -629,15 +586,16 @@
     <!-- ./wrapper -->
 
     <!-- jQuery -->
-    <script src="./plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
-    <script src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Select2 -->
     <script src="plugins/select2/js/select2.full.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="./dist/js/adminlte.min.js"></script>
+    <script src="dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="./dist/js/demo.js"></script>
+    <script src="dist/js/demo.js"></script>
+
 
     <!-- Bootstrap4 Duallistbox -->
     <script src="plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>

@@ -4,20 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tlece | Selection Stages</title>
+    <title>Tlece | Edit Vacancy</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-
-
 
     <!-- daterange picker -->
     <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
@@ -35,12 +33,9 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
 
-
-
 </head>
 
 <body class="hold-transition sidebar-mini">
-    <!-- Site wrapper -->
     <div class="wrapper">
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -273,12 +268,6 @@
                   <p>Selection Process</p>
                 </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="./tlece-videolibrary.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Video Library</p>
-                </a>
-                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -314,12 +303,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Selection Stages</h1>
+                            <h1>Edit Vacancy</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                                <li class="breadcrumb-item active">Selection Stages</li>
+                                <li class="breadcrumb-item active">Edit Vacancy</li>
                             </ol>
                         </div>
                     </div>
@@ -330,266 +319,96 @@
             <!-- Main content -->
             <section class="content">
 
-                <!-- Default box -->
-                <div class="card">
-                    <div class="card-header p-2">
-                        <a href="tlece-recruitmentplanning.html" class="btn btn-sm btn-primary">
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- /.col -->
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header p-2">
+                                    <a href="tlece-recruitmentplanning.html" class="btn btn-sm btn-primary">
                             <i class="fas fa-user"></i> Vacancies list</a>
-                        <!--<a href="tlece-vacancyprofile.html" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-default">-->
-                        <a href="tlece-vacancynew.html" class="btn btn-sm btn-primary">
-                      <i class="fas fa-user"></i> New vacancy
-                        </a>
-                        <div class="btn btn-sm">
-                            <i class="fas fa-user"></i> Selection stages
-                        </div>
-                    </div>
-                    
-                    
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            Search
-                            </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Name</a>
-                                    <a class="dropdown-item" href="#">Description</a>
-                                    <a class="dropdown-item" href="#">Stage</a>
-                                    <!--<div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a>-->
-                                </div>
-                            </div>
-                            <input type="text" class="form-control">
-                            <div class="input-group-append">
-                                <button class="btn btn-navbar" type="submit">
-                                <i class="fas fa-search"></i>
-                            </button>
-                            </div>
-                        </div>
-
-
-                    <!-- /.card-header -->
-
-
-                    <div class="card-body p-0">
-
-
-                        <table class="table table-striped projects">
-                            <thead>
-                                <tr>
-                                    <th>Name
-                                    </th>
-                                    <th>Description
-                                    </th>
-                                    <th>
-                                        Stage 1
-                                    </th>
-                                    <th>
-                                        Stage 2
-                                    </th>
-                                    <th>
-                                        Stage 3
-                                    </th>
-                                    <th>
-                                        Stage 4
-                                    </th>
-                                    <th>
-                                    
-                        <a href="" class="btn btn-sm btn-primary float-right">
-                      <i class="fas fa-plus"></i>
-                        </a>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        Standard
-                                    </td>
-                                    <td>
-                                        <a>
-                              Standard stages
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <select class="form-control select2" style="width: 100%;">
-                                            <option>-</option>
-                                            <option>Actual</option>
-                                            <option selected="selected">Web</option>
-                                            <option>AI</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select class="form-control select2" style="width: 100%;">
-                                            <option>-</option>
-                                            <option>Actual</option>
-                                            <option selected="selected">Web</option>
-                                            <option>AI</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select class="form-control select2" style="width: 100%;">
-                                            <option>-</option>
-                                            <option selected="selected">Actual</option>
-                                            <option>Web</option>
-                                            <option>AI</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select class="form-control select2" style="width: 100%;">
-                                            <option selected="selected">-</option>
-                                            <option>Actual</option>
-                                            <option>Web</option>
-                                            <option>AI</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Short
-                                    </td>
-                                    <td>
-                                        <a>
-                              Short stages
-                          </a>
-                                    </td>
-                                    <td>
-                                        <select class="form-control select2" style="width: 100%;">
-                                            <option>-</option>
-                                            <option>Actual</option>
-                                            <option>Web</option>
-                                            <option selected="selected">AI</option>
-                                        </select><a href="tlece-vacancyprofile-questionvideo.html">Edit</a>
-                                    </td>
-                                    <td style="vertical-align:top">
-                                        <select class="form-control select2" style="width: 100%;">
-                                            <option>-</option>
-                                            <option>Actual</option>
-                                            <option selected="selected">Web</option>
-                                            <option>AI</option>
-                                        </select>
-                                    </td>
-                                    <td style="vertical-align:top">
-                                        <select class="form-control select2" style="width: 100%;">
-                                            <option selected="selected">-</option>
-                                            <option>Actual</option>
-                                            <option>Web</option>
-                                            <option>AI</option>
-                                        </select>
-                                    </td>
-                                    <td style="vertical-align:top">
-                                        <select class="form-control select2" style="width: 100%;">
-                                            <option selected="selected">-</option>
-                                            <option>Actual</option>
-                                            <option>Web</option>
-                                            <option>AI</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        Complete
-                                    </td>
-                                    <td>
-                                        <a>
-                              Complete stages
-                          </a>
-                                    </td>
-                                    <td>
-                                        <select class="form-control select2" style="width: 100%;">
-                                            <option>-</option>
-                                            <option>Actual</option>
-                                            <option selected="selected">Web</option>
-                                            <option>AI</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select class="form-control select2" style="width: 100%;">
-                                            <option>-</option>
-                                            <option>Actual</option>
-                                            <option selected="selected">Web</option>
-                                            <option>AI</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select class="form-control select2" style="width: 100%;">
-                                            <option>-</option>
-                                            <option>Actual</option>
-                                            <option selected="selected">Web</option>
-                                            <option>AI</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select class="form-control select2" style="width: 100%;">
-                                            <option>-</option>
-                                            <option selected="selected">Actual</option>
-                                            <option>Web</option>
-                                            <option>AI</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <!-- /.card-body -->
-                </div>
-                <!-- /.card -->
-
-                <div class="modal fade" id="modal-default">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Add job vacancy</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-
-                                <div class="form-group">
-                                    <label>Job Title <span style="color: red;">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Enter job title">
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Vacancy Name</label>
-                                    <input type="text" class="form-control" placeholder="Enter vacancy name">
-                                </div>
-
-
-                                <div class="form-group">
-                                    <label>Period <span style="color: red;">*</span></label>
-
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">
-                        <i class="far fa-calendar-alt"></i>
-                      </span>
-                                        </div>
-                                        <input type="text" class="form-control float-right" id="reservation">
+                                    <div class="btn btn-sm">
+                                        <i class="fas fa-user"></i> Edit vacancy
                                     </div>
-                                    <!-- /.input group -->
+                                    <a href="tlece-selectionstages.html" class="btn btn-sm btn-primary">
+                      <i class="fas fa-user"></i> Selection stages
+                        </a>
+
                                 </div>
-                                <!-- /.form group -->
+                                <!-- /.card-header -->
+                                <div class="card-body">
 
 
-                                <div class="form-group">
-                                    <label>Slots</label>
-                                    <input type="number" class="form-control" placeholder="Enter no. of vacancies">
-                                </div>
 
-                                <div class="form-group">
-                                    <label>Note</label>
-                                    <textarea class="form-control" placeholder="Enter note"></textarea>
-                                </div>
 
-                                <!--
+
+                                    <form class="form-horizontal">
+                                        <div class="form-group row">
+                                            <label for="inputName" class="col-sm-2 col-form-label">ID <span style="color: red;">*</span></label>
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="inputName" placeholder="Vacancy ID" value="123456789">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputName" class="col-sm-2 col-form-label">Job Title <span style="color: red;">*</span></label>
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="inputName" placeholder="Job title" value="Mechanical Engineer">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputName" class="col-sm-2 col-form-label">Vacancy Name</label>
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="inputName" placeholder="Job vacancy name" value="Join us and create innovative machineries">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputName" class="col-sm-2 col-form-label">Vacancy Video <span style="color: red;">*</span></label>
+                                            <div class="col-sm-10">
+                                                <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-addprofile">
+                                                    <i class="fas fa-video"></i> Select video
+                                                        </a>
+
+                                                <div class="modal fade" id="modal-addprofile">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h4 class="modal-title">Vacancy video selection</h4>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <!--
+                                                                <div class="form-group">
+                                                                    <label>Video <span style="color: red;">*</span></label>
+                                                                    <div class="input-group">
+                                                                        <div class="custom-file">
+                                                                            <input type="file" class="custom-file-input" id="exampleInputFile">
+                                                                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                -->
+                                                                <!-- /.form group -->
+                                                                
+
+                                                                <div class="form-group">
+                                                                    <label>Select video</label>
+                                                                    <select class="form-control" style="width: 100%;">
+                                                                    <option selected="selected">Video 1</option>
+                                                                    <option>Video 2</option>
+                                                                    <option>Video 3</option>
+                                                                    <option>Video 4</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- /.form group -->
+                                                                
+                                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3SvfOfJFJoE" frameborder="0" allowfullscreen=""></iframe>
+                                                                        </div>
+
+                                                                <!--
                       <div class="form-group">
                           <div class="checkbox">
                             <label>
@@ -599,30 +418,166 @@
                       </div>
 -->
 
-                            </div>
-                            <div class="modal-footer">
-                                <a class="btn btn-default btn-sm" href="#" data-dismiss="modal">
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <a class="btn btn-default btn-sm" href="#" data-dismiss="modal">
                     <i class="fas fa-sign-in-alt"></i>
                     Cancel
                 </a>
-                                <a class="btn btn-primary btn-sm" href="tlece-vacancyprofile.html">
+                                                                <a class="btn btn-primary btn-sm" href="tlece-vacancyprofile.html">
                     <i class="fas fa-sign-in-alt"></i>
                     Submit
                 </a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.modal-content -->
+                                                    </div>
+                                                    <!-- /.modal-dialog -->
+                                                </div>
+
+
+                                                <p></p>
+                                                <!--
+                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Krp6epQS9Ac" frameborder="0" allowfullscreen=""></iframe>
+                                                        </div>
+                                                        -->
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputName" class="col-sm-2 col-form-label">CV Video <span style="color: red;">*</span></label>
+                                            <div class="col-sm-10">
+                                                <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-selectcv">
+                                                    <i class="fas fa-video"></i> Select video
+                                                </a>
+
+                                                <div class="modal fade" id="modal-selectcv">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h4 class="modal-title">Organization CV selection</h4>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                                                            </div>
+                                                            <div class="modal-body">
+
+                                                                <div class="form-group">
+                                                                    <label>Select video</label>
+                                                                    <select class="form-control" style="width: 100%;">
+                                                                    <option selected="selected">Organization CV 1</option>
+                                                                    <option>Organization CV 2</option>
+                                                                    <option>Organization CV 3</option>
+                                                                    <option>Organization CV 4</option>
+                                                                    </select>
+                                                                </div>
+                                                                <!-- /.form group -->
+                                                                
+                                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3SvfOfJFJoE" frameborder="0" allowfullscreen=""></iframe>
+                                                                        </div>
+                                                                        
+
+                                                                <!--
+                                                                    <div class="form-group">
+                                                                        <div class="checkbox">
+                                                                            <label>
+                                                                                <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                -->
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <a class="btn btn-default btn-sm" href="#" data-dismiss="modal">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Cancel
+                </a>
+                                                                <a class="btn btn-primary btn-sm" href="tlece-vacancyprofile.html">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Submit
+                </a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.modal-content -->
+                                                    </div>
+                                                    <!-- /.modal-dialog -->
+                                                </div>
+
+                                                <p></p>
+                                                <!--
+                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3SvfOfJFJoE" frameborder="0" allowfullscreen=""></iframe>
+                                                        </div>
+                                                        -->
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="inputName2" class="col-sm-2 col-form-label">Stages <span style="color: red;">*</span></label>
+                                            <div class="col-sm-10">
+
+                                                <select class="form-control select2" style="width: 100%;">
+                                            <option>Standard</option>
+                                            <option selected="selected">Short</option>
+                                            <option>Complete</option>
+                                        </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row">
+                                            <label for="inputName" class="col-sm-2 col-form-label">Period <span style="color: red;">*</span></label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">
+                        <i class="far fa-calendar-alt"></i>
+                      </span>
+                                                    </div>
+                                                    <input type="text" class="form-control float-right" id="reservation">
+                                                </div>
+                                                <!-- /.input group -->
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row">
+                                            <label for="inputName2" class="col-sm-2 col-form-label">Slots</label>
+                                            <div class="col-sm-10">
+                                                <input type="num" class="form-control" id="inputName2" placeholder="No. of vacancy slot" value="2">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputExperience" class="col-sm-2 col-form-label">Description</label>
+                                            <div class="col-sm-10">
+                                                <textarea class="form-control" id="inputExperience" placeholder="Job description">Vestibulum neque nisi, tempor a sapien a, sodales vehicula nisl. Ut maximus egestas venenatis. Donec eleifend libero vitae odio elementum, non dictum tellus lacinia. </textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+
+
+
+
+
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
                             </div>
+                            <!-- /.nav-tabs-custom -->
                         </div>
-                        <!-- /.modal-content -->
+                        <!-- /.col -->
                     </div>
-                    <!-- /.modal-dialog -->
+                    <!-- /.row -->
                 </div>
-                <!-- /.modal -->
-
-
+                <!-- /.container-fluid -->
             </section>
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-
         <!-- Main Footer -->
         <footer class="main-footer">
             <strong>Copyright &copy; 2020 <a href="http://tlece.com">Tlece</a>.</strong> All rights reserved.
@@ -644,16 +599,15 @@
     <!-- ./wrapper -->
 
     <!-- jQuery -->
-    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="./plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
-    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Select2 -->
     <script src="plugins/select2/js/select2.full.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="dist/js/adminlte.min.js"></script>
+    <script src="./dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="dist/js/demo.js"></script>
-
+    <script src="./dist/js/demo.js"></script>
 
     <!-- Bootstrap4 Duallistbox -->
     <script src="plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
