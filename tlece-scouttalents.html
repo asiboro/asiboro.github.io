@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tlece | Manage Badge Categories</title>
+    <title>Tlece | Scout Talents</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -33,7 +33,7 @@
     <!-- Bootstrap4 Duallistbox -->
     <link rel="stylesheet" href="plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 
 
 
@@ -227,75 +227,84 @@
                 </div>
 -->
                 <!-- Sidebar Menu -->
-                <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                        <li class="nav-item">
-                            <a href="./tlece-index-organization.html" class="nav-link">
+                    <li class="nav-item">
+                        <a href="./tlece-index-organization.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Home
               </p>
             </a>
-                        </li>
-                        <li class="nav-header">ORGANIZATION<br>Acme Corp.</li>
-                        <li class="nav-item">
-                            <a href="tlece-companybranchprofile.html" class="nav-link">
+                    </li>
+                    <li class="nav-header">ORGANIZATION<br>Acme Corp.</li>
+
+                    <li class="nav-item">
+                        <a href="tlece-companybranchprofile.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Organization Profile</p>
                 </a>
-                        </li>
-                        <li class="nav-item has-treeview menu-open">
-                            <a href="#" class="nav-link">
+                    </li>
+                    <li class="nav-item has-treeview menu-open">
+                        <a href="#" class="nav-link">
               <i class="nav-icon fas fa-id-card"></i>
               <p>
                 Recruitment
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="tlece-recruitmentplanning.html" class="nav-link">
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="tlece-recruitmentplanning.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Recruitment Planning</p>
                 </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="tlece-scouttalents.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Scout Talents</p>
-                </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="tlece-selectionprocess.html" class="nav-link">
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a href="tlece-selectionprocess.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Selection Process</p>
                 </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="tlece-administrator.html" class="nav-link">
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="tlece-scouttalents.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Scout Talents</p>
+                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="./tlece-videolibrary.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Video Library</p>
+                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./tlece-administrator.html" class="nav-link">
                     <i class="nav-icon fas fa-toolbox"></i>
                 <p>Administrator</p>
                 </a>
-                        </li>
-                        <li class="nav-header">SYSTEM</li>
-                        <li class="nav-item">
-                            <a href="./tlece-sitemanagement.html" class="nav-link">
+                    </li>
+                    <li class="nav-header">SYSTEM</li>
+                    <li class="nav-item">
+                        <a href="./tlece-sitemanagement.html" class="nav-link">
                 <i class="nav-icon fas fa-sitemap"></i>
             <p>Site Management</p>
             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./tlece-systemmanagement.html" class="nav-link active">
+                    </li>
+                    <li class="nav-item">
+                        <a href="./tlece-systemmanagement.html" class="nav-link">
                 <i class="nav-icon fas fa-tools"></i>
             <p>System Management</p>
             </a>
-                        </li>
-                    </ul>
-                </nav>
+                    </li>
+
+                </ul>
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->
@@ -308,12 +317,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Manage Badge Categories</h1>
+                            <h1>Scout Talents</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="tlece-index-organization.html">Home</a></li>
-                                <li class="breadcrumb-item active">Manage Badge Categories</li>
+                                <li class="breadcrumb-item active">Scout Talents</li>
                             </ol>
                         </div>
                     </div>
@@ -324,16 +333,34 @@
             <!-- Main content -->
             <section class="content">
 
-                <div>
-                    <div>
+
+                <!-- Default box -->
+                <div class="card">
+
+                    <div class="card-header p-2">
+
+                        <!--
+                        <div class="btn btn-sm">
+                            <i class="fas fa-user"></i> Applicants
+                        </div>
+                        <a href="tlece-interviews.html" class="btn btn-sm btn-primary">
+                      <i class="fas fa-user"></i> Interviews
+                        </a>
+                        <a href="tlece-selectionprocess.html" class="btn btn-sm btn-primary">
+                      <i class="fas fa-user"></i> Applications
+                        </a>
+                        -->
+                        
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                             Search
                             </button>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Area</a>
-                                    <a class="dropdown-item" href="#">Item</a>
+                                    <a class="dropdown-item" href="#">Name</a>
+                                    <a class="dropdown-item" href="#">Vacancies/Job Titles</a>
+                                    <a class="dropdown-item" href="#">Last applied date</a>
+                                    <a class="dropdown-item" href="#">Current applications</a>
                                     <!--<div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Separated link</a>-->
                                 </div>
@@ -345,79 +372,163 @@
                             </button>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Default box -->
-                <div class="card">
-                    <div class="card-header p-2">
-                        <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-addbadge">
-                      <i class="fas fa-user"></i> Add category
-                </a>
+                        <!--
+                <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal-default">
+                      <i class="fas fa-user"></i> Add staffs
+                    </a>
+-->
                     </div>
+
                     <!-- /.card-header -->
 
 
-                    <div class="card-body p-0">
 
+
+                    <div class="card-body p-0">
 
                         <table class="table table-striped projects">
                             <thead>
                                 <tr>
                                     <th>
-                                        Badge
+                                        
                                     </th>
                                     <th>
-                                        Area
+                                        Select applicant
                                     </th>
                                     <th>
-                                        No. of items
+                                        Description
                                     </th>
-                                    <th>
+                                    <th class="text-right">
+                                        <a class="btn btn-primary btn-sm" href="#" data-toggle="modal" data-target="#scoutselected">
+                                            <i class="fas fa-heart"></i> Scout selected
+                                        </a>
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>
-                                        <img class="img-circle img-sm" src="dist/img/tlecelogo.png" alt="User Image"></td>
-                                    <td>Work-life balance</td>
-                                    <td>140
+                                    <td style="white-space:nowrap">
+                                        <a>
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pzCuKh7QyOA?start=13" frameborder="0" allowfullscreen=""></iframe>
+                                            </div>
+                          </a>
+                                        <br/>
+                                        <small>
+                              Looking for new opportunity
+                          </small>
                                     </td>
-                                    <td class="project-actions text-right">
-                                        <a class="btn btn-primary btn-sm" href="./tlece-vacancyprofile.html" data-toggle="modal" data-target="#modal-addbadge">
-                              <i class="fas fa-folder">
-                              </i>
-                              Edit
+                                    <td style="vertical-align: top; white-space:nowrap">
+                                        <!-- User image -->
+                                        <img class="img-circle img-sm" src="dist/img/user1-128x128.jpg" alt="User Image">
+                                        <div class="icheck-primary d-inline">
+                                            <input type="checkbox" id="checkboxPrimary1">
+                                            <label for="checkboxPrimary1">Select
+                                            </label>
+                                          </div>
+                                    </td>
+                                    <td style="vertical-align: top;">
+                                        Duis in dui rhoncus, vulputate mi vitae, tempus tellus. Nam id tincidunt velit, at pretium libero.
+                                    </td>
+                                    <td class="project-actions text-right" style="vertical-align: top;">
+                                        <a class="btn btn-primary btn-sm" href="#" data-toggle="modal" data-target="#process">
+                                            <i class="fas fa-heart"></i> Scout
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="white-space:nowrap">
+                                        <a>
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LspIeUElIFA?start=13" frameborder="0" allowfullscreen=""></iframe>
+                                            </div>
                           </a>
-                                        <a class="btn btn-warning btn-sm" href="#">
-                              <i class="fas fa-trash">
-                              </i>
-                              Archive
-                          </a>
+                                        <br/>
+                                        <small>
+                              Entrepreneur and engineer
+                          </small>
+                                    </td>
+                                    <td style="vertical-align: top; white-space:nowrap">
+                                        <!-- User image -->
+                                        <img class="img-circle img-sm" src="dist/img/user2-160x160.jpg" alt="User Image">
+                                        <div class="icheck-primary d-inline">
+                                            <input type="checkbox" id="checkboxPrimary1">
+                                            <label for="checkboxPrimary1">Select
+                                            </label>
+                                          </div>
+                                    </td>
+                                    <td style="vertical-align: top;">
+                                        Sed posuere, massa in cursus tincidunt, metus odio facilisis risus, a vehicula dolor velit non risus.
+                                    </td>
+                                    <td class="project-actions text-right" style="vertical-align: top;">
+                                        <a class="btn btn-primary btn-sm" href="#" data-toggle="modal" data-target="#process">
+                                            <i class="fas fa-heart"></i> Scout
+                                        </a>
                                     </td>
                                 </tr>
 
                                 <tr>
-                                    <td>
-                                        <img class="img-circle img-sm" src="dist/img/tlecelogo.png" alt="User Image"></td>
-                                    <td>Gender equality</td>
-                                    <td>2345
+                                    <td style="white-space:nowrap">
+                                        <a>
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rbRxhLaP6oE?start=13" frameborder="0" allowfullscreen=""></iframe>
+                                            </div>
+                          </a>
+                                        <br/>
+                                        <small>
+                              Professional in marketing
+                          </small>
                                     </td>
-                                    <td class="project-actions text-right">
-                                        <a class="btn btn-primary btn-sm" href="./tlece-vacancyprofile.html" data-toggle="modal" data-target="#modal-addbadge">
-                              <i class="fas fa-folder">
-                              </i>
-                              Edit
-                          </a>
-                                        <a class="btn btn-warning btn-sm" href="#">
-                              <i class="fas fa-trash">
-                              </i>
-                              Archive
-                          </a>
+                                    <td style="vertical-align: top; white-space:nowrap">
+                                        <!-- User image -->
+                                        <img class="img-circle img-sm" src="dist/img/user3-128x128.jpg" alt="User Image">
+                                        <div class="icheck-primary d-inline">
+                                            <input type="checkbox" id="checkboxPrimary1">
+                                            <label for="checkboxPrimary1">Select
+                                            </label>
+                                          </div>
+                                    </td>
+                                    <td style="vertical-align: top;">
+                                        Fusce faucibus est ex, at elementum nunc faucibus id. Mauris mollis diam ac nulla tincidunt, sed eleifend mi aliquam. Vestibulum dui risus, condimentum eu mollis eu, auctor et nisi
+                                    </td>
+                                    <td class="project-actions text-right" style="vertical-align: top;">
+                                        <a class="btn btn-primary btn-sm" href="#" data-toggle="modal" data-target="#process">
+                                            <i class="fas fa-heart"></i> Scout
+                                        </a>
                                     </td>
                                 </tr>
 
+                                <tr>
+                                    <td style="white-space:nowrap">
+                                        <a>
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pzCuKh7QyOA?start=13" frameborder="0" allowfullscreen=""></iframe>
+                                            </div>
+                          </a>
+                                        <br/>
+                                        <small>
+                              Professional in marketing
+                          </small>
+                                    </td>
+                                    <td style="vertical-align: top; white-space:nowrap">
+                                        <!-- User image -->
+                                        <img class="img-circle img-sm" src="dist/img/user3-128x128.jpg" alt="User Image">
+                                        <div class="icheck-primary d-inline">
+                                            <input type="checkbox" id="checkboxPrimary1">
+                                            <label for="checkboxPrimary1">Select
+                                            </label>
+                                          </div>
+                                    </td>
+                                    <td style="vertical-align: top;">
+                                        Morbi dapibus, risus porta porta dictum, nisl erat malesuada nisi, vestibulum mollis enim lorem eu est. Duis id hendrerit erat.
+                                    </td>
+                                    <td class="project-actions text-right" style="vertical-align: top;">
+                                        <a class="btn btn-primary btn-sm" href="#" data-toggle="modal" data-target="#process">
+                                            <i class="fas fa-heart"></i> Scout
+                                        </a>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -425,169 +536,94 @@
                 </div>
                 <!-- /.card -->
 
-                <div class="modal fade" id="modal-addbadge">
+                <div class="modal fade" id="scoutselected">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Add category</h4>
+                                <h4 class="modal-title">Scout selected jobseeker(s)</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
                             </div>
                             <div class="modal-body">
-
-
-                                <div class="form-group">
-                                    <label class="col-form-label">Area (Category) <span style="color: red;">*</span></label>
-                                    <input type="text" class="form-control" id="inputName" placeholder="Brand name">
-                                </div>
+                                Are you sure to scout selected jobseeker(s)?
 
                                 <div>
-                                    <label class="col-form-label">Relationship <span style="color: red;">*</span></label>
-
-                                    <div class="input-group mb-3">
-                                        <select class="form-control select2" style="width: 100%;">
-                                            <option selected="selected">Work-life balance</option>
-                                            <option>Gender equality</option>
-                                            <option>Ikigai promotion</option>
-                                        </select>
-                                        <span class="input-group-append">
-                    <button type="button" class="btn btn-sm btn-primary"> <i class="fas fa-plus"></i></button>
-                  </span>
-                                    </div>
-
-
-                                    <table class="table table-head-fixed text-nowrap">
-                                        <thead>
-                                            <tr>
-                                                <th>Area</th>
-                                                <th>Relatedness</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Work-life balance</td>
-                                                <th><select class="form-control select2" style="width: 100%;">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option selected="selected">3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                    </select>
-                                                </th>
-                                                <th><button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button></th>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td>Work-life balance</td>
-                                                <th><select class="form-control select2" style="width: 100%;">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option selected="selected">5</option>
-                                                    </select>
-                                                </th>
-                                                <th><button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button></th>
-                                            </tr>
-                                            <tr>
-                                                <td>Gender equality</td>
-                                                <th><select class="form-control select2" style="width: 100%;">
-                                                        <option>1</option>
-                                                        <option selected="selected">2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                    </select>
-                                                </th>
-                                                <th><button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button></th>
-                                            </tr>
-                                            <tr>
-                                                <td>Work-life balance</td>
-                                                <th><select class="form-control select2" style="width: 100%;">
-                                                        <option selected="selected">1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                    </select>
-                                                </th>
-                                                <th><button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button></th>
-                                            </tr>
-                                            <tr>
-                                                <td>Gender equality</td>
-                                                <th><select class="form-control select2" style="width: 100%;">
-                                                        <option>1</option>
-                                                        <option selected="selected">2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                    </select>
-                                                </th>
-                                                <th><button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button></th>
-                                            </tr>
-                                            <tr>
-                                                <td>Gender equality</td>
-                                                <th><select class="form-control select2" style="width: 100%;">
-                                                        <option selected="selected">1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                    </select>
-                                                </th>
-                                                <th><button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button></th>
-                                            </tr>
-                                            <tr>
-                                                <td>Gender equality</td>
-                                                <th><select class="form-control select2" style="width: 100%;">
-                                                        <option selected="selected">1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                    </select>
-                                                </th>
-                                                <th><button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button></th>
-                                            </tr>
-                                            <tr>
-                                                <td>Work-life balance</td>
-                                                <th><select class="form-control select2" style="width: 100%;">
-                                                        <option selected="selected">1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                    </select>
-                                                </th>
-                                                <th><button type="button" class="btn btn-sm btn-danger"><i class="fas fa-minus"></i></button></th>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
                                 </div>
 
-                                <!--
-                      <div class="form-group">
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
-                            </label>
-                          </div>
-                      </div>
--->
                             </div>
                             <div class="modal-footer">
-                                <a class="btn btn-default btn-sm" href="#" data-dismiss="modal">
-                    <i class="fas fa-sign-in-alt"></i>
-                    Cancel
-                </a>
-                                <a class="btn btn-primary btn-sm" href="tlece-vacancyprofile.html">
-                    <i class="fas fa-sign-in-alt"></i>
-                    Submit
-                </a>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Scout</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <div class="modal fade" id="process">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Scout a jobseeker</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                            </div>
+                            <div class="modal-body">
+                                Are you sure to scout this jobseeker?
+
+                                <div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Scout</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <div class="modal fade" id="processmultiple">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Process applicants</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                            </div>
+                            <div class="modal-body">
+                                Are you sure to process these applicants?
+
+
+                                <table class="table table-striped">
+                                    <thead>
+                                        <th>Name</th>
+                                        <th>Vacancy applied</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Zhane Ballard</td>
+                                            <td>Executive Secretary</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bentley Enriquez</td>
+                                            <td>Sales Engineer</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Process</button>
                             </div>
                         </div>
                         <!-- /.modal-content -->
@@ -608,6 +644,7 @@
                 <b>Version</b> 1.0.0 (
                 <script type="text/javascript">
                     document.write(document.lastModified);
+
                 </script>)
             </div>
         </footer>
@@ -723,6 +760,7 @@
             });
 
         })
+
     </script>
 </body>
 
