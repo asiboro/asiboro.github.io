@@ -21,7 +21,10 @@
     <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
 
     <!-- Chosen -->
-    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+
+    
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
 
 </head>
 
@@ -269,6 +272,14 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
+                                        <label class="control-label"></label>
+                                        <div class="form-group">
+                                            <input type="checkbox" class="i-checks" value="" selected> Included leads converted into accounts
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
                                         <div class="form-group">
                                             <label class="control-label">Address: </label>
                                             <div class="input-group">
@@ -381,7 +392,7 @@
                                                         <tbody>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
+                                                                <td nowrap><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a> <i class="fa fa-circle" style="color:red"></i></td>
                                                                 <td> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
                                                                 <td> Bekasi</td>
                                                                 <td>
@@ -551,6 +562,7 @@
                                                 <h4>
 													Jakarta Barat, DKI Jakarta, Indonesia
 												</h4>
+                                                <span class="label label-danger">Converted</span>
                                             </div>
                                         </div>
                                         <div class="client-detail">
@@ -690,6 +702,19 @@
 
     <!-- Chosen -->
     <script src="js/plugins/chosen/chosen.jquery.js"></script>
+
+
+        <!-- iCheck -->
+        <script src="js/plugins/iCheck/icheck.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.i-checks').iCheck({
+                    checkboxClass: 'icheckbox_square-green',
+                    radioClass: 'iradio_square-green',
+                });
+            });
+        </script>
+
     <!-- Page-Level Scripts -->
     <script>
         $(document).ready(function () {
@@ -794,6 +819,8 @@
             width: "100%"
         });
     </script>
+
+
 </body>
 
 </html>
