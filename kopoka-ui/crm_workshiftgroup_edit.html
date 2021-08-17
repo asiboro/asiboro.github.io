@@ -17,6 +17,7 @@
     <link href="css/plugins/footable/footable.core.css" rel="stylesheet">
     <link href="css/bootstrap-select.css" rel="stylesheet">
 
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -296,12 +297,12 @@
                                     <div class="form-group" id="data_1">
                                         <label class="col-sm-2 control-label">Assignee</label>
                                         <div class="col-sm-5">
-                                            <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
-                                                <option value="1">None</option>
+                                        <select data-placeholder="Choose persons..." class="chosen-select  form-control" multiple tabindex="2">
                                             <option value="1">Benny</option>
                                             <option value="2">Serena</option>
-                                            <option value="4">Saefudin</option>
+                                            <option value="3">Saefudin</option>
                                         </select>
+
                                         </div>
                                     </div>
 
@@ -610,7 +611,6 @@
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
@@ -621,6 +621,15 @@
     <script>
         w3IncludeHTML();
     </script>
+    
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+    <script>
+        $('.chosen-select').chosen({
+        width: "100%"
+        });
+    </script>
+
 </body>
 
 </html>

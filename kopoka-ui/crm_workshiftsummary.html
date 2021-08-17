@@ -19,6 +19,8 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -260,7 +262,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-1 control-label">Unit</label>
                                     <div class="col-sm-5">
-                                        <select class="form-control m-b">
+                                        <select class="form-control m-b chosen-select">
                                             <option>Any</option>
                                             <option>Marketing Team</option>
                                             <option>Support Team</option>
@@ -270,7 +272,7 @@
 
                                     <label class="col-sm-1 control-label">Asignee</label>
                                     <div class="col-sm-5">
-                                        <select class="form-control m-b">
+                                        <select class="form-control m-b chosen-select">
                                             <option>Any</option>
                                             <option>Benny</option>
                                             <option>Serena</option>
@@ -283,7 +285,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-1 control-label">Lead/contact</label>
                                     <div class="col-sm-5">
-                                        <select class="form-control m-b">
+                                        <select class="form-control m-b chosen-select">
                                             <option value="1">Any</option>
                                             <option value="2">Dono Karsono</option>
                                             <option value="3">Sono Kardono</option>
@@ -294,7 +296,7 @@
 
                                     <label class="col-sm-1 control-label">Account</label>
                                     <div class="col-sm-5">
-                                        <select class="form-control m-b">
+                                        <select class="form-control m-b chosen-select">
                                             <option value="1">Any</option>
                                             <option value="2">PT ABC</option>
                                             <option value="3">PT Sanasini</option>
@@ -305,7 +307,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-1 control-label">Opportunity</label>
                                     <div class="col-sm-5">
-                                        <select class="form-control m-b">
+                                        <select class="form-control m-b chosen-select">
                                             <option value="1">Any</option>
                                             <option value="2">10 ton tepung terigu per bulan</option>
                                             <option value="3">Beras merah</option>
@@ -372,6 +374,14 @@
 
     <!-- Full Calendar -->
     <script src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
+
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+    <script>
+        $('.chosen-select').chosen({
+        width: "100%"
+        });
+    </script>
 
     <script>
         $(document).ready(function () {

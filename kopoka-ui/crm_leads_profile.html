@@ -268,12 +268,44 @@
                         <div class="ibox float-e-margins">
                             <div class="ibox-content">
 
-                                <button type="button" class="btn btn-default btn">Back</button>
+                                <a href="crm_leads.html"><button type="button" class="btn btn-default btn">Back</button></a>
                                 <button type="submit" class="ladda-button btn btn-primary btn"
                                  data-style="slide-right"><span class="ladda-label"><strong>Save</strong></span></button>
-                                <button type="button" class="btn btn-danger btn" disabled=&#x27;disabled&#x27;>Delete</button>
+                                <button type="button" class="btn btn-danger btn" data-toggle="modal" data-target="#delete">Delete</button>
+                                <div class="modal inmodal" id="delete" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content animated">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title">Confirmation</h4>
+                                            </div>
+                                            <div class="modal-body">Are you sure to delete this lead?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-primary">Yes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                <button type="button" class="btn btn-primary btn pull-right">Convert to Contact</button>
+                                <button type="button" class="btn btn-primary btn pull-right" data-toggle="modal" data-target="#convert">Convert to Contact</button>
+                                <div class="modal inmodal" id="convert" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content animated">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title">Confirmation</h4>
+                                            </div>
+                                            <div class="modal-body">Are you sure to convert this lead into contact?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-primary">Yes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="row m-t-lg">
 					                <div class="tabs-container">
