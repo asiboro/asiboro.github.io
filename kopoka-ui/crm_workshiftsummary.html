@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kopoka | Visit Schedules</title>
+    <title>Kopoka | Visits</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -18,6 +18,8 @@
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
 
 </head>
 
@@ -63,7 +65,7 @@
                             <li><a href="">Contacts</a></li>
                             <li><a href="">Accounts</a></li>
                             <li><a href="">Activities</a></li>
-                            <li><a href="crm_workshiftsummary.html">Visits</a></li>
+                            <li><a href="crm_attendance.html">Visits</a></li>
                         </ul>
                     </li>
                     <li>
@@ -227,13 +229,16 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-8">
-                    <h2>Visit Schedules</h2>
+                    <h2>Visits (Calendar)</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index_crm.html">Home</a>
                         </li>
                         <li class="active">
-                            <strong>Visit Schedules</strong>
+                            <a href="crm_attendance.html">Visits</a>
+                        </li>
+                        <li class="active">
+                            <strong>Visits (Calendar)</strong>
                         </li>
                     </ol>
                 </div>
@@ -257,7 +262,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-1 control-label">Unit</label>
                                     <div class="col-sm-5">
-                                        <select class="form-control m-b">
+                                        <select class="form-control m-b chosen-select">
                                             <option>Any</option>
                                             <option>Marketing Team</option>
                                             <option>Support Team</option>
@@ -267,7 +272,7 @@
 
                                     <label class="col-sm-1 control-label">Asignee</label>
                                     <div class="col-sm-5">
-                                        <select class="form-control m-b">
+                                        <select class="form-control m-b chosen-select">
                                             <option>Any</option>
                                             <option>Benny</option>
                                             <option>Serena</option>
@@ -280,7 +285,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-1 control-label">Lead/contact</label>
                                     <div class="col-sm-5">
-                                        <select class="form-control m-b">
+                                        <select class="form-control m-b chosen-select">
                                             <option value="1">Any</option>
                                             <option value="2">Dono Karsono</option>
                                             <option value="3">Sono Kardono</option>
@@ -291,7 +296,7 @@
 
                                     <label class="col-sm-1 control-label">Account</label>
                                     <div class="col-sm-5">
-                                        <select class="form-control m-b">
+                                        <select class="form-control m-b chosen-select">
                                             <option value="1">Any</option>
                                             <option value="2">PT ABC</option>
                                             <option value="3">PT Sanasini</option>
@@ -302,7 +307,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-1 control-label">Opportunity</label>
                                     <div class="col-sm-5">
-                                        <select class="form-control m-b">
+                                        <select class="form-control m-b chosen-select">
                                             <option value="1">Any</option>
                                             <option value="2">10 ton tepung terigu per bulan</option>
                                             <option value="3">Beras merah</option>
@@ -330,23 +335,6 @@
 
                         <div class="ibox float-e-margins">
                             <div class="ibox-content">
-
-                                <fieldset class="form-horizontal">
-                                <div>
-                                <a href="crm_workshiftgroup.html">
-                                    <button type="button" class="btn btn-primary btn-xs">Schedule Assignment</button>
-                                </a>
-
-                                <a href="">
-                                    <button type="button" class="btn btn-primary btn-xs">Upload Schedule Assignment</button>
-                                </a>
-
-                                <a href="">
-                                    <button type="button" class="btn btn-primary btn-xs">Simple Schedule Assignment</button>
-                                </a>
-                                <p></p>
-                            </div>
-                        </fieldset>
                                 
 
                                 <div id="calendar"></div>
@@ -386,6 +374,14 @@
 
     <!-- Full Calendar -->
     <script src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
+
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+    <script>
+        $('.chosen-select').chosen({
+        width: "100%"
+        });
+    </script>
 
     <script>
         $(document).ready(function () {

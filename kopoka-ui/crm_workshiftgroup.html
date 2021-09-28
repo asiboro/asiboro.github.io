@@ -20,7 +20,7 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
 
 </head>
 
@@ -66,7 +66,7 @@
                             <li><a href="">Contacts</a></li>
                             <li><a href="">Accounts</a></li>
                             <li><a href="">Activities</a></li>
-                            <li><a href="crm_workshiftsummary.html">Visits</a></li>
+                            <li><a href="crm_attendance.html">Visits</a></li>
                         </ul>
                     </li>
                     <li>
@@ -232,16 +232,16 @@
             
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>Visit Schedules Assignment</h2>
+                    <h2>Schedule Assignments</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index_crm.html">Home</a>
                         </li>
-                        <li>
-                            <a href="crm_workshiftsummary.html">Visit Schedules</a>
+                        <li class="active">
+                            <a href="crm_attendance.html">Visits</a>
                         </li>
                         <li class="active">
-                            <strong>Visit Schedules Assignment</strong>
+                            <strong>Schedule Assignments</strong>
                         </li>
                     </ol>
                 </div>
@@ -274,7 +274,7 @@
                             <div class="col-sm-6">
                                 <label class="control-label">Lead/contact: </label>
                                 <div class="form-group">
-                                    <select data-placeholder="Select a lead or contact" class="form-control m-b">
+                                    <select data-placeholder="Select a lead or contact" class="form-control chosen-select">
                                         <option value="1">Any</option>
                                         <option value="2">Dono Karsono</option>
                                         <option value="3">Sono Kardono</option>
@@ -286,7 +286,7 @@
                             <div class="col-sm-6">
                                 <label class="control-label">Account: </label>
                                 <div class="form-group">
-                                    <select data-placeholder="Select an account" class="form-control m-b">
+                                    <select data-placeholder="Select an account" class="form-control m-b chosen-select">
                                     <option value="1">Any</option>
                                     <option value="2">PT ABC</option>
                                     <option value="3">PT Sanasini</option>
@@ -299,7 +299,7 @@
                             <div class="col-sm-6">
                                 <label class="control-label">Opportunity: </label>
                                 <div class="form-group">
-                                    <select data-placeholder="Select an opportunity" class="form-control m-b">
+                                    <select data-placeholder="Select an opportunity" class="form-control m-b chosen-select">
                                         <option value="1">Any</option>
                                         <option value="2">10 ton tepung terigu per bulan</option>
                                         <option value="3">Beras merah</option>
@@ -331,7 +331,7 @@
                         <div class="ibox">
                             <div class="ibox-content">
                                 <a href="crm_workshiftgroup_edit.html">
-                                    <button type="button" class="btn btn-primary btn-xs">New Visit Schedules/Assignment</button>
+                                    <button type="button" class="btn btn-primary btn-xs">New Schedule Assignment</button>
                                 </a>
 
                     <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
@@ -363,7 +363,23 @@
                                             <button type="button" class="btn btn-primary btn-xs">Edit</button>
                                         </a>
                                         <a href="#">
-                                            <button type="button" class="btn btn-primary btn-xs">Delete</button>
+                                            <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#delete">Delete</button>
+                                            <div class="modal inmodal" id="delete" tabindex="-1" role="dialog" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content animated">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                            <h4 class="modal-title">Confirmation</h4>
+                                                        </div>
+                                                        <div class="modal-body text-left">Are you sure to delete this schedule? <br>If you want to remove just assignments, cancel this and click "Edit" instead.
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+                                                            <button type="button" class="btn btn-primary">Yes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </a>
                                     </div>
                                 </td>
@@ -457,6 +473,15 @@
     <script>
         w3IncludeHTML();
     </script>
+
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+    <script>
+        $('.chosen-select').chosen({
+        width: "100%"
+        });
+    </script>
+
 </body>
 
 </html>

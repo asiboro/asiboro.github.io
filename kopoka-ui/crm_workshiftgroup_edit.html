@@ -17,6 +17,7 @@
     <link href="css/plugins/footable/footable.core.css" rel="stylesheet">
     <link href="css/bootstrap-select.css" rel="stylesheet">
 
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -67,7 +68,7 @@
                             <li><a href="">Contacts</a></li>
                             <li><a href="">Accounts</a></li>
                             <li><a href="">Activities</a></li>
-                            <li><a href="crm_workshiftsummary.html">Visits</a></li>
+                            <li><a href="crm_attendance.html">Visits</a></li>
                         </ul>
                     </li>
                     <li>
@@ -231,19 +232,19 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>New Visit Schedule Assignment</h2>
+                    <h2>New Schedule Assignment</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index_crm.html">Home</a>
                         </li>
                         <li>
-                            <a href="crm_workshiftsummary.html">Visits Schedules</a>
+                            <a href="crm_attendance.html">Visits</a>
                         </li>
                         <li>
-                            <a href="crm_workshiftgroup.html">Visit Schedules Assignment</a>
+                            <a href="crm_workshiftgroup.html">Schedules Assignment</a>
                         </li>
                         <li class="active">
-                            <strong>New Visit Schedule Assignment</strong>
+                            <strong>New Schedule Assignment</strong>
                         </li>
                     </ol>
                 </div>
@@ -260,7 +261,7 @@
                                 <fieldset class="form-horizontal">
                                     
                                     <div class="form-group" id="data_1">
-                                        <label class="col-sm-2 control-label">Lead/Contact</label>
+                                        <label class="col-sm-2 control-label">Lead/Contact<span style="color: red;"> *</span></label>
                                         <div class="col-sm-5">
                                             <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
                                             <option value="1">Dono Karsono</option>
@@ -296,12 +297,12 @@
                                     <div class="form-group" id="data_1">
                                         <label class="col-sm-2 control-label">Assignee</label>
                                         <div class="col-sm-5">
-                                            <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
-                                                <option value="1">None</option>
+                                        <select data-placeholder="Choose persons..." class="chosen-select  form-control" multiple tabindex="2">
                                             <option value="1">Benny</option>
                                             <option value="2">Serena</option>
-                                            <option value="4">Saefudin</option>
+                                            <option value="3">Saefudin</option>
                                         </select>
+
                                         </div>
                                     </div>
 
@@ -514,40 +515,6 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                2
-                                            </td>
-                                            <td>
-                                                08.30
-                                            </td>
-                                            <td>
-                                                11.00
-                                            </td>
-                                            <td class="text-right">
-                                                <div class="btn-group">
-                                                    <button class="btn-white btn btn-xs" data-toggle="modal" data-target="#append">Edit</button>
-                                                    <button class="btn-white btn btn-xs">Delete</button>
-                                                </div>
-                                            </td>
-                                        </tr>                                    
-                                        <tr>
-                                            <td>
-                                                2
-                                            </td>
-                                            <td>
-                                                13.00
-                                            </td>
-                                            <td>
-                                                15.00
-                                            </td>
-                                            <td class="text-right">
-                                                <div class="btn-group">
-                                                    <button class="btn-white btn btn-xs" data-toggle="modal" data-target="#append">Edit</button>
-                                                    <button class="btn-white btn btn-xs">Delete</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
                                                 3
                                             </td>
                                             <td>
@@ -610,7 +577,6 @@
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
@@ -621,6 +587,15 @@
     <script>
         w3IncludeHTML();
     </script>
+    
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+    <script>
+        $('.chosen-select').chosen({
+        width: "100%"
+        });
+    </script>
+
 </body>
 
 </html>

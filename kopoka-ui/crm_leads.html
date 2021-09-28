@@ -21,7 +21,10 @@
     <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
 
     <!-- Chosen -->
-    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+
+    
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
 
 </head>
 
@@ -67,7 +70,7 @@
                             <li><a href="">Contacts</a></li>
                             <li><a href="">Accounts</a></li>
                             <li><a href="">Activities</a></li>
-                            <li><a href="crm_workshiftsummary.html">Visits</a></li>
+                            <li><a href="crm_attendance.html">Visits</a></li>
                         </ul>
                     </li>
                     <li>
@@ -234,10 +237,7 @@
                     <h2>Leads</h2>
                     <ol class="breadcrumb">
                         <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="active">
-                            CRM
+                            <a href="index_crm.html">Home</a>
                         </li>
                         <li class="active">
                             <strong>Leads</strong>
@@ -272,6 +272,14 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
+                                        <label class="control-label"></label>
+                                        <div class="form-group">
+                                            <input type="checkbox" class="i-checks" value="" selected> Include leads converted into accounts
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
                                         <div class="form-group">
                                             <label class="control-label">Address: </label>
                                             <div class="input-group">
@@ -284,16 +292,15 @@
                                                         <div class="modal-content animated">
                                                             <div class="modal-header">
                                                                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                                <h4 class="modal-title">Browse for address</h4>
+                                                                <h4 class="modal-title">Select location</h4>
                                                             </div>
                                                             <div class="modal-body">
                                                                 <div class="row">
                                                                     <div class="col-sm-3">
-                                                                        Country
+                                                                        <label>Country</label>
                                                                     </div>
                                                                     <div class="col-sm-9">
                                                                         <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
-                                                                            <option value="1">Any</option>
                                                                             <option value="1">Malaysia</option>
                                                                             <option selected value="2">Indonesia</option>
                                                                             <option value="3">Singapore</option>
@@ -302,11 +309,11 @@
                                                                 </div>
                                                                 <div class="row">
                                                                     <div class="col-sm-3">
-                                                                        Province
+                                                                        <label>Province</label>
                                                                     </div>
                                                                     <div class="col-sm-9">
                                                                         <select data-placeholder="Choose a job sub-level..." class="chosen-select" tabindex="2">
-                                                                            <option value="1">Any</option>
+                                                                            <option value="1">None</option>
                                                                             <option value="1" selected>DKI Jakarta</option>
                                                                             <option value="2">Jawa Barat</option>
                                                                             <option value="3">Tangerang</option>
@@ -316,11 +323,11 @@
                                                                 </div>
                                                                 <div class="row">
                                                                     <div class="col-sm-3">
-                                                                        City
+                                                                        <label>City</label>
                                                                     </div>
                                                                     <div class="col-sm-9">
                                                                         <select data-placeholder="Choose a job level..." class="chosen-select" tabindex="2">
-                                                                            <option value="1">Any</option>
+                                                                            <option value="1">None</option>
                                                                             <option value="1">Jakarta Utara</option>
                                                                             <option value="2">Jakarta Selatan</option>
                                                                             <option value="3" selected>Jakarta Barat</option>
@@ -362,11 +369,6 @@
                                 </a>
                                 <button type="button" class="btn btn-primary btn-xs">Export leads</button>
                                 <div class="clients-list">
-                                    <ul class="nav nav-tabs">
-                                        <span class="pull-right small text-muted">16 persons</span>
-                                        <li class="active"><a data-toggle="tab" href="#tab-1"><i class="fa fa-user"></i> Active</a></li>
-                                        <li class=""><a data-toggle="tab" href="#tab-2"><i class="fa fa-briefcase"></i> Inactive</a></li>
-                                    </ul>
                                     <div class="tab-content">
                                         <div id="tab-1" class="tab-pane active">
                                             <div class="full-height-scroll">
@@ -379,149 +381,161 @@
                                                                 Name
                                                             </th>
                                                             <th>
-                                                                Street Address
+                                                                Description
                                                             </th>
                                                             <th>
-                                                                City
+                                                                Location
                                                             </th>
+                                                            <th></th>
                                                         </thead>
                                                         <tbody>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
-                                                                <td> IT Developer</td>
+                                                                <td nowrap><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a> <i class="fa fa-circle" style="color:red"></i></td>
+                                                                <td> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
+                                                                <td> Bekasi</td>
+                                                                <td>
+                                                                    <a href="crm_leads_profile.html">
+                                                                        <button class="btn-white btn btn-xs">Detail</button>
+                                                                    </a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
                                                                 <td><a data-toggle="tab" href="#contact-2" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
+                                                                <td> </td>
                                                                 <td> Jakarta Selatan</td>
+                                                                <td>
+                                                                    <a href="crm_leads_profile.html">
+                                                                        <button class="btn-white btn btn-xs">Detail</button>
+                                                                    </a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
+                                                                <td><a data-toggle="tab" href="#contact-3" class="client-link">Jono Karjono</a> <i class="fa fa-circle" style="color:red"></i></td>
+                                                                <td> Praesent volutpat libero sem, vel pulvinar eros tincidunt in. </td>
                                                                 <td> Jakarta Selatan</td>
+                                                                <td>
+                                                                    <a href="crm_leads_profile.html">
+                                                                        <button class="btn-white btn btn-xs">Detail</button>
+                                                                    </a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
+                                                                <td><a data-toggle="tab" href="#contact-4" class="client-link">Titi Kartiti</a> <i class="fa fa-circle" style="color:red"></i></td>
+                                                                <td> Nullam in velit lacus</td>
                                                                 <td> Bandung</td>
+                                                                <td>
+                                                                    <a href="crm_leads_profile.html">
+                                                                        <button class="btn-white btn btn-xs">Detail</button>
+                                                                    </a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
+                                                                <td><a data-toggle="tab" href="#contact-5" class="client-link">Toto Kartolo</a></td>
+                                                                <td> Maecenas porta nulla non venenatis varius.</td>
                                                                 <td> Semarang</td>
+                                                                <td>
+                                                                    <a href="crm_leads_profile.html">
+                                                                        <button class="btn-white btn btn-xs">Detail</button>
+                                                                    </a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
+                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tata Karyata</a></td>
+                                                                <td> </td>
                                                                 <td> Jakarta Selatan</td>
+                                                                <td>
+                                                                    <a href="crm_leads_profile.html">
+                                                                        <button class="btn-white btn btn-xs">Detail</button>
+                                                                    </a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
+                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Sana Karsana</a></td>
+                                                                <td> Vestibulum venenatis luctus odio non laoreet</td>
                                                                 <td> Bogor</td>
+                                                                <td>
+                                                                    <a href="crm_leads_profile.html">
+                                                                        <button class="btn-white btn btn-xs">Detail</button>
+                                                                    </a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
+                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Joni Marjoni</a></td>
+                                                                <td> </td>
                                                                 <td> Tangerang</td>
+                                                                <td>
+                                                                    <a href="crm_leads_profile.html">
+                                                                        <button class="btn-white btn btn-xs">Detail</button>
+                                                                    </a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
+                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Sani Karsani</a></td>
+                                                                <td> Nunc ac nulla a sapien rhoncus tincidunt sit amet vel tortor</td>
                                                                 <td> Jakarta Utara</td>
+                                                                <td>
+                                                                    <a href="crm_leads_profile.html">
+                                                                        <button class="btn-white btn btn-xs">Detail</button>
+                                                                    </a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
+                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Jono Marjono</a></td>
+                                                                <td> Quisque vitae mollis eros</td>
                                                                 <td> Jakarta Timur</td>
+                                                                <td>
+                                                                    <a href="crm_leads_profile.html">
+                                                                        <button class="btn-white btn btn-xs">Detail</button>
+                                                                    </a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
+                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Jojo Karjojo</a></td>
                                                                 <td> IT Team</td>
                                                                 <td> Jakarta Selatan</td>
+                                                                <td>
+                                                                    <a href="crm_leads_profile.html">
+                                                                        <button class="btn-white btn btn-xs">Detail</button>
+                                                                    </a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
+                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Lana Korlana</a></td>
+                                                                <td> </td>
                                                                 <td> Jakarta Barat</td>
+                                                                <td>
+                                                                    <a href="crm_leads_profile.html">
+                                                                        <button class="btn-white btn btn-xs">Detail</button>
+                                                                    </a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
+                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Yana Saryana</a></td>
+                                                                <td> </td>
                                                                 <td> Jakarta Selatan</td>
+                                                                <td>
+                                                                    <a href="crm_leads_profile.html">
+                                                                        <button class="btn-white btn btn-xs">Detail</button>
+                                                                    </a></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
+                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Hana Farlana</a></td>
+                                                                <td> Curabitur justo lacus, commodo sed fringilla non, viverra quis neque</td>
                                                                 <td> Jakarta Selatan</td>
+                                                                <td>
+                                                                    <a href="crm_leads_profile.html">
+                                                                        <button class="btn-white btn btn-xs">Detail</button>
+                                                                    </a></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div id="tab-2" class="tab-pane">
-                                            <div class="full-height-scroll">
-                                                <div class="table-responsive">
-                                                    <table class="table table-striped table-hover">
-                                                        <thead>
-                                                            <th>
-                                                            </th>
-                                                            <th>
-                                                                Name
-                                                            </th>
-                                                            <th>
-                                                                Street Address
-                                                            </th>
-                                                            <th>
-                                                                City
-                                                            </th>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
-                                                                <td> Jakarta Selatan</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
-                                                                <td> Jakarta Barat</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
-                                                                <td> Jakarta Selatan</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
-                                                                <td> Jakarta Selatan</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
+
                                     </div>
 
                                 </div>
@@ -547,9 +561,7 @@
                                                 <h4>
 													Jakarta Barat, DKI Jakarta, Indonesia
 												</h4>
-                                                <h4>
-													021-2345-6789 
-												</h4>
+                                                <span class="label label-danger">Converted</span>
                                             </div>
                                         </div>
                                         <div class="client-detail">
@@ -580,10 +592,10 @@
                                                 <strong>Contact Information</strong>
                                                 <ul class="list-group clear-list">
                                                     <li class="list-group-item fist-item">
-                                                        <span class="pull-right"> 021123123</span> Telephone Number
+                                                        <span class="pull-right"> 021362080001</span> Telephone Number
                                                     </li>
                                                     <li class="list-group-item fist-item">
-                                                        <span class="pull-right"> 08111123123</span> Mobile Phone Number
+                                                        <span class="pull-right"> 081362080020</span> Mobile Phone Number
                                                     </li>
                                                     <li class="list-group-item fist-item">
                                                         <span class="pull-right"> Toto.Kartono@kopoka.com </span> Email
@@ -593,6 +605,69 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div id="contact-2" class="tab-pane">
+                                        <div class="row m-b-lg">
+                                            <div class="col-lg-4 text-center">
+
+                                                <h2>Titi Kartiti</h2>
+
+                                                <div class="m-b-sm">
+                                                    <img alt="image" class="img-circle" src="img/a3.jpg" style="width: 62px">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <h4>
+													Jakarta Selatan, DKI Jakarta, Indonesia
+												</h4>
+                                                <h4>
+													021-3457-1234 
+												</h4>
+                                            </div>
+                                        </div>
+                                        <div class="client-detail">
+                                            <div class="full-height-scroll">
+
+                                                <strong>Lead Information</strong>
+
+                                                <ul class="list-group clear-list">
+                                                    <li class="list-group-item">
+                                                        <span class="pull-right"> New</span> Status
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span class="pull-right"> Warm</span> Rating
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span class="pull-right">  </span> Company
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span class="pull-right"> </span> Title
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span class="pull-right"> Female </span> Gender
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span class="pull-right"> PT XYZ</span> Account
+                                                    </li>
+                                                </ul>
+                                                <strong>Contact Information</strong>
+                                                <ul class="list-group clear-list">
+                                                    <li class="list-group-item fist-item">
+                                                        <span class="pull-right"> 0229485822</span> Telephone Number
+                                                    </li>
+                                                    <li class="list-group-item fist-item">
+                                                        <span class="pull-right"> 08163242355</span> Mobile Phone Number
+                                                    </li>
+                                                    <li class="list-group-item fist-item">
+                                                        <span class="pull-right"> Titi.Kartiti@kopoka.com </span> Email
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
@@ -626,6 +701,19 @@
 
     <!-- Chosen -->
     <script src="js/plugins/chosen/chosen.jquery.js"></script>
+
+
+        <!-- iCheck -->
+        <script src="js/plugins/iCheck/icheck.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.i-checks').iCheck({
+                    checkboxClass: 'icheckbox_square-green',
+                    radioClass: 'iradio_square-green',
+                });
+            });
+        </script>
+
     <!-- Page-Level Scripts -->
     <script>
         $(document).ready(function () {
@@ -730,6 +818,8 @@
             width: "100%"
         });
     </script>
+
+
 </body>
 
 </html>
